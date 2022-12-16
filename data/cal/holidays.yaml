@@ -1,0 +1,51 @@
+---
+holidays:
+  - name: 
+      commonname: "Last Harvest"
+      gaulishname: "Giamonios"
+      irishname: "Samhain"
+      scotishname: "Samhain"
+      manxname: "Sauin"
+      cornishname: "Kalan Gwav"
+      welshname: "Galan Gaeaf"
+      bretonname: "Kalan-Goañv"
+      datekind: static
+    date: 10-31
+    time: 19:30
+  - name:
+      commonname: "Spring"
+      irishname:
+       - "Imbolc"
+       - "Lá Fhéile Bríde"
+      scotishname: "Là Fhèill Brìghde"
+      manxname: "Laa’l Breeshey"
+      cornishname: "Kalan Gwaynten"
+      welshname: "Gwyl Dechrau’r Gwanwyn"
+      bretonname: "Gouel ar Gouloú"
+    datekind: static
+    date: 10-31
+    time: 19:30
+  - name:
+      commonname: "Beltane"
+      gaulishname: "Samonios"
+      irishname: "Lá Bealtainne"
+      scotishname: "Latha Bealltainn"
+      manxname: "Laa Boaldyn"
+      cornishname: "Kalan Haf"
+      welshname: "Galan Haf"
+      bretonname: "Kalan-hañv"
+    datekind: static
+    date: 10-31
+    time: 19:30
+  - name:
+      commonname: "First Harvest"
+      irishname: "Lúnasa"
+      scotishname: "Lùnastal"
+      manxname: "Luanistyn"
+      cornishname: "Kalan Kynyaf"
+      welshname: "Gŵyl Awst"
+      bretonname: "Kalan Here"
+    datekind: static
+    date: 10-31
+    time: 19:30
+ 
