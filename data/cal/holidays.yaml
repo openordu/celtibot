@@ -1,51 +1,102 @@
 ---
 holidays:
-  - name: 
-      commonname: "Last Harvest"
-      gaulishname: "Giamonios"
-      irishname: "Samhain"
-      scotishname: "Samhain"
-      manxname: "Sauin"
-      cornishname: "Kalan Gwav"
-      welshname: "Galan Gaeaf"
-      bretonname: "Kalan-Goañv"
+  - name: "Last Harvest"
+    gaulishname: "Trinouxs Samonia"
+    irishname: "Samhain"
+    scotishname: "Samhain"
+    manxname:
+      - "Sauin"
+      - "Oie Houney"
+    cornishname: "Kalan Gwav"
+    welshname: "Galan Gaeaf"
+    bretonname: "Kalan Goañv"
       datekind: static
     date: 10-31
     time: 19:30
-  - name:
-      commonname: "Spring"
-      irishname:
-       - "Imbolc"
-       - "Lá Fhéile Bríde"
-      scotishname: "Là Fhèill Brìghde"
-      manxname: "Laa’l Breeshey"
-      cornishname: "Kalan Gwaynten"
-      welshname: "Gwyl Dechrau’r Gwanwyn"
-      bretonname: "Gouel ar Gouloú"
-    datekind: static
-    date: 10-31
+  - name: "Midwinter"
+    gaulishname: "Medigiamos"
+    irishname: "Meán Geimhridh"
+    scotishname: "Meadhan Geamhradh"
+    manxname: "Mee Veanagh y Gheuree"
+    cornishname: "Montol"
+    welshname: "Canol Gaeaf"
+    bretonname: "Dez Gouel Nedeleg"
+      datekind: static
+    date: 12-20
     time: 19:30
-  - name:
-      commonname: "Beltane"
-      gaulishname: "Samonios"
-      irishname: "Lá Bealtainne"
-      scotishname: "Latha Bealltainn"
-      manxname: "Laa Boaldyn"
-      cornishname: "Kalan Haf"
-      welshname: "Galan Haf"
-      bretonname: "Kalan-hañv"
+  - name: "Spring"
+    gaulishname: "Ambiuolcia"
+    irishname:
+      - "Imbolc"
+      - "Lá Fhéile Bríde"
+    scotishname: "Là Fhèill Brìghde"
+    manxname:
+      - "Laa'l Breeshey"
+      - "Toshiaght Arree"
+    cornishname: "Kalan Gwaynten"
+    welshname: "Gwyl Dechrau'r Gwanwyn"
+    bretonname: "Gouel ar Gouloú"
     datekind: static
-    date: 10-31
+    date: 01-31
     time: 19:30
-  - name:
-      commonname: "First Harvest"
-      irishname: "Lúnasa"
-      scotishname: "Lùnastal"
-      manxname: "Luanistyn"
-      cornishname: "Kalan Kynyaf"
-      welshname: "Gŵyl Awst"
-      bretonname: "Kalan Here"
+  - name: "Old Woman's Day"
+    gaulishname: "Litu Uesonnae"
+    irishname:
+      - "Lá Fhéile Cailleach"
+      - "Meán Earrachai"
+    scotishname: "Latha na Cailliche"
+    manxname: "Y Chaisht"
+    cornishname: "Dedh Hen Ben"
+    welshname: "Cyhydnos y Gwanwyn"
+    bretonname: "Deiz Hen Benyn"
+      datekind: static
+    date: 03-20
+    time: 19:30
+  - name: "May Day"
+    gaulishname: "Belotenia"
+    irishname: "Lá Bealtainne"
+    scotishname: "Latha Bealltainn"
+    manxname: "Laa Boaldyn"
+    cornishname: "Kalan Haf"
+    welshname: "Galan Haf"
+    bretonname: "Kalan-hañv"
     datekind: static
-    date: 10-31
+    date: 04-30
     time: 19:30
+  - name: "Midsummer"
+    gaulishname: "Medisamos"
+    irishname: "Meán Samhraidh"
+    scotishname: "Meadhan an t-samhraidh"
+    manxname: "Laa Tinvaal"
+    cornishname: "Golowan"
+    welshname: "Canol Haf"
+    bretonname: "Deiz Gouel Yann"
+    datekind: static
+    date: 03-20
+    time: 19:30
+  - name: "First Harvest"
+    gaulishname: "Lugunassatis"
+    irishname: "Lúnasa"
+    scotishname: "Lùnastal"
+    manxname: "Luanistyn"
+    cornishname: "Kalan Kynyaf"
+    welshname: "Gŵyl Awst"
+    bretonname: "Kalan Here"
+    datekind: static
+    date: 07-30
+    time: 19:30
+  - name: "Midharvest"
+    gaulishname: "Litu Uogiami"
+    irishname: "Meán Fómhair"
+    scotishname: "Meadhan Foghar"
+    manxname: "Mean Fouyr"
+    cornishname: 
+      - "Guldize, Gooldize"
+      - "Kenhesnos Kynyaf"
+    welshname: "Cyhydnos yr hydref"
+    bretonname: "Dilost Hañv"
+    datekind: static
+    date: 03-20
+    time: 19:30
+    Kenhesnos Kynyaf
  
