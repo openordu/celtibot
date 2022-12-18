@@ -10,7 +10,6 @@ holidays:
     cornishname: "Kalan Gwav"
     welshname: "Galan Gaeaf"
     bretonname: "Kalan Goañv"
-      datekind: static
     date: 10-31
     time: 19:30
   - name: "Midwinter"
@@ -21,9 +20,25 @@ holidays:
     cornishname: "Montol"
     welshname: "Canol Gaeaf"
     bretonname: "Dez Gouel Nedeleg"
-      datekind: static
     date: 12-20
     time: 19:30
+  # Western New Year
+  - name: "Twelfth Night"
+    date: 01-05
+  - name: "Epiphany"
+    date: 01-06
+  - name: "Plough Monday"
+    welshname: "Dydd Gwyl Geiliau"
+    day: 0 30 8 ? 1 MON#2
+    when: "first monday after twelfth day"
+    what: "Festival of the Sheepfolds is a return to ordinary working life"
+  - name: Handsel Day
+    scottishname: "Handsel Monday"
+    day: 0 30 8 ? 1 MON#3 # cron notation for first monday of the month of january at 8:30AM
+    when: "first monday after the Julian new year(Jan 12th)"
+    what:
+     - "Time to give to the poor, to sit with and be with the infirm."
+     - "If you pay a debt on this day, you'll be paying it all year."
   - name: "Spring"
     gaulishname: "Ambiuolcia"
     irishname:
@@ -36,7 +51,7 @@ holidays:
     cornishname: "Kalan Gwaynten"
     welshname: "Gwyl Dechrau'r Gwanwyn"
     bretonname: "Gouel ar Gouloú"
-    datekind: static
+    datekind: 
     date: 01-31
     time: 19:30
   - name: "Old Woman's Day"
@@ -49,7 +64,6 @@ holidays:
     cornishname: "Dedh Hen Ben"
     welshname: "Cyhydnos y Gwanwyn"
     bretonname: "Deiz Hen Benyn"
-      datekind: static
     date: 03-20
     time: 19:30
   - name: "May Day"
@@ -60,7 +74,6 @@ holidays:
     cornishname: "Kalan Haf"
     welshname: "Galan Haf"
     bretonname: "Kalan-hañv"
-    datekind: static
     date: 04-30
     time: 19:30
   - name: "Midsummer"
@@ -71,7 +84,6 @@ holidays:
     cornishname: "Golowan"
     welshname: "Canol Haf"
     bretonname: "Deiz Gouel Yann"
-    datekind: static
     date: 03-20
     time: 19:30
   - name: "First Harvest"
@@ -82,7 +94,6 @@ holidays:
     cornishname: "Kalan Kynyaf"
     welshname: "Gŵyl Awst"
     bretonname: "Kalan Here"
-    datekind: static
     date: 07-30
     time: 19:30
   - name: "Midharvest"
@@ -95,8 +106,6 @@ holidays:
       - "Kenhesnos Kynyaf"
     welshname: "Cyhydnos yr hydref"
     bretonname: "Dilost Hañv"
-    datekind: static
-    date: 03-20
+    date: 08-20
     time: 19:30
-    Kenhesnos Kynyaf
  
