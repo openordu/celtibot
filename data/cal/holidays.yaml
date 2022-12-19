@@ -1,146 +1,135 @@
 ---
 holidays:
-  - october:
-      days:
-        - name: "Last Harvest"
-          gaulishname: "Trinouxs Samonia"
-          irishname: "Samhain"
-          scotishname: "Samhain"
-          manxname:
-            - "Sauin"
-            - "Oie Houney"
-          cornishname: "Kalan Gwav"
-          welshname: "Galan Gaeaf"
-          bretonname: "Kalan Goañv"
-          date: 10-31
-          time: 19:30
-  - november:
-      days:
-        - name: "Martinmas Eve"
-          irishname: "Sean Samhain"
-          date: 11-10
-          time: 19:30
-        - name: "Martinmas"
-          irishname: "Sean Samhain"
-          date: 11-11
-  - december:
-      days:
-      - name: "Midwinter"
-        gaulishname: "Medigiamos"
-        irishname: "Meán Geimhridh"
-        scotishname: "Meadhan Geamhradh"
-        manxname: "Mee Veanagh y Gheuree"
-        cornishname: "Montol"
-        welshname: "Canol Gaeaf"
-        bretonname: "Dez Gouel Nedeleg"
-        date: 12-20
-        time: 19:30
-  - january:
+  - name: "Last Harvest"
+    gaulishname: "Trinouxs Samonia"
+    irishname: "Samhain"
+    scotishname: "Samhain"
+    manxname:
+      - "Sauin"
+      - "Oie Houney"
+    cornishname: "Kalan Gwav"
+    welshname: "Galan Gaeaf"
+    bretonname: "Kalan Goañv"
+    date: 10-31
+    time: 19:30
+  - name: "Martinmas Eve"
+    irishname: "Sean Samhain"
+    date: 11-10
+    time: 19:30
+  - name: "Martinmas"
+    irishname: "Sean Samhain"
+    date: 11-11
+  - name: "Midwinter"
+    gaulishname: "Medigiamos"
+    irishname: "Meán Geimhridh"
+    scotishname: "Meadhan Geamhradh"
+    manxname: "Mee Veanagh y Gheuree"
+    cornishname: "Montol"
+    welshname: "Canol Gaeaf"
+    bretonname: "Dez Gouel Nedeleg"
+    date: 12-20
+    time: 19:30
+  - name: "Hogmanay"
+    scotishname: "Hogmanay"
+    date: 12-31
+  - name: January
     bretonname: Genver
     irishname: Gionbhar
     scottishname: Gionbhar
     welshname: Ionawr
     manxname: Jerry Geuree
     cornishname: Genvar
-    days:
-      # Western New Year
-      - name: "Twelfth Night"
-        date: 01-05
-      - name: "Epiphany"
-        date: 01-06
-      - name: "Plough Monday"
-        welshname: "Dydd Gwyl Geiliau"
-        day: 0 30 8 ? 1 MON#2
-        when: "first monday after twelfth day"
-        what: "Festival of the Sheepfolds is a return to ordinary working life"
-      - name: Handsel Day
-        scottishname: "Handsel Monday"
-        day: 0 30 8 ? 1 MON#3 # cron notation for first monday of the month of january at 8:30AM
-        when: "first monday after the Julian new year(Jan 12th)"
-        what:
-        - "Time to give to the poor, to sit with and be with the infirm"
-        - "If you pay a debt on this day, you'll be paying it all year."
-      - name: "St Kentigern's Feast"
-        scottishname: "Festival of St Kentigern"
-        date: 1-14
-        what: "St aids Queen in hiding her love affair with a knight from the King."
-      - name: "Burns Supper"
-        scottishname: "Burns Supper"
-        date: 1-25
-        what: "Celebration of the life and poetry of Robert Burns and Robert Boyle(his birthday)"
-      - name: "Brighid's Eve"
-        gaulishname: "Brigantianox"
-        irishname: Oíche Bhríghte
-        scotishname: "Oíche Brìghde"
-        manxname:
-          - "Laa'l Breeshey"
-          - "Toshiaght Arree"
-        cornishname: "Kalan Gwaynten"
-        welshname: "Gwyl Dechrau'r Gwanwyn"
-        bretonname: "Gouel ar Gouloú"
-        datekind: 
-        date: 01-31
-        time: 19:30
-  - febuary:
-      bretonname: C'houevrer
-      irishname: Feabhra
-      scottishname: An Gearran
-      welshname: Chwefror
-      manxname: Toshiaght Aree
-      cornishname: Huevral
-      days:
-        - name: "Festival of Spring"
-            gaulishname: "Ambiuolcia"
-            irishname:
-              - "Imbolc"
-              - "Lá Fhéile Bríde"
-            scotishname: "Là Fhèill Brìghde"
-            manxname:
-              - "Laa'l Breeshey"
-              - "Toshiaght Arree"
-            cornishname: "Kalan Gwaynten"
-            welshname: "Gwyl Dechrau'r Gwanwyn"
-            bretonname: "Gouel ar Gouloú"
-            datekind: 
-            date: 02-01
-        - name: "Candlemas"
-          date: 02-02
-        - name: "Blaise' Day"
-          cornish: "St. Blaise Day"
-          date: 02-03
-        - name: "Bredan Behan's Birthday"
-          date: 02-09
-        - 
-  - march:
-      days:
-        - name: "Old Woman's Day"
-          gaulishname: "Litu Uesonnae"
-          irishname:
-            - "Lá Fhéile Cailleach"
-            - "Meán Earrachai"
-          scotishname: "Latha na Cailliche"
-          manxname: "Y Chaisht"
-          cornishname: "Dedh Hen Ben"
-          welshname: "Cyhydnos y Gwanwyn"
-          bretonname: "Deiz Hen Benyn"
-          date: 03-20
-          time: 19:30
-  - april:
-      days:
-      - name: "May Day"
-        gaulishname: "Belotenia"
-        irishname: "Lá Bealtainne"
-        scotishname: "Latha Bealltainn"
-        manxname: "Laa Boaldyn"
-        cornishname: "Kalan Haf"
-        welshname: "Galan Haf"
-        bretonname: "Kalan-hañv"
-        date: 04-30
-        time: 19:30
-  - may:
-      days:
-  - june:
-      days:
+    date: 01-01
+  - name: New Years Day
+    date: 01-01
+  - name: "Twelfth Night"
+    date: 01-05
+  - name: "Epiphany"
+    date: 01-06
+  - name: "Plough Monday"
+    welshname: "Dydd Gwyl Geiliau"
+    day: 0 30 8 ? 1 MON#2
+    when: "first monday after twelfth day"
+    what: "Festival of the Sheepfolds is a return to ordinary working life"
+  - name: Handsel Day
+    scottishname: "Handsel Monday"
+    day: 0 30 8 ? 1 MON#3 # cron notation for first monday of the month of january at 8:30AM
+    when: "first monday after the Julian new year(Jan 12th)"
+    what:
+    - "Time to give to the poor, to sit with and be with the infirm"
+    - "If you pay a debt on this day, you'll be paying it all year."
+  - name: "St Kentigern's Feast"
+    scottishname: "Festival of St Kentigern"
+    date: 1-14
+    what: "St aids Queen in hiding her love affair with a knight from the King."
+  - name: "Burns Supper"
+    scottishname: "Burns Supper"
+    date: 1-25
+    what: "Celebration of the life and poetry of Robert Burns and Robert Boyle(his birthday)"
+  - name: "Brighid's Eve"
+    gaulishname: "Brigantianox"
+    irishname: Oíche Bhríghte
+    scotishname: "Oíche Brìghde"
+    manxname:
+      - "Laa'l Breeshey"
+      - "Toshiaght Arree"
+    cornishname: "Kalan Gwaynten"
+    welshname: "Gwyl Dechrau'r Gwanwyn"
+    bretonname: "Gouel ar Gouloú"
+    datekind: 
+    date: 01-31
+    time: 19:30
+  - name: February
+    bretonname: C'houevrer
+    irishname: Feabhra
+    scottishname: An Gearran
+    welshname: Chwefror
+    manxname: Toshiaght Aree
+    cornishname: Huevral
+  - name: "Festival of Spring"
+      gaulishname: "Ambiuolcia"
+      irishname:
+        - "Imbolc"
+        - "Lá Fhéile Bríde"
+      scotishname: "Là Fhèill Brìghde"
+      manxname:
+        - "Laa'l Breeshey"
+        - "Toshiaght Arree"
+      cornishname: "Kalan Gwaynten"
+      welshname: "Gwyl Dechrau'r Gwanwyn"
+      bretonname: "Gouel ar Gouloú"
+      datekind: 
+      date: 02-01
+  - name: "Candlemas"
+    date: 02-02
+  - name: "Blaise' Day"
+    cornish: "St. Blaise Day"
+    date: 02-03
+  - name: "Bredan Behan's Birthday"
+    date: 02-09
+
+  - name: "Old Woman's Day"
+    gaulishname: "Litu Uesonnae"
+    irishname:
+      - "Lá Fhéile Cailleach"
+      - "Meán Earrachai"
+    scotishname: "Latha na Cailliche"
+    manxname: "Y Chaisht"
+    cornishname: "Dedh Hen Ben"
+    welshname: "Cyhydnos y Gwanwyn"
+    bretonname: "Deiz Hen Benyn"
+    date: 03-20
+    time: 19:30
+  - name: "May Day"
+    gaulishname: "Belotenia"
+    irishname: "Lá Bealtainne"
+    scotishname: "Latha Bealltainn"
+    manxname: "Laa Boaldyn"
+    cornishname: "Kalan Haf"
+    welshname: "Galan Haf"
+    bretonname: "Kalan-hañv"
+    date: 04-30
+    time: 19:30
   - name: "Midsummer"
     gaulishname: "Medisamos"
     irishname: "Meán Samhraidh"
@@ -151,8 +140,6 @@ holidays:
     bretonname: "Deiz Gouel Yann"
     date: 6-20
     time: 19:30
-  - july:
-      days:
   - name: "First Harvest"
     gaulishname: "Lugunassatis"
     irishname: "Lúnasa"
@@ -163,10 +150,6 @@ holidays:
     bretonname: "Kalan Here"
     date: 07-30
     time: 19:30
-  - august:
-      days:
-  - september:
-      days:
   - name: "Midharvest"
     gaulishname: "Litu Uogiami"
     irishname: "Meán Fómhair"
