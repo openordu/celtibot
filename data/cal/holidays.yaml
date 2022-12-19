@@ -32,14 +32,6 @@ holidays:
   - name: "Hogmanay"
     scotishname: "Hogmanay"
     date: 12-31
-  - name: January
-    bretonname: Genver
-    irishname: Gionbhar
-    scottishname: Gionbhar
-    welshname: Ionawr
-    manxname: Jerry Geuree
-    cornishname: Genvar
-    date: 01-01
   - name: New Years Day
     date: 01-01
   - name: "Twelfth Night"
@@ -79,13 +71,6 @@ holidays:
     datekind: 
     date: 01-31
     time: 19:30
-  - name: February
-    bretonname: C'houevrer
-    irishname: Feabhra
-    scottishname: An Gearran
-    welshname: Chwefror
-    manxname: Toshiaght Aree
-    cornishname: Huevral
   - name: "Festival of Spring"
       gaulishname: "Ambiuolcia"
       irishname:
