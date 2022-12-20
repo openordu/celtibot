@@ -44,18 +44,18 @@ holidays:
     when: "first monday after twelfth day"
     what: "Festival of the Sheepfolds is a return to ordinary working life"
   - name: Handsel Day
-    scottishname: "Handsel Monday"
+    scotishname: "Handsel Monday"
     day: 0 30 8 ? 1 MON#3 # cron notation for first monday of the month of january at 8:30AM
     when: "first monday after the Julian new year(Jan 12th)"
     what:
     - "Time to give to the poor, to sit with and be with the infirm"
     - "If you pay a debt on this day, you'll be paying it all year."
   - name: "St Kentigern's Feast"
-    scottishname: "Festival of St Kentigern"
+    scotishname: "Festival of St Kentigern"
     date: 1-14
     what: "St aids Queen in hiding her love affair with a knight from the King."
   - name: "Burns Supper"
-    scottishname: "Burns Supper"
+    scotishname: "Burns Supper"
     date: 1-25
     what: "Celebration of the life and poetry of Robert Burns and Robert Boyle(his birthday)"
   - name: "Brighid's Eve"
@@ -92,19 +92,48 @@ holidays:
     date: 02-03
   - name: "Bredan Behan's Birthday"
     date: 02-09
-
+  - name: "Fairy Queen Day"
+    date: 02-11
+    what: "Festival of Bees"
+  - name: "Memorial of James MacPherson"
+    date: 02-17
+    what: "Translator of the Ossianic Poems"
+  - name: "Pancake Tuesday"
+    day: third tuesday in february
+    what: "Finishing the soon-to-spoil winter stores of oats and grain."
+  - name: "Ash Wednesday"
+    day: third wednesday in february
+    what: "Beginning of fasting as the days of Spring Lengthen."
+  - name: "Fionn MacCumhail's Day"
+    date: 03-16
+  - name: "Saint patrick's Day"
+    date: 03-17
+  - name: Tobias Smollett's Birthday
+    date: 03-19
+  - name: "Vernal Equinox"
+    date: 03-21
   - name: "Old Woman's Day"
     gaulishname: "Litu Uesonnae"
     irishname:
       - "Lá Fhéile Cailleach"
       - "Meán Earrachai"
     scotishname: "Latha na Cailliche"
-    manxname: "Y Chaisht"
-    cornishname: "Dedh Hen Ben"
+    manxname: "Laa Cailleeyn"
+    cornishname: "Dedh Ben Hen"
     welshname: "Cyhydnos y Gwanwyn"
-    bretonname: "Deiz Hen Benyn"
-    date: 03-20
+    bretonname: "Deiz Benyn Hen"
+    date: 03-25
     time: 19:30
+  - name: "Peel Fair Day"
+    date: 03-28
+  - name: "The Borrowin' Days"
+    scotishname: "Laetheanta na riaibhche"
+    date: 03-29
+  - name: "St. Kessog's Day"
+    date: 03-31
+  - name: "Belfast Blitz"
+    date: 04-15
+  
   - name: "May Day"
     gaulishname: "Belotenia"
     irishname: "Lá Bealtainne"
