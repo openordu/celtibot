@@ -133,7 +133,15 @@ holidays:
     date: 03-31
   - name: "Belfast Blitz"
     date: 04-15
-  
+  - name: "Memorial of Sir William Robert Wills Wilde"
+    date: 04-19
+  - name: "Hen Day"
+    date: 04-21
+    what: "The group of stars known as cearcean(hens, pleiades) is only visible at sunset at this time from 9pm to exactly midnight from the hill of Tara in Ireland."
+  - name: Battle of Clontarf
+    date: 04-23
+    what: "Brian Boru won against King of Leinster and the Vikings."
+  - 
   - name: "May Day"
     gaulishname: "Belotenia"
     irishname: "Lá Bealtainne"
