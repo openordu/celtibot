@@ -32,7 +32,7 @@ holidays:
   - name: "Hogmanay"
     scotishname: "Hogmanay"
     date: 12-31
-  - name: New Years Day
+  - name: "New Years Day"
     date: 01-01
   - name: "Twelfth Night"
     date: 01-05
@@ -41,19 +41,21 @@ holidays:
   - name: "Plough Monday"
     welshname: "Dydd Gwyl Geiliau"
     day: 0 30 8 ? 1 MON#2
-    when: "first monday after twelfth day"
+    when: "first monday after twelfth night"
     what: "Festival of the Sheepfolds is a return to ordinary working life"
-  - name: Handsel Day
+  - name: "Handsel Day"
     scotishname: "Handsel Monday"
     day: 0 30 8 ? 1 MON#3 # cron notation for first monday of the month of january at 8:30AM
     when: "first monday after the Julian new year(Jan 12th)"
     what:
     - "Time to give to the poor, to sit with and be with the infirm"
     - "If you pay a debt on this day, you'll be paying it all year."
-  - name: "St Kentigern's Feast"
+  - name: "Father Winter's Day"
     scotishname: "Festival of St Kentigern"
+    gaulishname: "Îuos Kentutigernos"
+    irishname: "Lá Fhéile Céad-tiarna"
     date: 1-14
-    what: "St aids Queen in hiding her love affair with a knight from the King."
+    what: "Saint / Father Winter aids Queen in hiding her love affair with a knight from the King."
   - name: "Burns Supper"
     scotishname: "Burns Supper"
     date: 1-25
@@ -108,7 +110,7 @@ holidays:
     date: 03-16
   - name: "Saint patrick's Day"
     date: 03-17
-  - name: Tobias Smollett's Birthday
+  - name: "Tobias Smollett's Birthday"
     date: 03-19
   - name: "Vernal Equinox"
     date: 03-21
@@ -129,7 +131,9 @@ holidays:
   - name: "The Borrowin' Days"
     scotishname: "Laetheanta na riaibhche"
     date: 03-29
-  - name: "St. Kessog's Day"
+  - name: "St Kessog's Day"
+    scotishname: "La Chessaig"
+    reconstructed: true
     date: 03-31
   - name: "Belfast Blitz"
     date: 04-15
@@ -138,10 +142,12 @@ holidays:
   - name: "Hen Day"
     date: 04-21
     what: "The group of stars known as cearcean(hens, pleiades) is only visible at sunset at this time from 9pm to exactly midnight from the hill of Tara in Ireland."
-  - name: Battle of Clontarf
+  - name: "Battle of Culloden"
+    date: 04-16
+    what: "Jacobite army lead by Charles Edward Stuart fought against the English."
+  - name: "Battle of Clontarf"
     date: 04-23
     what: "Brian Boru won against King of Leinster and the Vikings."
-  - 
   - name: "May Day"
     gaulishname: "Belotenia"
     irishname: "Lá Bealtainne"
@@ -152,6 +158,18 @@ holidays:
     bretonname: "Kalan-hañv"
     date: 04-30
     time: 19:30
+  - name: "La Féill Ròid"
+    date: 05-03
+    what: "Roodday or Crossmas in Scotland marked the beginning of the rutting season for deer. Part of the Gallican liturgical system. If wet the night of May 2nd, then the whole month would be forecast as dry. James McPherson wrote in 1929 that witches would meet on this morning upon St. Katherine's Hill at the head of Andrew Gowis close. No work is started on this day in Scottland"
+  - name: "Furry Dance Day"
+    cornishname: "Flora's Day"
+    date: 05-08
+    what: "In Helston Cornwall, much fare occurs and certain songs are sung in the early morning by young lads who tie anyone they find working to a pole and hoist him to the river. In the evening they morris dance back to town unapologetically claiming they have rights to enter and leave through any door of the houses they find."
+  - name: "Calving Day"
+    date: 05-09
+    what: "Traditional Welsh Calving day"
+  - name: "W.B. Yeats' Birthday"
+    date: 06-13
   - name: "Midsummer"
     gaulishname: "Medisamos"
     irishname: "Meán Samhraidh"
@@ -160,8 +178,22 @@ holidays:
     cornishname: "Golowan"
     welshname: "Canol Haf"
     bretonname: "Deiz Gouel Yann"
-    date: 6-20
+    date: 6-23
     time: 19:30
+  - name: "Manannán's Feast"
+    name: 06-29
+    what: "Eclipsing St. Peter's day patron saint of Fishermen."
+  - name: "Rome Sacking Day"
+    date: 08-24
+    what: "Rome was sacked by Gaulish forces lead by Brennus."
+  - name: "Battle of Killiecrankie"
+    date: 07-27
+    what: "Jacobite victory over the William III supporters and lowland Scots."
+  - name: "Garland Sunday"
+    day: last sunday in july
+    what: "Destruction of Crom Dubh by St. Patrick"
+  - name: "Lúnasa Eve"
+    date: 07-31
   - name: "First Harvest"
     gaulishname: "Lugunassatis"
     irishname: "Lúnasa"
@@ -170,8 +202,30 @@ holidays:
     cornishname: "Kalan Kynyaf"
     welshname: "Gŵyl Awst"
     bretonname: "Kalan Here"
-    date: 07-30
+    date: 08-01
     time: 19:30
+  - name: "Puck Fair Day"
+    date: 08-10, 08-11, 08-12
+    what: "Livestock sale presided over by a live poc(wild billy goat) from the mountains that was decorated."
+  - name: "End of the Dog Days"
+    date: 08-11
+  - name: "Festival of Our Lady of the Harvest"
+    date: 08-15
+    what: "Originally the Assumption of the Blessed Virgin, it is our Welcoming the Cailleach's slow return as hare."
+    reconstructed: true
+  - name: "Cuchullain's Birthday"
+    date: 08-22
+    what: "The Annals of Tigernach place Cúchullain's birthday at Aug 11 Julian and therefore its Aug 22 Gregorian."
+  - name: "The Battle of Flodden"
+    date: 09-09
+    what: "Earls of Argyll and Lennox rise up against the English."
+  - name: "La Féill Ròid Naofa"
+    date: 09-14
+    what: "Holy Cross Day, same as Crossmas but Roman."
+  - name: "St Cornelius' Feast"
+    date: 9-16
+  - name: "Manx herring fleet loss"
+    date: 09-21  
   - name: "Midharvest"
     gaulishname: "Litu Uogiami"
     irishname: "Meán Fómhair"
@@ -184,4 +238,7 @@ holidays:
     bretonname: "Dilost Hañv"
     date: 08-20
     time: 19:30
- 
+  - name: "Michaelmas Eve"
+    date: "Michaelmas"
+  - name: ""
+    date: ""
