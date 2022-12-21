@@ -1,5 +1,6 @@
 ---
 holidays:
+
   - name: "Last Harvest"
     gaulishname: "Trinouxs Samonia"
     irishname: "Samhain"
@@ -239,6 +240,6 @@ holidays:
     date: 08-20
     time: 19:30
   - name: "Michaelmas Eve"
-    date: "Michaelmas"
-  - name: ""
-    date: ""
+    date: 09-28
+  - name: "Michaelmas" 
+    date: 09-29
