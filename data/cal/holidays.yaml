@@ -1,18 +1,33 @@
 ---
 holidays:
-
+  - name: "Oscar Wilde's Birthday"
+    date: 10-16
+  - name: "Memorial of John Boyd Dunlop"
+    date: 10-23
+    what: "Death of the inventor of pneumatic tires rubber tires."
+  - name: "Dylan Marlais Thomas' Birthday"
+    date: 10-27
+  - name: "James Boswell's Birthday"
+    date: 10-29
+  - name: "Richard Brinsley Sheridan's Birthday"
+    date: 10-30
+  - name: "November Eve"
+    date: 10-31
   - name: "Last Harvest"
     gaulishname: "Trinouxs Samonia"
     irishname: "Samhain"
-    scotishname: "Samhain"
+    scottishname: "Samhain"
     manxname:
       - "Sauin"
       - "Oie Houney"
     cornishname: "Kalan Gwav"
     welshname: "Galan Gaeaf"
     bretonname: "Kalan Goañv"
-    date: 10-31
+    date: 11-01
     time: 19:30
+  - name: "Nuada's Day" 
+    date: 11-03
+    reconstructed: true
   - name: "Martinmas Eve"
     irishname: "Sean Samhain"
     date: 11-10
@@ -20,18 +35,44 @@ holidays:
   - name: "Martinmas"
     irishname: "Sean Samhain"
     date: 11-11
+  - name: "Battle of Sheriffmuir"
+    date: 11-13
+  - name: "St. Malo's Feast"
+    date: 11-15
+  - name: "St. Cecilia's Day"
+    date: 11-22
+  - name: "St. Catherine's Day"
+    date: 11-25
+  - name: "Advent"
+    date: 11-29
+  - name: "St. Andrew's Day"
+    date: 11-30
+  - name: "Mungo Park's Birthday"
+    date: 12-02
+  - name: "Memorial of Llywelyn ap Gruffydd"
+    date: 12-11
   - name: "Midwinter"
     gaulishname: "Medigiamos"
     irishname: "Meán Geimhridh"
-    scotishname: "Meadhan Geamhradh"
+    scottishname: "Meadhan Geamhradh"
     manxname: "Mee Veanagh y Gheuree"
     cornishname: "Montol"
     welshname: "Canol Gaeaf"
     bretonname: "Dez Gouel Nedeleg"
     date: 12-20
     time: 19:30
+  - name: "Samuel Beckett's Birthday"
+    date: 12-22
+  - name: "Manx Wren Hunting Day"
+    date: 12-24
+  - name: "Wren Day"
+    date: 12-26
+  - name: "Innocent's Day"
+    date: 12-28
+  - name: "Memorial of Robert Boyle"
+    date: 12-30
   - name: "Hogmanay"
-    scotishname: "Hogmanay"
+    scottishname: "Hogmanay"
     date: 12-31
   - name: "New Years Day"
     date: 01-01
@@ -45,26 +86,26 @@ holidays:
     when: "first monday after twelfth night"
     what: "Festival of the Sheepfolds is a return to ordinary working life"
   - name: "Handsel Day"
-    scotishname: "Handsel Monday"
+    scottishname: "Handsel Monday"
     day: 0 30 8 ? 1 MON#3 # cron notation for first monday of the month of january at 8:30AM
     when: "first monday after the Julian new year(Jan 12th)"
     what:
     - "Time to give to the poor, to sit with and be with the infirm"
     - "If you pay a debt on this day, you'll be paying it all year."
   - name: "Father Winter's Day"
-    scotishname: "Festival of St Kentigern"
+    scottishname: "Festival of St Kentigern"
     gaulishname: "Îuos Kentutigernos"
     irishname: "Lá Fhéile Céad-tiarna"
-    date: 1-14
+    date: 01-14
     what: "Saint / Father Winter aids Queen in hiding her love affair with a knight from the King."
   - name: "Burns Supper"
-    scotishname: "Burns Supper"
-    date: 1-25
+    scottishname: "Burns Supper"
+    date: 01-25
     what: "Celebration of the life and poetry of Robert Burns and Robert Boyle(his birthday)"
   - name: "Brighid's Eve"
     gaulishname: "Brigantianox"
     irishname: Oíche Bhríghte
-    scotishname: "Oíche Brìghde"
+    scottishname: "Oíche Brìghde"
     manxname:
       - "Laa'l Breeshey"
       - "Toshiaght Arree"
@@ -75,19 +116,18 @@ holidays:
     date: 01-31
     time: 19:30
   - name: "Festival of Spring"
-      gaulishname: "Ambiuolcia"
-      irishname:
-        - "Imbolc"
-        - "Lá Fhéile Bríde"
-      scotishname: "Là Fhèill Brìghde"
-      manxname:
-        - "Laa'l Breeshey"
-        - "Toshiaght Arree"
-      cornishname: "Kalan Gwaynten"
-      welshname: "Gwyl Dechrau'r Gwanwyn"
-      bretonname: "Gouel ar Gouloú"
-      datekind: 
-      date: 02-01
+    gaulishname: "Ambiuolcia"
+    irishname:
+      - "Imbolc"
+      - "Lá Fhéile Bríde"
+    scottishname: "Là Fhèill Brìghde"
+    manxname:
+      - "Laa'l Breeshey"
+      - "Toshiaght Arree"
+    cornishname: "Kalan Gwaynten"
+    welshname: "Gwyl Dechrau'r Gwanwyn"
+    bretonname: "Gouel ar Gouloú"
+    date: 02-01
   - name: "Candlemas"
     date: 02-02
   - name: "Blaise' Day"
@@ -120,7 +160,7 @@ holidays:
     irishname:
       - "Lá Fhéile Cailleach"
       - "Meán Earrachai"
-    scotishname: "Latha na Cailliche"
+    scottishname: "Latha na Cailliche"
     manxname: "Laa Cailleeyn"
     cornishname: "Dedh Ben Hen"
     welshname: "Cyhydnos y Gwanwyn"
@@ -130,10 +170,10 @@ holidays:
   - name: "Peel Fair Day"
     date: 03-28
   - name: "The Borrowin' Days"
-    scotishname: "Laetheanta na riaibhche"
+    scottishname: "Laetheanta na riaibhche"
     date: 03-29
   - name: "St Kessog's Day"
-    scotishname: "La Chessaig"
+    scottishname: "La Chessaig"
     reconstructed: true
     date: 03-31
   - name: "Belfast Blitz"
@@ -152,7 +192,7 @@ holidays:
   - name: "May Day"
     gaulishname: "Belotenia"
     irishname: "Lá Bealtainne"
-    scotishname: "Latha Bealltainn"
+    scottishname: "Latha Bealltainn"
     manxname: "Laa Boaldyn"
     cornishname: "Kalan Haf"
     welshname: "Galan Haf"
@@ -174,15 +214,15 @@ holidays:
   - name: "Midsummer"
     gaulishname: "Medisamos"
     irishname: "Meán Samhraidh"
-    scotishname: "Meadhan an t-samhraidh"
+    scottishname: "Meadhan an t-samhraidh"
     manxname: "Laa Tinvaal"
     cornishname: "Golowan"
     welshname: "Canol Haf"
     bretonname: "Deiz Gouel Yann"
-    date: 6-23
+    date: 06-23
     time: 19:30
   - name: "Manannán's Feast"
-    name: 06-29
+    date: 06-29
     what: "Eclipsing St. Peter's day patron saint of Fishermen."
   - name: "Rome Sacking Day"
     date: 08-24
@@ -198,7 +238,7 @@ holidays:
   - name: "First Harvest"
     gaulishname: "Lugunassatis"
     irishname: "Lúnasa"
-    scotishname: "Lùnastal"
+    scottishname: "Lùnastal"
     manxname: "Luanistyn"
     cornishname: "Kalan Kynyaf"
     welshname: "Gŵyl Awst"
@@ -206,7 +246,7 @@ holidays:
     date: 08-01
     time: 19:30
   - name: "Puck Fair Day"
-    date: 08-10, 08-11, 08-12
+    date: 08-10
     what: "Livestock sale presided over by a live poc(wild billy goat) from the mountains that was decorated."
   - name: "End of the Dog Days"
     date: 08-11
@@ -224,16 +264,17 @@ holidays:
     date: 09-14
     what: "Holy Cross Day, same as Crossmas but Roman."
   - name: "St Cornelius' Feast"
-    date: 9-16
+    date: 09-16
   - name: "Manx herring fleet loss"
     date: 09-21  
   - name: "Midharvest"
     gaulishname: "Litu Uogiami"
     irishname: "Meán Fómhair"
-    scotishname: "Meadhan Foghar"
+    scottishname: "Meadhan Foghar"
     manxname: "Mean Fouyr"
     cornishname: 
-      - "Guldize, Gooldize"
+      - "Guldize"
+      - "Gooldize"
       - "Kenhesnos Kynyaf"
     welshname: "Cyhydnos yr hydref"
     bretonname: "Dilost Hañv"
