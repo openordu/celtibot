@@ -1,6 +1,14 @@
 #!/usr/bin/python3
 from pprint import pprint
 
+def scriptDirectory(file = __file__):
+    import os
+    return str(os.path.dirname(os.path.realpath(file)))
+
+def currentDirectory():
+    import os
+    return os.getcwd()
+
 def yamlRead(yamlFileByName):
     import yaml, sys
     with open(yamlFileByName, 'r') as stream:
@@ -9,7 +17,6 @@ def yamlRead(yamlFileByName):
         except yaml.YAMLError as exc:
             print(exc)
             sys.exit(1)
-
 
 def tooter(toot):
     from mastodon import Mastodon
@@ -27,22 +34,154 @@ def formatName(name):
     if type(name) == type([]): return name[0]
     if type(name) == type(''): return name
 
+def is_nth_weekday(daynum, nth, date):
+    import calendar
+    tally = 0
+    pprint(daynum)
+    pprint(nth)
+    pprint(date.weekday())
+    if date.weekday() == daynum:
+        tally += 1
+    return date == calendar.Calendar(daynum).monthdatescalendar(
+        date.year, 
+        date.month
+    )[nth][0]
+
+def superDateFinder(dateString, verb, dayOfTheWeek, words):
+    import datetime
+    current_time = datetime.datetime.now()
+    current_year = current_time.strftime('%Y')
+    current_month = current_time.strftime('%m')
+    current_day = current_time.strftime('%d')
+
+    day = dateString.split('-')[1]
+    month = dateString.split('-')[0]
+
+    date = datetime.datetime.strptime("%s-%s" % (dateString, current_year), '%m-%d-%Y')
+
+    temporalWords = {
+        'first': 1,
+        'second': 2,
+        'third': 3,
+        'fourth': 4,
+        'last': -1
+    }
+
+    daysOfTheWeek = {
+        'sunday': 6,
+        'monday': 0,
+        'tuesday': 1,
+        'wednesday': 2,
+        'thursday': 3,
+        'friday': 4,
+        'saturday': 5
+    }
+    pprint([dateString, verb, dayOfTheWeek, words])
+    tally = 0
+    while True:
+        try:
+            if tally == temporalWords[words[0]]:
+                break
+            if verb == 'after':
+                date += datetime.timedelta(days=1)
+                if date.weekday() == daysOfTheWeek[dayOfTheWeek]:
+                    tally += 1
+            elif verb == 'before':
+                date -= datetime.timedelta(days=1)
+                if date.weekday() == daysOfTheWeek[dayOfTheWeek]:
+                    tally -= 1
+        except OverflowError:
+            print("OverflowError on date `%s', try 'last'" % " ".join(words))
+            break
+
+
+    pprint(date)
+    # pprint("is the date: %s congruent with the sentence: %s") % (date,"".join(words))
+
+        
+
+def dateFromWords(dateString):
+    words = dateString.split(' ')
+    if words[0] not in ['first', 'second', 'third', 'fourth','easter', 'last']:
+        return False
+    else:
+        if words[0] == 'easter':
+            pass #return calcEasterDate(2020) - words[-1:]
+        elif words[0] in ['first', 'second', 'third', 'fourth', 'last']:
+            date = words[-1]
+            verb = words[-2]
+            dayOfTheWeek = words[1]
+            superDateFinder(date, verb, dayOfTheWeek, words)
+        else:
+            return False
+    
 def isDateToday(dateString):
     from datetime import datetime
     current_time = datetime.now()
-    if current_time.strftime('%m-%d') != dateString: return False
-    return True
+    if current_time.strftime('%m-%d') == dateString:
+        return True
+    if not matchDateFormat(dateString):
+            dateFromWords(dateString)
+            pprint(dateString)
+    return False
 
 def getStuffAboutToday(yamlListOfHolidays):
     # pprint(yamlListOfHolidays['holidays'])
     holidays = list()
     for item in yamlListOfHolidays['holidays']:
        
-        date = item['date'] if 'date' in item.keys() else None
+        date = item['date'] if 'date' in item.keys() else item['day']
 
         if isDateToday(date):
             holidays.append(item)
     return holidays
+
+def calcEasterDate(year):
+    import datetime
+    """returns the date of Easter Sunday of the given yyyy year"""
+    y = year
+    # golden year - 1
+    g = y % 19
+    # offset
+    e = 0
+    # century
+    c = y/100
+    # h is (23 - Epact) mod 30
+    h = (c-c/4-(8*c+13)/25+19*g+15)%30
+    # number of days from March 21 to Paschal Full Moon
+    i = h-(h/28)*(1-(h/28)*(29/(h+1))*((21-g)/11))
+    # weekday for Paschal Full Moon (0=Sunday)
+    j = (y+y/4+i+2-c+c/4)%7
+    # number of days from March 21 to Sunday on or before Paschal Full Moon
+    # p can be from -6 to 28
+    p = i-j+e
+    d = 1+(p+27+(p+6)/40)%31
+    m = 3+(p+26)/30
+    return datetime.date(y,m,d)
+  
+    if year in special_years:
+        dateofeaster = (22 + d + e) - specyr_sub
+    else:
+        dateofeaster = 22 + d + e
+    return dateofeaster
+
+def matchDateFormat(dateString):
+    import re
+    if re.match(r'\d{2}-\d{2}', dateString):
+        return True
+    return False
+
+def main():
+    year = int(input("Please enter a year: "))
+
+    if (year >= 1900) and (year <= 2099):
+        dateofeaster = calcEasterDate(year)
+        if dateofeaster > 31:
+            print("April {}".format(dateofeaster - 31))
+        else:
+            print("March {}".format(dateofeaster))
+    else:
+        print("Error: Year is out of range: 1900 - 2099")
 
 def makeHolidayToots(holiday):
     holidayName     = holiday['name']
@@ -58,8 +197,9 @@ def makeHolidayToots(holiday):
     return string
 
 def init():
+    import os
     toots = dict()
-    yamlObjectFromFile = yamlRead('../data/cal/holidays.yaml')
+    yamlObjectFromFile = yamlRead('%s/../data/cal/holidays.yaml' % str(scriptDirectory()))
     relevantHolidaysFromFile = getStuffAboutToday(yamlObjectFromFile)
     for i in range(len(relevantHolidaysFromFile)):
         holiday = relevantHolidaysFromFile[i]

@@ -2,7 +2,7 @@
 holidays:
   - name: "Oscar Wilde's Birthday"
     date: 10-16
-  - name: "Memorial of John Boyd Dunlop"
+  - name: "Remembrance of John Boyd Dunlop"
     date: 10-23
     what: "Death of the inventor of pneumatic tires rubber tires."
   - name: "Dylan Marlais Thomas' Birthday"
@@ -49,7 +49,7 @@ holidays:
     date: 11-30
   - name: "Mungo Park's Birthday"
     date: 12-02
-  - name: "Memorial of Llywelyn ap Gruffydd"
+  - name: "Remembrance of Llywelyn ap Gruffydd"
     date: 12-11
   - name: "Midwinter"
     gaulishname: "Medigiamos"
@@ -61,15 +61,16 @@ holidays:
     bretonname: "Dez Gouel Nedeleg"
     date: 12-20
     time: 19:30
-  - name: "Samuel Beckett's Birthday"
+  - name: "Samuel Beckett's Remembrance Day"
     date: 12-22
+    note: 
   - name: "Manx Wren Hunting Day"
     date: 12-24
   - name: "Wren Day"
     date: 12-26
   - name: "Innocent's Day"
     date: 12-28
-  - name: "Memorial of Robert Boyle"
+  - name: "Remembrance of Robert Boyle"
     date: 12-30
   - name: "Hogmanay"
     scottishname: "Hogmanay"
@@ -82,13 +83,11 @@ holidays:
     date: 01-06
   - name: "Plough Monday"
     welshname: "Dydd Gwyl Geiliau"
-    day: 0 30 8 ? 1 MON#2
-    when: "first monday after twelfth night"
+    day: "first monday after 01-05"
     what: "Festival of the Sheepfolds is a return to ordinary working life"
   - name: "Handsel Day"
     scottishname: "Handsel Monday"
-    day: 0 30 8 ? 1 MON#3 # cron notation for first monday of the month of january at 8:30AM
-    when: "first monday after the Julian new year(Jan 12th)"
+    day: "first monday after 01-12"
     what:
     - "Time to give to the poor, to sit with and be with the infirm"
     - "If you pay a debt on this day, you'll be paying it all year."
@@ -138,14 +137,14 @@ holidays:
   - name: "Fairy Queen Day"
     date: 02-11
     what: "Festival of Bees"
-  - name: "Memorial of James MacPherson"
+  - name: "Remembrance of James MacPherson"
     date: 02-17
     what: "Translator of the Ossianic Poems"
   - name: "Pancake Tuesday"
-    day: third tuesday in february
+    day: easter - 47
     what: "Finishing the soon-to-spoil winter stores of oats and grain."
   - name: "Ash Wednesday"
-    day: third wednesday in february
+    day: easter - 46
     what: "Beginning of fasting as the days of Spring Lengthen."
   - name: "Fionn MacCumhail's Day"
     date: 03-16
@@ -178,7 +177,7 @@ holidays:
     date: 03-31
   - name: "Belfast Blitz"
     date: 04-15
-  - name: "Memorial of Sir William Robert Wills Wilde"
+  - name: "Remembrance of Sir William Robert Wills Wilde"
     date: 04-19
   - name: "Hen Day"
     date: 04-21
@@ -231,7 +230,7 @@ holidays:
     date: 07-27
     what: "Jacobite victory over the William III supporters and lowland Scots."
   - name: "Garland Sunday"
-    day: last sunday in july
+    day:  last sunday before 08-01
     what: "Destruction of Crom Dubh by St. Patrick"
   - name: "Lúnasa Eve"
     date: 07-31
