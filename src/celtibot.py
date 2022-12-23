@@ -205,16 +205,39 @@ def makeHolidayToots(holiday):
     return string
 
 def init():
-    import os
+    import os, datetime
     toots = dict()
-    yamlObjectFromFile = yamlRead('%s/../data/cal/holidays.yaml' % str(scriptDirectory()))
-    relevantHolidaysFromFile = getStuffAboutToday(yamlObjectFromFile)
+
+    # holidays
+    holidayObjectsFromYamlFile = yamlRead('%s/../data/cal/holidays.yaml' % str(scriptDirectory()))
+    relevantHolidaysFromFile = getStuffAboutToday(holidayObjectsFromYamlFile)
     for i in range(len(relevantHolidaysFromFile)):
         holiday = relevantHolidaysFromFile[i]
         toots[i] = makeHolidayToots(holiday)
+
+    # moons
+    # no moons yet
+
+    # quotes
+
+    quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
     try:
-        print(toots[0])
-    except:
+        todaysquote = quoteObjectsFromYamlFile[datetime.datetime.now().strftime('%j')-1]
+        quote = "`%s' - %s, %s " % (todaysquote['text'], todaysquote['author'], todaysquote['source'])
+        hashTags = set(todaysquote['tags']) if 'tags' in todaysquote.keys() else []
+
+        if len(hashTags): quote += "\n"
+        while len(hashTags):
+            tag = list(hashTags)[0]
+            quote += "#%s " % hashTags.pop()
+        quote += "#celtic #celtibot #CelticQuotes"
+        toots[len(toots)] = quote
+    except TypeError:
+        # No quotes for today
         pass
 
+    try:
+        print(toots)
+    except:
+        pass
 init()
