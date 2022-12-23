@@ -353,17 +353,38 @@ holidays:
       - catholic
   - name: "Belfast Blitz"
     date: 04-15
+    tags:
+      - battle
+      - wwii
+      - irish
   - name: "Remembrance of Sir William Robert Wills Wilde Day"
     date: 04-19
+    tags:
+      - irish
+      - irishman
+      - surgeon
+      - doctor
+      - author
+      - folklorist
   - name: "Hen Day"
     date: 04-21
     what: "The group of stars known as cearcean(hens, pleiades) is only visible at sunset at this time from 9pm to exactly midnight from the hill of Tara in Ireland."
+    reconstructed: true
+    tags:
+      - 
   - name: "Battle of Culloden Remembrance Day"
     date: 04-16
     what: "Jacobite army lead by Charles Edward Stuart fought against the English."
+    tags:
+      - scottish
+      - battle
   - name: "Battle of Clontarf Remembrance Day"
     date: 04-23
     what: "Brian Boru won against King of Leinster and the Vikings."
+    tags:
+      - irish
+      - battle
+      - vikings
   - name: "May Day"
     gaulishname: "Belotenia"
     irishname: "Lá Bealtainne"
@@ -374,18 +395,43 @@ holidays:
     bretonname: "Kalan-hañv"
     date: 04-30
     time: 19:30
+    tags:
+      - may
+      - mayday
+      - beltane
+      - bealtainne
+      - pagan
+      - witch
+      - druid
   - name: "La Féill Ròid"
     date: 05-03
-    what: "Roodday or Crossmas in Scotland marked the beginning of the rutting season for deer. Part of the Gallican liturgical system. If wet the night of May 2nd, then the whole month would be forecast as dry. James McPherson wrote in 1929 that witches would meet on this morning upon St. Katherine's Hill at the head of Andrew Gowis close. No work is started on this day in Scottland"
+    what: "Old roodday. Part of the Gallican liturgical system. If wet the night of May 2nd, then the whole month would be forecast as dry. James McPherson wrote in 1929 that witches would meet on this morning upon St. Katherine's Hill at the head of Andrew Gowis close. No work is started on this day in Scottland"
+    tags:
+      - catholic
+      - scottish
+      - pagan
+      - witch
+      - druid
   - name: "Furry Dance Day"
     cornishname: "Flora's Day"
     date: 05-08
     what: "In Helston Cornwall, much fare occurs and certain songs are sung in the early morning by young lads who tie anyone they find working to a pole and hoist him to the river. In the evening they morris dance back to town unapologetically claiming they have rights to enter and leave through any door of the houses they find."
+    tags:
+      - cornish
+      - notThatKindOfFurry
   - name: "Calving Day"
     date: 05-09
     what: "Traditional Welsh Calving day"
+    tags:
+      - welsh
   - name: "W.B. Yeats' Birthday"
     date: 06-13
+    tags:
+      - irish
+      - irishman
+      - poet
+      - dramatist
+      - writer
   - name: "Midsummer"
     gaulishname: "Medisamos"
     irishname: "Meán Samhraidh"
@@ -396,20 +442,46 @@ holidays:
     bretonname: "Deiz Gouel Yann"
     date: 06-23
     time: 19:30
+    tags:
+      - solstice
+      - summersolstice
+      - pagan
+      - witch
+      - druid
   - name: "Manannán's Feast"
     date: 06-29
     what: "Eclipsing St. Peter's day patron saint of Fishermen."
+    tags:
+      - pagan
+      - witch
+      - druid
+    reconstructed: true
   - name: "Rome Sacking Day"
     date: 08-24
     what: "Rome was sacked by Gaulish forces lead by Brennus."
+    tags:
+      - gaulish
+      - battle
   - name: "Battle of Killiecrankie Remembrance Day"
     date: 07-27
     what: "Jacobite victory over the William III supporters and lowland Scots."
+    tags:
+      - scottish
+      - battle
   - name: "Garland Sunday"
     day:  last sunday before 08-01
     what: "Destruction of Crom Dubh by St. Patrick"
+    tags:
+      - catholic
+      - pagan
+      - witch
+      - druid
   - name: "Lúnasa Eve"
     date: 07-31
+    tags:
+      - pagan
+      - witch
+      - druid
   - name: "First Harvest"
     gaulishname: "Lugunassatis"
     irishname: "Lúnasa"
@@ -420,28 +492,50 @@ holidays:
     bretonname: "Kalan Here"
     date: 08-01
     time: 19:30
-  - name: "Puck Fair Day"
-    date: 08-10
-    what: "Livestock sale presided over by a live poc(wild billy goat) from the mountains that was decorated."
-  - name: "End of the Dog Days"
+    tags:
+      - pagan
+      - witch
+      - druid
+  - name: "Dog Days of Summer's End"
     date: 08-11
+    tags:
+      - summer
+      - dogdays
   - name: "Festival of Our Lady of the Harvest"
     date: 08-15
-    what: "Originally the Assumption of the Blessed Virgin, it is our Welcoming the Cailleach's slow return as hare."
+    what: "Originally the Assumption of the Blessed Virgin, it is our welcoming the Cailleach's slow return as hare."
     reconstructed: true
+    tags:
+      - cailleachNotMary
+      - notMyHarvestLady
+      - pagan
+      - witch
+      - druid
   - name: "Cuchullain's Birthday"
     date: 08-22
     what: "The Annals of Tigernach place Cúchullain's birthday at Aug 11 Julian and therefore its Aug 22 Gregorian."
+    tags:
+      - irishlore
+      - irish
   - name: "Battle of Flodden Remembrance Day"
     date: 09-09
     what: "Earls of Argyll and Lennox rise up against the English."
-  - name: "La Féill Ròid Naofa"
+    tags:
+      - battle
+      - scottish
+  - name: "Holy Cross Day"
+    scottishname: ""
+    irishname: "Oidhche na Cnò Naomh"
     date: 09-14
-    what: "Holy Cross Day, same as Crossmas but Roman."
-  - name: "St Cornelius' Feast"
-    date: 09-16
+    what: "Holy Cross Day, same as Crossmas but Roman. Roodday or Crossmas in Scotland marked the beginning of the rutting season for deer. It's also nutting season."
+    tags:
+      - catholic
+      - irish
+      - scottish
   - name: "Manx Herring Fleet Remembrance Day"
     date: 09-21  
+    tags:
+      - manx
   - name: "Midharvest"
     gaulishname: "Litu Uogiami"
     irishname: "Meán Fómhair"
@@ -453,9 +547,26 @@ holidays:
       - "Kenhesnos Kynyaf"
     welshname: "Cyhydnos yr hydref"
     bretonname: "Dilost Hañv"
-    date: 08-20
+    date: 09-20
     time: 19:30
+    tags:
+      - gooseHarvest
+      - autumnalEquinox
+      - equinox
+      - pagan
+      - witch
+      - druid
   - name: "Michaelmas Eve"
     date: 09-28
+    tags:
+      - catholic
+      - pagan
+      - witch
+      - druid
   - name: "Michaelmas" 
     date: 09-29
+    tags:
+      - catholic
+      - pagan
+      - witch
+      - druid
