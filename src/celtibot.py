@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 from pprint import pprint
 
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("--date", help="set now date in %m-%d / mm-dd format.")
+args = parser.parse_args()
+
 def scriptDirectory(file = __file__):
     import os
     return str(os.path.dirname(os.path.realpath(file)))
@@ -18,11 +23,6 @@ def yamlRead(yamlFileByName):
             print(exc)
             sys.exit(1)
 
-def tooter(toot):
-    from mastodon import Mastodon
-    mastodon = Mastodon(access_token = 'thetoken')
-    # mastodon.toot(toot)
-
 def flatten(item):
     if len(item) == 0:
         return item 
@@ -34,20 +34,7 @@ def formatName(name):
     if type(name) == type([]): return name[0]
     if type(name) == type(''): return name
 
-def is_nth_weekday(daynum, nth, date):
-    import calendar
-    tally = 0
-    pprint(daynum)
-    pprint(nth)
-    pprint(date.weekday())
-    if date.weekday() == daynum:
-        tally += 1
-    return date == calendar.Calendar(daynum).monthdatescalendar(
-        date.year, 
-        date.month
-    )[nth][0]
-
-def superDateFinder(dateString, verb, dayOfTheWeek, words):
+def findDatetimeFromWords(dateString, verb, dayOfTheWeek, words):
     import datetime
     current_time = datetime.datetime.now()
     current_year = current_time.strftime('%Y')
@@ -76,7 +63,6 @@ def superDateFinder(dateString, verb, dayOfTheWeek, words):
         'friday': 4,
         'saturday': 5
     }
-    pprint([dateString, verb, dayOfTheWeek, words])
     tally = 0
     while True:
         try:
@@ -91,14 +77,9 @@ def superDateFinder(dateString, verb, dayOfTheWeek, words):
                 if date.weekday() == daysOfTheWeek[dayOfTheWeek]:
                     tally -= 1
         except OverflowError:
-            print("OverflowError on date `%s', try 'last'" % " ".join(words))
-            break
-
-
-    pprint(date)
-    # pprint("is the date: %s congruent with the sentence: %s") % (date,"".join(words))
-
-        
+            print("OverflowError on day:`%s', try 'last'" % " ".join(words))
+            return False
+    return date
 
 def dateFromWords(dateString):
     words = dateString.split(' ')
@@ -111,28 +92,32 @@ def dateFromWords(dateString):
             date = words[-1]
             verb = words[-2]
             dayOfTheWeek = words[1]
-            superDateFinder(date, verb, dayOfTheWeek, words)
+            returnDate = findDatetimeFromWords(date, verb, dayOfTheWeek, words)
+            return returnDate.strftime('%m-%d')
         else:
             return False
     
 def isDateToday(dateString):
     from datetime import datetime
-    current_time = datetime.now()
-    if current_time.strftime('%m-%d') == dateString:
-        return True
+    if args.date:
+        current_time = datetime(int(datetime.now().strftime('%Y')),int(args.date.split("-")[0]),int(args.date.split("-")[1]))
+    else:
+        current_time = datetime.now()
+    
     if not matchDateFormat(dateString):
-            dateFromWords(dateString)
-            pprint(dateString)
+            newDateString = dateFromWords(dateString)
+    else: newDateString = None
+    if current_time.strftime('%m-%d') in [dateString, newDateString]:
+        return True
     return False
 
 def getStuffAboutToday(yamlListOfHolidays):
-    # pprint(yamlListOfHolidays['holidays'])
     holidays = list()
     for item in yamlListOfHolidays['holidays']:
        
-        date = item['date'] if 'date' in item.keys() else item['day']
+        dateString = item['date'] if 'date' in item.keys() else item['day']
 
-        if isDateToday(date):
+        if isDateToday(dateString):
             holidays.append(item)
     return holidays
 
@@ -171,17 +156,10 @@ def matchDateFormat(dateString):
         return True
     return False
 
-def main():
-    year = int(input("Please enter a year: "))
-
-    if (year >= 1900) and (year <= 2099):
-        dateofeaster = calcEasterDate(year)
-        if dateofeaster > 31:
-            print("April {}".format(dateofeaster - 31))
-        else:
-            print("March {}".format(dateofeaster))
-    else:
-        print("Error: Year is out of range: 1900 - 2099")
+def tooter(toot):
+    from mastodon import Mastodon
+    mastodon = Mastodon(access_token = 'thetoken')
+    # mastodon.toot(toot)
 
 def makeHolidayToots(holiday):
     holidayName     = holiday['name']
@@ -190,10 +168,23 @@ def makeHolidayToots(holiday):
     cornishName     = formatName(holiday['cornishname']) if 'cornishname' in holiday.keys() else None
     bretonName      = formatName(holiday['bretonname']) if 'bretonname' in holiday.keys() else None
     welshName       = formatName(holiday['welshname']) if 'welshname' in holiday.keys() else None
+    hashTags        = set(holiday['tags']) if 'tags' in holiday.keys() else []
+    
+    celticNames     = {'scottish':scottishName, 'irish': irishName, 'cornish': cornishName, 'breton': bretonName, 'welsh': welshName}
+    celticNames     = {key:val for key, val in celticNames.items() if val != None}
 
-    holidayGreeting = "Happy day."
+    string = "Today is %s!\n" % (holidayName)
 
-    string = "Today is %s! %s" % (holidayName, holidayGreeting)
+    if len(celticNames):
+        string += "\nDifferent names for today in Celtic languages:\n"
+
+    for key, name in celticNames.items():
+        string += "#%s `%s'\n" % (key.capitalize(),name)
+
+    string += "\nCeltibot wishes a happy %s to all those who celebrate it.\n" % holidayName
+    while len(hashTags):
+        tag = list(hashTags)[0]
+        string += "#%s " % hashTags.pop()
     return string
 
 def init():
@@ -204,6 +195,6 @@ def init():
     for i in range(len(relevantHolidaysFromFile)):
         holiday = relevantHolidaysFromFile[i]
         toots[i] = makeHolidayToots(holiday)
-    pprint(toots)
+    print(toots[0])
 
 init()
