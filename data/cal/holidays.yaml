@@ -2,7 +2,7 @@
 holidays:
   - name: "Oscar Wilde's Birthday"
     date: 10-16
-  - name: "Remembrance of John Boyd Dunlop"
+  - name: "John Boyd Dunlop Remembrance Day"
     date: 10-23
     what: "Death of the inventor of pneumatic tires rubber tires."
   - name: "Dylan Marlais Thomas' Birthday"
@@ -12,7 +12,15 @@ holidays:
   - name: "Richard Brinsley Sheridan's Birthday"
     date: 10-30
   - name: "November Eve"
+    irishname: "Oíche Shamhna"
+    scottishname: "Oidhche Shamhna"
+    gaulishname: "Noux Samonia"
     date: 10-31
+    tags:
+      - pagan
+      - witch
+      - witchcraft
+      - druid
   - name: "Last Harvest"
     gaulishname: "Trinouxs Samonia"
     irishname: "Samhain"
@@ -25,31 +33,56 @@ holidays:
     bretonname: "Kalan Goañv"
     date: 11-01
     time: 19:30
-  - name: "Nuada's Day" 
+    tags:
+      - pagan
+      - witch
+      - witchcraft
+      - druid
+  - name: "Nuada's Day"
+    irishname: "Lá Fhéile Nuada"
     date: 11-03
+    tags:
+      - pagan
+      - witch
+      - witchcraft
+      - druid
     reconstructed: true
   - name: "Martinmas Eve"
     irishname: "Sean Samhain"
     date: 11-10
     time: 19:30
+    tags:
+      - catholic
   - name: "Martinmas"
     irishname: "Sean Samhain"
     date: 11-11
-  - name: "Battle of Sheriffmuir"
+    tags:
+      - catholic
+  - name: "Battle of Sheriffmuir Remembrance Day"
     date: 11-13
   - name: "St. Malo's Feast"
     date: 11-15
+    tags:
+      - catholic
   - name: "St. Cecilia's Day"
+    tags:
+      - catholic
     date: 11-22
   - name: "St. Catherine's Day"
     date: 11-25
+    tags:
+      - catholic
   - name: "Advent"
     date: 11-29
+    tags:
+      - catholic
   - name: "St. Andrew's Day"
     date: 11-30
+    tags:
+      - catholic
   - name: "Mungo Park's Birthday"
     date: 12-02
-  - name: "Remembrance of Llywelyn ap Gruffydd"
+  - name: "Llywelyn ap Gruffydd Remembrance"
     date: 12-11
   - name: "Midwinter"
     gaulishname: "Medigiamos"
@@ -61,46 +94,128 @@ holidays:
     bretonname: "Dez Gouel Nedeleg"
     date: 12-20
     time: 19:30
+    tags:
+      - wintersolstice
+      - solstice
+      - midwinter
+      - pagan
+      - witch
+      - witchcraft
+      - druid
   - name: "Samuel Beckett's Remembrance Day"
     date: 12-22
     note: 
   - name: "Manx Wren Hunting Day"
     date: 12-24
+    tags:
+      - wintersolstice
+      - solstice
+      - midwinter
+      - pagan
+      - witch
+      - witchcraft
+      - druid
+  - name: "Birth of the Young Son"
+    date: 12-25
+    tags:
+      - wintersolstice
+      - solstice
+      - midwinter
+      - pagan
+      - witch
+      - witchcraft
+      - druid
+    reconstructed: true
   - name: "Wren Day"
     date: 12-26
-  - name: "Innocent's Day"
+    tags:
+      - wintersolstice
+      - solstice
+      - catholic
+      - pagan
+      - witch
+      - witchcraft
+      - druid
+  - name: "Innocents' Day"
     date: 12-28
-  - name: "Remembrance of Robert Boyle"
+  - name: "Robert Boyle Remembrance Day"
     date: 12-30
+    tags:
+      - mathematics
+      - science
+      - boyleslaw
+      - canTootsBeMeasuredByBoylesLaw
+      - scottish
+      - scotsman
   - name: "Hogmanay"
     scottishname: "Hogmanay"
     date: 12-31
+    tags:
+      - newyears
+      - newyearseve
+      - catholic
+      - pagan
+      - witch
+      - witchcraft
+      - druid
   - name: "New Years Day"
     date: 01-01
   - name: "Twelfth Night"
     date: 01-05
-  - name: "Epiphany"
+    tags:
+      - christmas
+      - midwinter
+      - solstice
+      - catholic
+      - pagan
+      - witch
+      - witchcraft
+      - druid
+  - name: "The Epiphany"
     date: 01-06
+    tags:
+      - epiphany
+      - catholic
+      - pagan
+      - witch
+      - witchcraft
+      - druid
+    reconstructed: true
   - name: "Plough Monday"
     welshname: "Dydd Gwyl Geiliau"
     day: "first monday after 01-05"
     what: "Festival of the Sheepfolds is a return to ordinary working life"
-  - name: "Handsel Day"
-    scottishname: "Handsel Monday"
-    day: "first monday after 01-12"
-    what:
-    - "Time to give to the poor, to sit with and be with the infirm"
-    - "If you pay a debt on this day, you'll be paying it all year."
+    tags:
+      - returntowork
+      - sheep
+  - name: "Handsel Monday"
+    scottishname: Diluain Traoighte
+    day: "first monday after 01-01"
+    what: "Time to give to the poor, to sit with and be with the infirm. If you pay a debt on this day, you'll be paying it all year."
+    tags:
+      - charity
+      - altruism
+      - compassion
+      - debt
   - name: "Father Winter's Day"
     scottishname: "Festival of St Kentigern"
     gaulishname: "Îuos Kentutigernos"
     irishname: "Lá Fhéile Céad-tiarna"
     date: 01-14
     what: "Saint / Father Winter aids Queen in hiding her love affair with a knight from the King."
-  - name: "Burns Supper"
-    scottishname: "Burns Supper"
+    reconstructed: true
+    tags:
+      - pagan
+      - witch
+      - druid
+  - name: "Burns Night"
+    blessname: "Burns Supper"
     date: 01-25
     what: "Celebration of the life and poetry of Robert Burns and Robert Boyle(his birthday)"
+    tags:
+      - scottish
+      - burnssupper
+      - burnsnight
   - name: "Brighid's Eve"
     gaulishname: "Brigantianox"
     irishname: Oíche Bhríghte
@@ -114,11 +229,17 @@ holidays:
     datekind: 
     date: 01-31
     time: 19:30
+    reconstructed: true
+    tags:
+      - pagan
+      - witch
+      - druid
+      - catholic
   - name: "Festival of Spring"
     gaulishname: "Ambiuolcia"
     irishname:
+      - "Lá Fhéile Bríd"
       - "Imbolc"
-      - "Lá Fhéile Bríde"
     scottishname: "Là Fhèill Brìghde"
     manxname:
       - "Laa'l Breeshey"
@@ -127,38 +248,83 @@ holidays:
     welshname: "Gwyl Dechrau'r Gwanwyn"
     bretonname: "Gouel ar Gouloú"
     date: 02-01
+    tags:
+      - pagan
+      - witch
+      - druid
+      - catholic
   - name: "Candlemas"
     date: 02-02
+    tags:
+      - catholic
+      - wiccan
+      - witch
+      - neopagan
   - name: "Blaise' Day"
     cornish: "St. Blaise Day"
-    date: 02-03
+    date: 02-
+    tags:
+      - catholic
   - name: "Bredan Behan's Birthday"
     date: 02-09
+    tags:
+      - irishman
   - name: "Fairy Queen Day"
     date: 02-11
+    reconstructed: true
     what: "Festival of Bees"
-  - name: "Remembrance of James MacPherson"
+  - name: "James MacPherson Remembrance Day"
     date: 02-17
     what: "Translator of the Ossianic Poems"
+    tags:
+      - scottish
+      - writer
+      - scotsman
   - name: "Pancake Tuesday"
     day: easter - 47
     what: "Finishing the soon-to-spoil winter stores of oats and grain."
+    tags:
+      - catholic
+      - pagan
   - name: "Ash Wednesday"
     day: easter - 46
-    what: "Beginning of fasting as the days of Spring Lengthen."
+    what: "Beginning of fasting as the days of Spring Lengthen(Lenten)."
+    tags:
+      - catholic
+      - pagan
   - name: "Fionn MacCumhail's Day"
     date: 03-16
+    reconstructed: true
+    tags:
+      - pagan
+      - witch
+      - druid
+      - newpaganholiday
   - name: "Saint patrick's Day"
     date: 03-17
+    tags:
+      - catholic
+      - irish
+      - irishsaint
   - name: "Tobias Smollett's Birthday"
     date: 03-19
+    tags:
+      - scottish
+      - scotsman
+      - poet
+      - writer
+      - author
   - name: "Vernal Equinox"
     date: 03-21
+    tags:
+      - pagan
+      - witch
+      - druid
   - name: "Old Woman's Day"
     gaulishname: "Litu Uesonnae"
     irishname:
-      - "Lá Fhéile Cailleach"
-      - "Meán Earrachai"
+      - "Meán Earraigh"
+      - "Lá Fhéile Cailleachán"
     scottishname: "Latha na Cailliche"
     manxname: "Laa Cailleeyn"
     cornishname: "Dedh Ben Hen"
@@ -166,26 +332,36 @@ holidays:
     bretonname: "Deiz Benyn Hen"
     date: 03-25
     time: 19:30
-  - name: "Peel Fair Day"
-    date: 03-28
+    reconstructed: true
+    what: "The Cailleach loses to the power of the Spring goddess."
+    tags:
+      - pagan
+      - witch
+      - druid
   - name: "The Borrowin' Days"
     scottishname: "Laetheanta na riaibhche"
     date: 03-29
+    tags:
+      - pagan
+      - witch
+      - druid
   - name: "St Kessog's Day"
     scottishname: "La Chessaig"
-    reconstructed: true
+    irishname: "Lá Chessaig"
     date: 03-31
+    tags:
+      - catholic
   - name: "Belfast Blitz"
     date: 04-15
-  - name: "Remembrance of Sir William Robert Wills Wilde"
+  - name: "Remembrance of Sir William Robert Wills Wilde Day"
     date: 04-19
   - name: "Hen Day"
     date: 04-21
     what: "The group of stars known as cearcean(hens, pleiades) is only visible at sunset at this time from 9pm to exactly midnight from the hill of Tara in Ireland."
-  - name: "Battle of Culloden"
+  - name: "Battle of Culloden Remembrance Day"
     date: 04-16
     what: "Jacobite army lead by Charles Edward Stuart fought against the English."
-  - name: "Battle of Clontarf"
+  - name: "Battle of Clontarf Remembrance Day"
     date: 04-23
     what: "Brian Boru won against King of Leinster and the Vikings."
   - name: "May Day"
@@ -226,7 +402,7 @@ holidays:
   - name: "Rome Sacking Day"
     date: 08-24
     what: "Rome was sacked by Gaulish forces lead by Brennus."
-  - name: "Battle of Killiecrankie"
+  - name: "Battle of Killiecrankie Remembrance Day"
     date: 07-27
     what: "Jacobite victory over the William III supporters and lowland Scots."
   - name: "Garland Sunday"
@@ -256,7 +432,7 @@ holidays:
   - name: "Cuchullain's Birthday"
     date: 08-22
     what: "The Annals of Tigernach place Cúchullain's birthday at Aug 11 Julian and therefore its Aug 22 Gregorian."
-  - name: "The Battle of Flodden"
+  - name: "Battle of Flodden Remembrance Day"
     date: 09-09
     what: "Earls of Argyll and Lennox rise up against the English."
   - name: "La Féill Ròid Naofa"
@@ -264,7 +440,7 @@ holidays:
     what: "Holy Cross Day, same as Crossmas but Roman."
   - name: "St Cornelius' Feast"
     date: 09-16
-  - name: "Manx herring fleet loss"
+  - name: "Manx Herring Fleet Remembrance Day"
     date: 09-21  
   - name: "Midharvest"
     gaulishname: "Litu Uogiami"

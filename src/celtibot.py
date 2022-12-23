@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 from pprint import pprint
+import sys
 
 import argparse
 parser = argparse.ArgumentParser()
@@ -82,12 +83,18 @@ def findDatetimeFromWords(dateString, verb, dayOfTheWeek, words):
     return date
 
 def dateFromWords(dateString):
+    import datetime
     words = dateString.split(' ')
     if words[0] not in ['first', 'second', 'third', 'fourth','easter', 'last']:
         return False
     else:
         if words[0] == 'easter':
-            pass #return calcEasterDate(2020) - words[-1:]
+            if words[-2] == '-':
+                newDate = calcEasterDate(datetime.datetime.now().strftime('%Y')) - datetime.timedelta(days=int(words[-1]))
+                newDateString = newDate.strftime('%m-%d')
+                return newDateString
+            if words[-2] == '+':
+                return (calcEasterDate(datetime.datetime.now().strftime('%Y')) + datetime.timedelta(days=int(words[-1])))
         elif words[0] in ['first', 'second', 'third', 'fourth', 'last']:
             date = words[-1]
             verb = words[-2]
@@ -100,7 +107,11 @@ def dateFromWords(dateString):
 def isDateToday(dateString):
     from datetime import datetime
     if args.date:
-        current_time = datetime(int(datetime.now().strftime('%Y')),int(args.date.split("-")[0]),int(args.date.split("-")[1]))
+        try:
+            current_time = datetime(int(datetime.now().strftime('%Y')),int(args.date.split("-")[0]),int(args.date.split("-")[1]))
+        except ValueError:
+            print('That date doesn\'t exist')
+            sys.exit(1)
     else:
         current_time = datetime.now()
     
@@ -124,7 +135,7 @@ def getStuffAboutToday(yamlListOfHolidays):
 def calcEasterDate(year):
     import datetime
     """returns the date of Easter Sunday of the given yyyy year"""
-    y = year
+    y = int(year)
     # golden year - 1
     g = y % 19
     # offset
@@ -140,8 +151,8 @@ def calcEasterDate(year):
     # number of days from March 21 to Sunday on or before Paschal Full Moon
     # p can be from -6 to 28
     p = i-j+e
-    d = 1+(p+27+(p+6)/40)%31
-    m = 3+(p+26)/30
+    d = int(1+(p+27+(p+6)/40)%31)
+    m = int(3+(p+26)/30)
     return datetime.date(y,m,d)
   
     if year in special_years:
@@ -163,28 +174,34 @@ def tooter(toot):
 
 def makeHolidayToots(holiday):
     holidayName     = holiday['name']
+    blessName       = holiday['blessname'] if 'blessname' in holiday.keys() else holidayName
     scottishName    = formatName(holiday['scottishname']) if 'scottishname' in holiday.keys() else None
+    gaulishName     = formatName(holiday['gaulishname']) if 'gaulishname' in holiday.keys() else None
     irishName       = formatName(holiday['irishname']) if 'irishname' in holiday.keys() else None
     cornishName     = formatName(holiday['cornishname']) if 'cornishname' in holiday.keys() else None
     bretonName      = formatName(holiday['bretonname']) if 'bretonname' in holiday.keys() else None
     welshName       = formatName(holiday['welshname']) if 'welshname' in holiday.keys() else None
     hashTags        = set(holiday['tags']) if 'tags' in holiday.keys() else []
+    reconstructed   = holiday['reconstructed'] if 'reconstructed' in holiday.keys() else False
     
-    celticNames     = {'scottish':scottishName, 'irish': irishName, 'cornish': cornishName, 'breton': bretonName, 'welsh': welshName}
+    celticNames     = {'gaulish':gaulishName,'scottish':scottishName, 'irish': irishName, 'cornish': cornishName, 'breton': bretonName, 'welsh': welshName}
     celticNames     = {key:val for key, val in celticNames.items() if val != None}
 
     string = "Today is %s!\n" % (holidayName)
 
     if len(celticNames):
-        string += "\nDifferent names for today in Celtic languages:\n"
+        string += "\nNames for today in Celtic languages:\n"
 
     for key, name in celticNames.items():
         string += "#%s `%s'\n" % (key.capitalize(),name)
 
-    string += "\nCeltibot wishes a happy %s to all those who celebrate it.\n" % holidayName
+    string += "\nCeltibot wishes blessings on %s to all those who keep it.\n" % blessName
     while len(hashTags):
         tag = list(hashTags)[0]
         string += "#%s " % hashTags.pop()
+    string += "#celtic #celtibot #CelticCalendar"
+    if reconstructed == True:
+            string += "\n\n\nnote: contains some reconstructed elements"
     return string
 
 def init():
@@ -195,6 +212,9 @@ def init():
     for i in range(len(relevantHolidaysFromFile)):
         holiday = relevantHolidaysFromFile[i]
         toots[i] = makeHolidayToots(holiday)
-    print(toots[0])
+    try:
+        print(toots[0])
+    except:
+        pass
 
 init()
