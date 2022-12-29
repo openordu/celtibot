@@ -1805,13 +1805,6 @@
     \ is the character who made his entrance as a knight in the Arthurian world of\
     \ Middle Welsh ..."
   wiki: http://en.wikipedia.org/wiki/Peredur
-- name: River
-  rscore: 68.58619999999995
-  summary: A river is a natural flowing watercourse, usually freshwater, flowing towards
-    an ocean, sea, lake or another river. In some cases, a river flows into the ground
-    and becomes dry at the end of its course without reaching another body of water.
-    Small rivers can be referred to using names such as creek,...
-  wiki: http://en.wikipedia.org/wiki/River
 - name: Medb
   rscore: 383.7602000000005
   summary: "Medb (Old Irish:\_[m\u025B\xF0v]), later spelled Meadhbh (Middle Irish:\_\

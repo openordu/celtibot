@@ -1,8 +1,9 @@
 from registry.access.redhat.com/ubi8/python-38:latest
-ENV ACCESS_TOKEN=${ACCESS_TOKEN:-"yourtoken"}
-ENV SERVER=${SERVER:-"https://yourendpoint/api"}
+ENV ACCESS_TOKEN="yourtoken"
+ENV SERVER="https://yourendpoint/api"
 ENV MODE=information
 ENV DRYRUN=1
+ENV BOT_ACCOUNT_ID=000000000000000000
 USER 0
 RUN mkdir -p /tmp/bot
 WORKDIR /tmp/bot

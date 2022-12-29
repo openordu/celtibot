@@ -2,15 +2,17 @@
 from pprint import pprint
 import sys, datetime
 from os import environ as env
+import random
 
 import argparse
 
-modes = ['holiday', 'quote', 'information']
+allModes = ['holiday', 'quote', 'information', 'follow']
+tootModes =  ['holiday', 'information', 'quote']
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dryrun", help="on/off/True/False",default="0",metavar='DRYRUN')
 parser.add_argument("--date", help="set now date in %m-%d / mm-dd format.",default="%s-%s" % (datetime.datetime.now().strftime('%m'), datetime.datetime.now().strftime('%d')),metavar='DATE')
-parser.add_argument("--mode", help="must be one of %s" % " ".join(modes),default=str('holiday'),metavar='INFO')
+parser.add_argument("--mode", help="must be one of %s" % " ".join(allModes),default=str('holiday'),metavar='INFO')
 
 args = parser.parse_args()
 current_year = int(datetime.datetime.now().strftime('%Y'))
@@ -231,8 +233,9 @@ def holidayToots(toots):
 def quoteToots(toots):
     # quotes
     quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
+    random.shuffle(quoteObjectsFromYamlFile)
     try:
-        todaysquote = quoteObjectsFromYamlFile[doy - 1]
+        todaysquote = quoteObjectsFromYamlFile[0]
         quote = "`%s' - %s, %s " % (todaysquote['text'], todaysquote['author'], todaysquote['source'])
         hashTags = set(todaysquote['tags']) if 'tags' in todaysquote.keys() else []
 
@@ -251,10 +254,29 @@ def quoteToots(toots):
         pass
     return toots
 
+def followToots(toots):
+    from mastodon import Mastodon
+    mastodon = Mastodon(
+        access_token = env['ACCESS_TOKEN'],
+        api_base_url = env['SERVER']
+    )
+    # Get a list of accounts the bot is already following
+    following = mastodon.account_following(id=env['BOT_ACCOUNT_ID'])
+    following_ids = [f['id'] for f in following]
+
+    # Get a list of the bot's followers
+    followers = mastodon.account_followers(id=env['BOT_ACCOUNT_ID'])
+
+    # Follow each new follower
+    for follower in followers:
+        if follower['id'] not in following_ids:
+            mastodon.account_follow(id=follower['id'])
+
 def informationToots(toots):
     infoObjectsFromYamlFile = yamlRead('%s/../data/info/topics.yaml' % str(scriptDirectory()))
+    random.shuffle(infoObjectsFromYamlFile)
     try:
-        todaysinfo = infoObjectsFromYamlFile[doy - 1]
+        todaysinfo = infoObjectsFromYamlFile[0]
         info = "`%s' - %s\n\n%s\n" % (todaysinfo['name'], todaysinfo['summary'], todaysinfo['wiki'])
         hashTags = set(todaysinfo['tags']) if 'tags' in todaysinfo.keys() else []
 
@@ -281,7 +303,8 @@ def init():
     import os, datetime
     toots = dict()
 
-    toots = eval("%sToots(toots)" % args.mode) if args.mode in modes else "--mode must be one of holiday, quote, or information"
+    toots = eval("%sToots(toots)" % args.mode) if args.mode in allModes else "--mode must be one of holiday, quote, or information"
+    if args.mode not in tootModes: sys.exit()
     if switchHandler(args.dryrun) == 1: print(toots)
     else: makeToots(toots)
 init()
