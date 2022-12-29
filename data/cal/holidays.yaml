@@ -102,10 +102,20 @@ holidays:
       - witch
       - witchcraft
       - druid
+  - name: "St. Finan's Feast"
+    irishname: "Fèill Fionnain"
+    date: 12-20
+    tags:
+      - wintersolstice
+      - solstice
+      - midwinter
+      - catholic
   - name: "Samuel Beckett's Remembrance Day"
     date: 12-22
     note: 
-  - name: "Manx Wren Hunting Day"
+  - name: "Christmas Eve"
+    irishname: Oidhche nam Bannagan(Night of the Bannocks)
+    manxname: Wren Hunting Day
     date: 12-24
     tags:
       - wintersolstice

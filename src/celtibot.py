@@ -1,11 +1,26 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 from pprint import pprint
-import sys
+import sys, datetime
+from os import environ as env
 
 import argparse
+
+modes = ['holiday', 'quote', 'information']
+
 parser = argparse.ArgumentParser()
-parser.add_argument("--date", help="set now date in %m-%d / mm-dd format.")
+parser.add_argument("--dryrun", help="on/off/True/False",default="0",metavar='DRYRUN')
+parser.add_argument("--date", help="set now date in %m-%d / mm-dd format.",default="%s-%s" % (datetime.datetime.now().strftime('%m'), datetime.datetime.now().strftime('%d')),metavar='DATE')
+parser.add_argument("--mode", help="must be one of %s" % " ".join(modes),default=str('holiday'),metavar='INFO')
+
 args = parser.parse_args()
+current_year = int(datetime.datetime.now().strftime('%Y'))
+day = int(str(args.date).split('-')[1])
+month = int(str(args.date).split('-')[0])
+doy = int(datetime.date(current_year, month, day).strftime('%j'))-1
+
+def switchHandler(flick):
+    if flick in ['no','on', '1', 1, 'true', 'True', True]: return 1
+    if flick in ['yes','off', '0', 0, 'false', 'False', False]: return 0
 
 def scriptDirectory(file = __file__):
     import os
@@ -36,7 +51,6 @@ def formatName(name):
     if type(name) == type(''): return name
 
 def findDatetimeFromWords(dateString, verb, dayOfTheWeek, words):
-    import datetime
     current_time = datetime.datetime.now()
     current_year = current_time.strftime('%Y')
     current_month = current_time.strftime('%m')
@@ -83,7 +97,6 @@ def findDatetimeFromWords(dateString, verb, dayOfTheWeek, words):
     return date
 
 def dateFromWords(dateString):
-    import datetime
     words = dateString.split(' ')
     if words[0] not in ['first', 'second', 'third', 'fourth','easter', 'last']:
         return False
@@ -105,10 +118,9 @@ def dateFromWords(dateString):
             return False
     
 def isDateToday(dateString):
-    from datetime import datetime
     if args.date:
         try:
-            current_time = datetime(int(datetime.now().strftime('%Y')),int(args.date.split("-")[0]),int(args.date.split("-")[1]))
+            current_time = datetime.datetime(current_year, month, day)
         except ValueError:
             print('That date doesn\'t exist')
             sys.exit(1)
@@ -133,7 +145,6 @@ def getStuffAboutToday(yamlListOfHolidays):
     return holidays
 
 def calcEasterDate(year):
-    import datetime
     """returns the date of Easter Sunday of the given yyyy year"""
     y = int(year)
     # golden year - 1
@@ -169,10 +180,14 @@ def matchDateFormat(dateString):
 
 def tooter(toot):
     from mastodon import Mastodon
-    mastodon = Mastodon(access_token = 'thetoken')
-    # mastodon.toot(toot)
+    mastodon = Mastodon(
+        access_token = env['ACCESS_TOKEN'],
+        api_base_url = env['SERVER']
+    )
+    mastodon.toot(toot)
+    #pprint(toot)
 
-def makeHolidayToots(holiday):
+def authorHolidayToots(holiday):
     holidayName     = holiday['name']
     blessName       = holiday['blessname'] if 'blessname' in holiday.keys() else holidayName
     scottishName    = formatName(holiday['scottishname']) if 'scottishname' in holiday.keys() else None
@@ -204,25 +219,20 @@ def makeHolidayToots(holiday):
             string += "\n\n\nnote: contains some reconstructed elements"
     return string
 
-def init():
-    import os, datetime
-    toots = dict()
-
+def holidayToots(toots):
     # holidays
     holidayObjectsFromYamlFile = yamlRead('%s/../data/cal/holidays.yaml' % str(scriptDirectory()))
     relevantHolidaysFromFile = getStuffAboutToday(holidayObjectsFromYamlFile)
     for i in range(len(relevantHolidaysFromFile)):
         holiday = relevantHolidaysFromFile[i]
-        toots[i] = makeHolidayToots(holiday)
+        toots[i] = authorHolidayToots(holiday)
+    return toots
 
-    # moons
-    # no moons yet
-
+def quoteToots(toots):
     # quotes
-
     quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
     try:
-        todaysquote = quoteObjectsFromYamlFile[datetime.datetime.now().strftime('%j')-1]
+        todaysquote = quoteObjectsFromYamlFile[doy - 1]
         quote = "`%s' - %s, %s " % (todaysquote['text'], todaysquote['author'], todaysquote['source'])
         hashTags = set(todaysquote['tags']) if 'tags' in todaysquote.keys() else []
 
@@ -235,9 +245,43 @@ def init():
     except TypeError:
         # No quotes for today
         pass
-
-    try:
-        print(toots)
-    except:
+    except IndexError:
+        print("no quote for day %s at index %s" % (doy, doy - 1))
+        # No quotes for today
         pass
+    return toots
+
+def informationToots(toots):
+    infoObjectsFromYamlFile = yamlRead('%s/../data/info/topics.yaml' % str(scriptDirectory()))
+    try:
+        todaysinfo = infoObjectsFromYamlFile[doy - 1]
+        info = "`%s' - %s\n\n%s\n" % (todaysinfo['name'], todaysinfo['summary'], todaysinfo['wiki'])
+        hashTags = set(todaysinfo['tags']) if 'tags' in todaysinfo.keys() else []
+
+        info += "\n#celtic #celtibot #CelticTopics "
+        if len(hashTags): info += "\n"
+        while len(hashTags):
+            tag = list(hashTags)[0]
+            info += "#%s " % hashTags.pop()
+        info += "\nnote: this is scraped info, if inappropriate or wrong pls flag"
+        # if len(info) > 500: print("topic %s exceeds length: %s" % (str((doy - 1)),info) )
+        # print(str(len(info))+':'+str(doy))
+        toots[len(toots)] = info
+    except TypeError as e:
+        # No quotes for today
+        print(e)
+        pass
+    return toots
+
+def makeToots(toots):
+    for toot in toots:
+        tooter(toots[toot])
+
+def init():
+    import os, datetime
+    toots = dict()
+
+    toots = eval("%sToots(toots)" % args.mode) if args.mode in modes else "--mode must be one of holiday, quote, or information"
+    if switchHandler(args.dryrun) == 1: print(toots)
+    else: makeToots(toots)
 init()

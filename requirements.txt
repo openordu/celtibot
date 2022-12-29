@@ -1,0 +1,2 @@
+Mastodon.py==1.8.0
+PyYAML==5.3.1
