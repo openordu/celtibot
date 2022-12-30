@@ -14,6 +14,23 @@ Celtibot is a mastodon bot that runs on the [Openord server](https://mastodon.ce
 Celtibot prioritizes information relevant to today. If no today specific objects are found in the `data` directory, it will switch to
 a random selection mode using python's `random.shuffle()` method, selecting from the data which does not have a `date` or `day` key.
 
+### Date word language
+We've created a custom reverse query language for dates that do not fall on the same day each year. The language has three parts: `target`, `direction`, and `epoch`.
+
+`epoch` can either be a numeric date like `01-01` or the word `easter`. The word easter is the only non numeric date it understands and the last word in the `day` property being easter makes celtibot make a few assumptions:
+
+* Celtibot assumes that the first word is an integer for days away from easter's date
+* That the second word is either `+` or `-`
+
+If `epoch` is a hyphenated numeric value like `01-01`, this value represents 'month-day` format. With a numeric value, these assumptions are made:
+
+* the second to last word is either `after` or `before` and this signifies that the `target` after or before the `epoch` is what day this falls on.
+* The first word is one of `first`, `second`, `third`, `fourth`, or `last`
+* The second word is a day of the week like 'sunday' or 'monday'.
+
+#### Usage
+You can use the reverse query language by placing it under the `day` attribute of an object(see the examples below). Since our forward query is always now(), Celtibot computes the query languages of each object for that year and compares it to the now() value. If they're the same, it selects that object as relevant to now. If this seems complicated, it is.
+
 ## Quotes
 ```quotes.yaml|yaml
 # Today relevant Quotes in numerals

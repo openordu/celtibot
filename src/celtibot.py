@@ -106,13 +106,13 @@ def dateFromWords(dateString):
     if words[0] not in ['first', 'second', 'third', 'fourth','easter', 'last']:
         return False
     else:
-        if words[0] == 'easter':
+        if words[-1] == 'easter':
             if words[-2] == '-':
-                newDate = calcEasterDate(datetime.datetime.now().strftime('%Y')) - datetime.timedelta(days=int(words[-1]))
+                newDate = calcEasterDate(datetime.datetime.now().strftime('%Y')) - datetime.timedelta(days=int(words[0]))
                 newDateString = newDate.strftime('%m-%d')
                 return newDateString
             if words[-2] == '+':
-                return (calcEasterDate(datetime.datetime.now().strftime('%Y')) + datetime.timedelta(days=int(words[-1])))
+                return (calcEasterDate(datetime.datetime.now().strftime('%Y')) + datetime.timedelta(days=int(words[0])))
         elif words[0] in ['first', 'second', 'third', 'fourth', 'last']:
             date = words[-1]
             verb = words[-2]
