@@ -258,7 +258,7 @@ def holidayToots(toots):
     return toots
 
 def formatTopicToot(topic):
-    toot = "`%s' - %s\n\n%s\n" % (topic['name'], topic['summary'], topic['wiki'])
+    toot = "`%s' - %s\n\n%s\n" % (topic['name'], topic['summary'], topic['link'])
     hashTags = set(topic['tags']) if 'tags' in topic.keys() else []
 
     toot += "\n#celtic #celtibot #CelticTopics "
@@ -340,13 +340,6 @@ def topicToots(toots):
     for topic in todayTopics:
         toot = formatTopicToot(topic)
         toots[len(toots)] = toot
-        
-    # try:
-    #     todaysinfo = infoObjectsFromYamlFile[0]
-    # except TypeError as e:
-    #     # No quotes for today
-    #     print(e)
-    #     pass
     return toots
 
 def makeToots(toots):
