@@ -1,6 +1,5 @@
 # celtibot
-A repo for Celtibot's API interactions and data.
-
+Celtibot is a mastodon bot that runs on the [Openord server](https://mastodon.celticpaganism.org/@Celtibot)
 ## Usage
 ### Testing
 `SERVER='https://url.social' ACCESS_TOKEN='xxxx' ./src/celtibot.py --mode [topic, holiday, follow, quote] --dryrun 1 --date 03-01`
@@ -12,7 +11,7 @@ A repo for Celtibot's API interactions and data.
 `SERVER='https://url.social' ACCESS_TOKEN='xxxx' ./src/celtibot.py --mode [topic, holiday, follow, quote]`
 
 ## Dates
-Celtibot prioritizes information relevant to today. If no today specific objects are found it the `data` directory, it will switch to
+Celtibot prioritizes information relevant to today. If no today specific objects are found in the `data` directory, it will switch to
 a random selection mode using python's `random.shuffle()` method.
 
 ```quotes.yaml|yaml
