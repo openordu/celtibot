@@ -21,12 +21,14 @@ We've created a custom reverse query language for dates that do not fall on the 
 
 * Celtibot assumes that the first word is an integer for days away from easter's date
 * That the second word is either `+` or `-`
+* The day integer value(first word) is considered the `target`
 
 If `epoch` is a hyphenated numeric value like `01-01`, this value represents 'month-day` format. With a numeric value, these assumptions are made:
 
 * the second to last word is either `after` or `before` and this signifies that the `target` after or before the `epoch` is what day this falls on.
 * The first word is one of `first`, `second`, `third`, `fourth`, or `last`
 * The second word is a day of the week like 'sunday' or 'monday'.
+* The first and second word are the `target`
 
 #### Usage
 You can use the reverse query language by placing it under the `day` attribute of an object(see the examples below). Since our forward query is always now(), Celtibot computes the query languages of each object for that year and compares it to the now() value. If they're the same, it selects that object as relevant to now. If this seems complicated, it is.
