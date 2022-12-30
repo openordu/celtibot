@@ -318,13 +318,6 @@
     \ the 10th centuries, and following that, in a restricted form, the Kingdom of\
     \ Desmond, and its offshoot Carbery..."
   wiki: "http://en.wikipedia.org/wiki/E\xF3ganachta"
-- name: "Nollaig \xD3 Mura\xEDle"
-  rscore: 37.16420000000002
-  summary: "A native of Knock, County Mayo, \xD3 Mura\xEDle attended National University\
-    \ of Ireland, Maynooth where he was a postgraduate student enrolled for a PhD.\
-    \ He was Placenames Officer with the Ordnance Survey of Ireland 1972\u20131993.\
-    \ He was Reader in Irish and Celtic Studies at Queen's University Belfast to 2004..."
-  wiki: "http://en.wikipedia.org/wiki/Nollaig_\xD3_Mura\xEDle"
 - name: "Cobthach C\xF3el Breg"
   rscore: 43.885199999999976
   summary: "\n This biography of a member of an Irish royal house is a stub. You can\
@@ -830,6 +823,7 @@
   wiki: http://en.wikipedia.org/wiki/Deirdre
 - name: Imbolc
   rscore: 143.0416
+  date: 02-01
   summary: "Imbolc or Imbolg (Irish pronunciation:\_[\u026A\u02C8m\u02E0\u0254l\u02E0\
     \u0261]), also called Saint Brigid's Day (Irish: L\xE1 Fh\xE9ile Br\xEDde; Scottish\
     \ Gaelic: L\xE0 Fh\xE8ill Br\xECghde; Manx: Laa'l Breeshey), is a Gaelic traditional\
@@ -995,6 +989,7 @@
   wiki: http://en.wikipedia.org/wiki/Lords_Justices_of_Ireland
 - name: Lughnasadh
   rscore: 339.62809999999905
+  date: 08-01
   summary: "Lughnasadh or Lughnasa (/\u02C8lu\u02D0n\u0259s\u0259/ LOO-n\u0259-s\u0259\
     , Irish:\_[\u02C8l\u032A\u02E0u\u02D0n\u02E0\u0259s\u02E0\u0259]) is a Gaelic\
     \ festival marking the beginning of the harvest season. Historically, it was widely\
@@ -1026,6 +1021,7 @@
     \ ..."
   wiki: http://en.wikipedia.org/wiki/Folklore
 - name: Beltane
+  date: 05-01
   rscore: 366.7068999999998
   summary: "Beltane (/\u02C8bj\u0251\u02D0l.t\u026An\u0259/) is the Gaelic May Day\
     \ festival. Commonly observed on the first of May, the festival falls midway between\
@@ -1033,7 +1029,8 @@
     \ name is synonymous with the month marking the start of summer in Ireland, May\
     \ being M\xED na B..."
   wiki: http://en.wikipedia.org/wiki/Beltane
-- name: Midsummer
+-name: Midsummer
+  date: 06-24
   rscore: 53.73520000000006
   summary: "Midsummer is a celebration of the season of summer usually held at a date\
     \ around the summer solstice. It has pagan pre-Christian roots in Europe.\n The\
@@ -1195,6 +1192,7 @@
     \ Fionn ma..."
   wiki: "http://en.wikipedia.org/wiki/Ois\xEDn"
 - name: Halloween
+  date: 10-31
   rscore: 46.6413
   summary: Halloween or Hallowe'en (less commonly known as Allhalloween, All Hallows'
     Eve, or All Saints' Eve) is a celebration observed in many countries  on 31 October,
@@ -1281,13 +1279,6 @@
     \ to the eleventh descendant of Colla da Chrich, great-grandson of Cormac mac\
     \ Airt, who was monarch of I..."
   wiki: http://en.wikipedia.org/wiki/Maguire
-- name: Great Britain
-  rscore: 214.5692000000002
-  summary: "Great Britain is an island in the North Atlantic Ocean off the northwest\
-    \ coast of continental Europe. With an area of 209,331\_km2 (80,823\_sq\_mi),\
-    \ it is the largest of the British Isles, the largest European island and the\
-    \ ninth-largest island in the world.[note 1] It is dominated by a maritime clima..."
-  wiki: http://en.wikipedia.org/wiki/Great_Britain
 - name: Book Of Leinster
   rscore: 102.26779999999998
   summary: "The Book of Leinster (Middle Irish: Lebor Laignech [\u02C8l\u0348\u02B2\
@@ -1736,14 +1727,6 @@
     \ B\xE9imnech (Balor the smiter), Balor Balcb\xE9imnech (Balor the strong smiter),\
     \ Balor Birugderc (Balor of the piercing-eye), Balor mac Doit meic N\xE9id (Bal..."
   wiki: http://en.wikipedia.org/wiki/Balor
-- name: Resurrection Of Jesus
-  rscore: 71.82079999999998
-  summary: "\n The resurrection of Jesus (Biblical Greek: \u1F00\u03BD\u03AC\u03C3\
-    \u03C4\u03B1\u03C3\u03B9\u03C2 \u03C4\u03BF\u1FE6 \u1F38\u03B7\u03C3\u03BF\u1FE6\
-    ) is the Christian belief that God raised Jesus on the third day[note 1] after\
-    \ his crucifixion, starting \u2013 or restoring[web 1][note 2] \u2013 his exalted\
-    \ life as Christ and Lord.[web 2] According to the New Testament writing,  Jesus\
-    \ was firs..."
   wiki: http://en.wikipedia.org/wiki/Resurrection_of_Jesus
 - name: Liminality
   rscore: 58.50959999999998
@@ -1933,6 +1916,7 @@
     1800) and the Uni..."
   wiki: http://en.wikipedia.org/wiki/Lord_Lieutenant_of_Ireland
 - name: Hogmanay
+  date: 12-31
   rscore: 42.14649999999998
   summary: "Hogmanay (/\u02C8h\u0252\u0261m\u0259ne\u026A, \u02CCh\u0252\u0261m\u0259\
     \u02C8ne\u026A/ HOG-m\u0259-nay, -\u2060NAY, Scots:\_[\u02CCh\u0254\u0261m\u0259\
@@ -2090,6 +2074,7 @@
     \ the name has been emended by editors to \"Brian\" which conforms wit..."
   wiki: http://en.wikipedia.org/wiki/Brian_(mythology)
 - name: Wild Hunt
+  date: 12-01
   rscore: 75.2989
   summary: The Wild Hunt is a folklore motif (Motif E501 in Stith Thompson's Motif-Index
     of Folk-Literature) that occurs in the folklore of various northern European cultures.
@@ -2403,6 +2388,7 @@
     \ and transitioned into the Renaissance and the Age of Discovery...."
   wiki: http://en.wikipedia.org/wiki/Middle_Ages
 - name: Saint Patrick
+  date: 03-17
   rscore: 430.5595000000029
   summary: "Saint Patrick (Latin: Patricius; Irish: P\xE1draig [\u02C8p\u02E0\u0251\
     \u02D0\u027E\u02E0\u026A\u025F]; Welsh: Padrig) was a fifth-century Romano-British\
@@ -2463,14 +2449,6 @@
   rscore: 968.5975999999941
   summary: "O'Donnell:\n International titles:\n"
   wiki: http://en.wikipedia.org/wiki/O'Donnell_dynasty
-- name: England
-  rscore: 230.6429999999998
-  summary: "\u2013\_in Europe\_(green &\_dark grey)\u2013\_in the United Kingdom\_\
-    (green) England is a country that is part of the United Kingdom. It shares land\
-    \ borders with Wales to its west and Scotland to its north. The Irish Sea lies\
-    \ northwest and the Celtic Sea to the southwest. It is separated from continental\
-    \ Europe b..."
-  wiki: http://en.wikipedia.org/wiki/England
 - name: Pryderi
   rscore: 141.0079999999999
   summary: "Ifor Williams speculated that he was once the focal character of the Mabinogi\
@@ -2517,6 +2495,7 @@
     \ connect..."
   wiki: "http://en.wikipedia.org/wiki/Abb\xE1n"
 - name: Samhain
+  date: 11-01
   rscore: 428.0743999999986
   summary: "Samhain (/\u02C8s\u0251\u02D0w\u026An/ SAH-win, /\u02C8sa\u028A\u026A\
     n/ SOW-in, Irish:\_[\u02C8s\u02E0\u0259un\u02B2], Scottish\_Gaelic:\_[\u02C8s\u032A\
