@@ -216,7 +216,7 @@ def tooter(toot):
     mastodon.toot(toot)
     #pprint(toot)
 
-def authorHolidayToots(holiday):
+def formatHolidayToots(holiday):
     holidayName     = holiday['name']
     blessName       = holiday['blessname'] if 'blessname' in holiday.keys() else holidayName
     scottishName    = formatName(holiday['scottishname']) if 'scottishname' in holiday.keys() else None
@@ -254,7 +254,7 @@ def holidayToots(toots):
     relevantHolidaysFromFile = getHolidayObjectsForToday(holidayObjectsFromYamlFile)
     for i in range(len(relevantHolidaysFromFile)):
         holiday = relevantHolidaysFromFile[i]
-        toots[i] = authorHolidayToots(holiday)
+        toots[i] = formatHolidayToots(holiday)
     return toots
 
 def formatTopicToot(topic):
@@ -266,9 +266,7 @@ def formatTopicToot(topic):
     while len(hashTags):
         tag = list(hashTags)[0]
         toot += "#%s " % hashTags.pop()
-    toot += "\nnote: if inappropriate or wrong pls flag"
-    # if len(info) > 500: print("topic %s exceeds length: %s" % (str((doy - 1)),info) )
-    # print(str(len(info))+':'+str(doy))
+    toot += "\nnote: edit this https://github.com/openordu/celtibot/edit/main/data/info/topics.yaml"
     return toot
     
 
