@@ -103,7 +103,7 @@ def findDatetimeFromWords(dateString, verb, dayOfTheWeek, words):
 
 def dateFromWords(dateString):
     words = dateString.split(' ')
-    if words[0] not in ['first', 'second', 'third', 'fourth','easter', 'last']:
+    if words[0] not in ['first', 'second', 'third', 'fourth', 'last'] and words[-1] not in ['easter']:
         return False
     else:
         if words[-1] == 'easter':

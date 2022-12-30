@@ -1029,7 +1029,7 @@
     \ name is synonymous with the month marking the start of summer in Ireland, May\
     \ being M\xED na B..."
   link: http://en.wikipedia.org/wiki/Beltane
--name: Midsummer
+- name: Midsummer
   date: 06-24
   rscore: 53.73520000000006
   summary: "Midsummer is a celebration of the season of summer usually held at a date\
@@ -1173,7 +1173,7 @@
     medieval Irish text, but is rather a reconstruction by modern scholars based on
     the genitive Danann, which is the only form attested in the primary sources but 
     is believed to be a variation of Anu, the Mother of the Gods...
-link: http://en.wikipedia.org/wiki/Danu_(Irish_goddess)
+  link: http://en.wikipedia.org/wiki/Danu_(Irish_goddess)
 - name: Cailleach
   rscore: 153.33800000000014
   summary: "In Gaelic (Irish, Scottish and Manx) myth, the Cailleach (Irish:\_[\u02C8\

@@ -280,13 +280,13 @@ holidays:
       - writer
       - scotsman
   - name: "Pancake Tuesday"
-    day: easter - 47
+    day: 47 - easter
     what: "Finishing the soon-to-spoil winter stores of oats and grain."
     tags:
       - catholic
       - pagan
   - name: "Ash Wednesday"
-    day: easter - 46
+    day: 46 - easter
     what: "Beginning of fasting as the days of Spring Lengthen(Lenten)."
     tags:
       - catholic
