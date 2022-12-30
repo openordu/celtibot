@@ -136,7 +136,7 @@ def isDateToday(dateString):
         return True
     return False
 
-def getStuffAboutToday(yamlListOfHolidays):
+def getHolidayObjectsForToday(yamlListOfHolidays):
     holidays = list()
     for item in yamlListOfHolidays['holidays']:
        
@@ -145,6 +145,16 @@ def getStuffAboutToday(yamlListOfHolidays):
         if isDateToday(dateString):
             holidays.append(item)
     return holidays
+
+def getQuoteObjectsForToday(yamlListOfQuotes):
+    quotes = list()
+    for item in [x for x in yamlListOfQuotes if 'date' in x.keys()]:
+        dateString = item['date']
+
+        if isDateToday(dateString):
+            quotes.append(item)
+    return quotes
+
 
 def calcEasterDate(year):
     """returns the date of Easter Sunday of the given yyyy year"""
@@ -224,27 +234,23 @@ def authorHolidayToots(holiday):
 def holidayToots(toots):
     # holidays
     holidayObjectsFromYamlFile = yamlRead('%s/../data/cal/holidays.yaml' % str(scriptDirectory()))
-    relevantHolidaysFromFile = getStuffAboutToday(holidayObjectsFromYamlFile)
+    relevantHolidaysFromFile = getHolidayObjectsForToday(holidayObjectsFromYamlFile)
     for i in range(len(relevantHolidaysFromFile)):
         holiday = relevantHolidaysFromFile[i]
         toots[i] = authorHolidayToots(holiday)
     return toots
 
-def quoteToots(toots):
-    # quotes
-    quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
-    random.shuffle(quoteObjectsFromYamlFile)
+def formatQuoteToot(quote):
+    toot = ''
     try:
-        todaysquote = quoteObjectsFromYamlFile[0]
-        quote = "`%s' - %s, %s " % (todaysquote['text'], todaysquote['author'], todaysquote['source'])
-        hashTags = set(todaysquote['tags']) if 'tags' in todaysquote.keys() else []
+        toot = "`%s' - %s, %s " % (quote['text'], quote['author'], quote['source'])
+        hashTags = set(quote['tags']) if 'tags' in quote.keys() else []
 
-        if len(hashTags): quote += "\n"
+        if len(hashTags): toot += "\n"
         while len(hashTags):
             tag = list(hashTags)[0]
-            quote += "#%s " % hashTags.pop()
-        quote += "#celtic #celtibot #CelticQuotes"
-        toots[len(toots)] = quote
+            toot += "#%s " % hashTags.pop()
+        toot += "#celtic #celtibot #CelticQuotes"
     except TypeError:
         # No quotes for today
         pass
@@ -252,6 +258,21 @@ def quoteToots(toots):
         print("no quote for day %s at index %s" % (doy, doy - 1))
         # No quotes for today
         pass
+    return toot
+
+def quoteToots(toots):
+    # quotes
+    quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
+    todayQuotes = getQuoteObjectsForToday(quoteObjectsFromYamlFile)
+    if not len(todayQuotes):
+        random.shuffle(quoteObjectsFromYamlFile)   
+        quote = formatQuoteToot(quoteObjectsFromYamlFile[0])
+        toots[len(toots)] = quote
+        return toots
+
+    for quote in todayQuotes:
+        quote = formatQuoteToot(quote)
+        toots[len(toots)] = quote
     return toots
 
 def followToots(toots):
@@ -285,7 +306,7 @@ def informationToots(toots):
         while len(hashTags):
             tag = list(hashTags)[0]
             info += "#%s " % hashTags.pop()
-        info += "\nnote: this is scraped info, if inappropriate or wrong pls flag"
+        info += "\nnote: if inappropriate or wrong pls flag"
         # if len(info) > 500: print("topic %s exceeds length: %s" % (str((doy - 1)),info) )
         # print(str(len(info))+':'+str(doy))
         toots[len(toots)] = info

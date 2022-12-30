@@ -1,5 +1,876 @@
+# TODO: label some of these as praxes(customary actions performed in a complete cultural context)
+---
 - text: "The best candle for man is good sense"
   author: Cynfelan
   source: Welsh by K.H. Jackson
+  date: 12-30
   tags:
     - wisdom
+- text: |
+    On New Year's Day a game of football or shinty was played 
+    in the Highlands by one parish against the next, and no 
+    confines of pitch were observed. The match would begin 
+    at the parish bounds and continue into darkness or a free fight.
+  author: Sir Aeneas William Mackintosh of Mackintosh
+  source: Notes, 1774-83
+  tags:
+    - scottish
+    - newYearsDay
+    - newYears
+- text: |
+    Matrimony is avoided in the month of January, which is called in the Erse the 'cold month'.
+  author: Thomas Pennant
+  source: A Tour in Scotland and Voyage to the Hebrides 1772
+  tags:
+    - Scottish
+    - Scotland
+    - january
+    - theColdMonth
+- text: |
+    The Fire Festivals of Beltane, Halloween, Midsummer and Yule had this 
+    in common: they were all purificatory, designed to purge air and earth 
+    and sky of unclean and hostile influences... In later times, at least, 
+    witches are the enemy against whom the sacred fire is directed.
+  author: J. M. McPherson
+  source: Primitive Beliefs in the North-East of Scotland, 1929
+  tags:
+    - Scottish
+    - Scotland
+    - fire
+    - witch
+    - druid
+    - pagan
+- text: |
+    The highlanders for a sort of almanac of presage of the weather for the 
+    ensuing year in the following manner. They make observation on twelve days, 
+    beginning at the last of December, and hold as an infallible rule that 
+    whatsoever weather happens on each of those days, the same will prove to 
+    agree in the correspondent months. Thus, January is to answer to the 
+    weather of December the 31st, February to that of January 1st; and so with 
+    the rest. Old people still pay great attention to this augury.
+  author: Thomas Pennant
+  source: A Tour in Scotland and Voyage to the Hebrides, 1772 
+  tags:
+    - Scottish
+    - Scotland
+    - divination
+    - witch
+    - druid
+    - pagan
+- text: "From Twelfth Day, the days begin to lengthen by a Cock's span or stride"
+  author: Unknown
+  source: Breton Proverb
+  tags:
+    - Brittany
+    - Breton
+    - proverb
+- text: |
+    The Epiphany is Gwyl Ystwyll, or Yr Ystwyll. Ystwyll is simply the 
+    Latin stella [in Welsh], but being an uncommon word it is explained 
+    in the Welsh Prayer Book by the alternative title Seren Wyl, "Star 
+    Festival". The name Festum Stella was peculiar to the Celtic Church.
+  author: Rev. John Fisher
+  source: The Welsh Calendar, 1895
+  tags:
+    - Welsh
+    - Wales
+    - epiphany
+- text: |
+    On the day after Twelfth Day, i East Cornwall, all Christmas greenery 
+    comes down. Beware, however, of burning it, for this would be unlucky.
+  author: T. Quilled Couch
+  source: The Western Antiquary, 1883
+  tags:
+    - Cornish
+    - Cornwall
+    - TwelfthDay
+    - twelfthtide
+- text: |
+    On Twelve Eve in Christmas, they used to set up high as they can a sieve 
+    of oats, and in it a dozen candles set round, and in the center one larger, 
+    all lighted. This in memory of our savior and His Apostles, lights of the world.
+  author: Sir Henry Piers
+  source: Descriptions of the County of West Meath, 1682
+  tags:
+    - Irish
+    - Ireland
+    - TwelfthDay
+    - twelfthtide
+- text: |
+    In the west of Ireland on the eve of Twelfth Night the "Christmas Loaf" was 
+    banged against the doors an windows of the house to warn away famine.
+  author: Unknown
+  source: Journal of the Royal Society of Antiquaries of Ireland, 1853
+  tags:
+    - 
+- text: |
+    To eat millet and herring on New Year's Day ensures easy circumstances for the year.
+  author: Unknown
+  source: Manx Saying
+  tags:
+    - Manx
+    - isleOfMann
+    - newYearsDay
+    - newYears
+- text: |
+    You shouldn't pay your debts on Handsel Day or you'll be paying them all year round.
+  author: Unknown
+  source: Wicklow Saying
+  tags:
+    - Ireland
+    - Irish
+    - handselDay
+- text: |
+    If a man vomit excessively, let him immerse his testicles in vinegar. If will cure him.
+  author: Meddygon Myddfai
+  source: Welsh, 13th century
+  tags:
+    - Welsh
+    - folkMedicine
+- text: |
+    Concerning the treatment of Hiccup: which is treated both generally and specially. Generally 
+    as by sneezing, by prolonged sleep, by holding the breath; or by friction of the extremities 
+    or by tales of horror.
+  author: Unknown
+  source: Irish Medical Tract, 15th century Harley MS 546
+  tags:
+    - Irish
+- text: |
+    So fond were the ancient Irish of colour tha they dyed horses and pet animals to suite their 
+    taste. White horses with red ears, their long tails dyed purple, seem to have been favorites, 
+    especially with royalty. Red Conall's horses were white with crimson manes and tails.
+  author: S.H. O'Grady
+  source: Silva Gadelica, 1892
+  tags:
+    - Irish
+- text: |
+    An old custom used to prevail on St Paul's Pitcher day, as St Paul's Eve was called in Cornwall. 
+    The tine miners would leave their work, set up a pitcher full of water, pelt it with stones until 
+    it was broken and then go to and inn, ... refill a fresh pitcher with ale ... in revelry.
+    As late as the year 1859, the boys of Bodmin used to parade the town with pitchers, which they 
+    threw into ever open doorway, shouting the words "Paul's Eve and here's a heave".
+  author: Unknown
+  source: Daily Chronicle, 1906
+  tags:
+    - Cornish
+    - Cornwall
+    - stPaulsEve
+    - pitcherDay
+- text: |
+    The Cailleach Beara is the third celebrated hag of Celtic folklore, found in Scotland, throughout Ireland, 
+    especially the Beara peninsula, and in the Isle of Man; she if of huge stature, the maker of mountains, 
+    island, cairns, keeper of bitter weather.
+  author: W.G. Wood-Martin
+  source: Traces of the Elder Faiths of Ireland, 1902
+  tags:
+    - Irish
+    - Cailleach
+    - witch
+    - druid
+    - pagan
+- text: |
+    It is narrated that on one occasion she, [the Cailleach], turned Fionn MacCool into a decrepit old man, 
+    but his soldiers threatened to dig through Slieve Gullian in Armagh and drive her out of a cave in which 
+    she had her residence unless she restored Fionn to his form and symmetry.
+  author: W.G. Wood-Martin
+  source: Traces of the Elder Faiths of Ireland, 1902
+  tags:
+    - Irish
+    - Cailleach
+    - witch
+    - druid
+    - pagan
+- text: |
+    Rowan was protective rather than generative: it did not bring blessing so 
+    much as ward off evil - from whence it was thought to be the abode of a good spirit.
+  author: J. M. McPherson
+  source: Primitive Beliefs in the North-East of Scotland, 1929
+  tags:
+    - Scottish
+    - Scotland
+    - fire
+    - witch
+    - druid
+    - pagan
+- text: |
+    If Candlemas is fair and clear, There'll be two winters in the year.'
+  author: Unknown
+  source: Scottish Saying
+  date: 02-02
+  tags:
+    - Scottish
+- text: |
+    To see a hedgehog on this [Imbolc] day is a heralds of good ploughing weather.
+  author: Unknown
+  source: Irish Saying
+  date: 02-01
+  tags:
+    - Irish
+- text: |
+    A simple remedy for the relief of pan in the neck: take the roots of celandines 
+    and pound them together with fennel, garlic, wine or vinegar and a little 
+    butter. apply this as a poultice to the nap and the pain and swelling will 
+    disperse.
+  author: Meddygon Myddfai
+  source: Welsh, 13th century
+  tags:
+    - Welsh
+    - folkMedicine
+- text: |
+    Put the [rosemary] flowers or leaves under your head in bed, and you will not 
+    be troubled with disagreeable dreams, or oppressed with anxiety of mind.
+  author: Meddygon Myddfai
+  source: Welsh, 13th century
+  tags:
+    - Welsh
+    - folkMedicine
+- text: |
+    Macha's crop is the heads of those slaughtered.
+  author: Whitley Stokes
+  source: Yellow Book of Lecan
+  tags:
+    - Irish
+- text: |
+    If, by accident, you find the back tooth of a horse, carry it about with 
+    you as long as you live, and you shall never want for money; but it must 
+    be found by chance.
+  author: Lady Wilde
+  source: Superstitions and Cures, 1888
+  tags:
+    - Irish
+- text: |
+    [In Wales] both sexes take great care of their teeth, more than I have seen 
+    in any country. They are constantly cleaning them with green hazel shoots 
+    and then rubbing them with woollen cloths until they shine like ivory.
+  author: Gerald of Wales
+  source: Descriptins of Wales, 12th century
+  tags:
+    - Welsh
+- text: |
+    A man cannot thrive except is wife let him.
+  author: Fergusson
+  source: Scottish Proverbs, 1641
+  tags:
+    - Scottish
+- text: |
+    New boats are made each year, woven of withes on a frame of hazel rods cut in the autumn 
+    after the leaves have fallen and allowed to season over winter, and the whole covered with 
+    an ox-hide. Such boats are light and easy to manoeuver.
+  author: J. Hornell
+  source: British Coracles and Irish Curraghs, 1938
+  tags:
+    - British
+    - Welsh
+    - Irish
+- text: |
+    The crop will be Oats when sown in February, it will be straw and 
+    oats when sown in March, it will be wisps and chaff-bags when sown in April.
+  author: Unknown
+  source: Irish Saying
+  tags:
+    - Irish
+- text: |
+    From the east comes the crimson wind, from the south the white, 
+    from the north the black, and from the west the grey.
+  author: Unknown
+  source: Seanchas Mór
+  tags:
+    - Irish
+- text: |
+    South winds, heat and plenty cling 
+    West winds fish and milk will bring 
+    North winds bringeth gales and snow
+    East winds mean more fruit will grow.
+  author: T. D. MacDonald
+  source: Gaelic Proverbs and Proverbial Sayings 1926
+  tags:
+    - Scottish
+- text: |
+    A February clam, or a Dog Days' wind 
+    Never will be lasting
+  author: Unknown
+  source: Irish Saying
+  tags:
+    - Irish
+- text: |
+    It is still customary on certain estates to make annual 
+    payments to the landlord called Ynyd, or Gieir Ynyd, 
+    usually consisting of one hen and twenty eggs. In one 
+    case brought before the Commission the payment was of 
+    two fat geese and forty eggs.
+  author: Unknown
+  source: Minutes of Evidence, Welsh Land Commission, 1895
+  tags:
+    - Welsh
+- text: |
+    In Uist the dandelion is called the bearnán Bride, the 
+    little notched of Bride; in Ireland the same name, 
+    [bearnán Bríghte], is given to the juniper. The nipplewort, 
+    with its yellow serrated flower appearing in late 
+    summer, is called bride's leaf.
+  author: Sarah Costley
+  source: A Celtic Boo of Days, 1998
+  date: 02-01
+  tags:
+    - Scottish
+    - Irish
+    - witchcraft
+    - healing
+    - saining
+- text: |
+    Women made up a bed, perhaps with a sheaf of corn dressed as 
+    a woman in it, an that Bride was formally invoked and 
+    welcomed. On that day the fishermen of Barra used to 
+    cast lots for their fishing grounds.
+  author: M. F. Shaw
+  source: Folksongs and Folklore of South Uist, 1955
+  date: 01-31
+  tags:
+    - Scottish
+    - Imbolc
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: |
+    .
+  author: .
+  source: .
+  tags:
+    - 
+- text: "The three rivers of Ireland: the Shannon, the Boyne, the Bann."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: |
+    The three plains of Ireland: the plain of Meath, Moylinny, Moy-Liffey*.
+
+    * i.e. the plain of Kildare.
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'The three dark places of Ireland: the cave of Knowth, the cave of Slaney, the cave of Ferns.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'The three wells of Ireland: the Well of the Desi, the Well of Uarbel,* the Well of Uaran Garaid.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three wonders concerning the Táin Bó Cúailgne: the the 'cuilmen' came to Ireland in its stead; the dead relating it to the living, viz. Fergus mac Róig reciting it to Ninníne the poet in the time of Cormac mac Fáeláin; one year's protection to him to whom it is recited."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three rejoicings followed by sorrow: a wooer's, a thief's, a tale-bearer's."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'Three excellent things for a householder: proposing to a good woman, serving a good chief, exchanging for good land.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'Three hands that are best in the world: the hand of a good carpenter, the hand of a skilled woman, the hand of a good smith.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'Three things which justice demands: judgment, measure, conscience.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'Three things which judgment demands: wisdom, penetration, knowledge.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'Three things for which an enemy is loved: wealth, beauty, distinction.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'Three things for which a friend is hated: encroaching, unfamiliarity, fecklessness.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'Three rude ones of the world: a youngster mocking an old man, a healthy person mocking an invalid, a wise man mocking a fool.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'Three fair things that hide ugliness: good manners in the ill-favoured, skill in a serf, wisdom in the misshapen.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'Three ugly things that hide fairness: a sweet-lowing cow without milk, a fine horse without speed, a fine person without substance.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'Three sparks that kindle love: a face, demeanor, speech.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: 'Three ungentlemanly things: interrupting stories, a mischievous game, jesting so as to raise a blush.'
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three fewnesses that are better than plenty: a fewness of fine words, a fewness of cows in grass, a fewness of friends around ale."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three laughing-stocks of the world: an angry man, a jealous man, a stinge."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three ruins of a tribe: a lying chief, a false judge, a stubborn priest."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three preparations of a good man's house: ale, a bath, a large fire."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three preparations of a bad man's house: strife before you, complaining to you, his hound taking hold of you."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three shouts of a good warrior's house: the shout of distribution, the shout of sitting down, the shout of rising up."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three props of hastiness: pledging oneself, contending, wrangling."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three ungentlemanly boasts: I am on your track, I have trampled you, I have wet you with my dress."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three silences that are better than speech: silence during instruction, silence during music, silence during preaching."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three welcomes of an ale-house: plenty and kindliness and art."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three prohibitions of food: to eat it without giving thanks, to eat it before its proper time, to eat it after a guest."
+  author: Unknown
+  source: Trecheng Breth Féne - A Triad of Judgments of the Irish
+  tags:
+    - IrishTriads
+    - wisdomTriads
+    - wisdom
+
+- text: "Three tribal thrones of the Island of Prydain. Arthur the Chief Lord at Menevia, and David the chief bishop, and Maelgwyn Gwyned the chief elder. Arthur the chief lord at Kelliwic in Cornwall, and Bishop Betwini the chief bishop, and Caradawg Vreichvras the chief elder. Arthur the chief lord in Penrionyd in the north, and Cyndeyrn Garthwys the cheif bishop, and Gurthmwl Guledic the chief elder."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three generous ones of the Island of Prydain. Nudd Hael, son of Senyllt; Mordaf Hael, son of Servan; Rhydderch Hael, son of Tutwal Tudelyt."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three fair lords of the Island of Prydain. Run son of Maelgwyn; Owen son of Urien; Ruawn Pefyr son of Deorath Guledig."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three naturalists of the Island of Prydain. Gwalchmei son of Gwyar; and Llachau son of Arthur; and Rhiwallawn Gwallt Banadlen."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three pillars of battle of the Island of Prydain. Dunawd son of Pabo pillar of Britain; and Gwallawc son of Lleenawc; and Cynfelyn Drwsgl."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three bulls of battle of the Island of Prydain. Kynvarch Cat Caduc son of Kynnwyt Kynwytyon; and Gwenddoleu son of Coidyaw; and Uryen son of Kynvarch."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three bull-princes of the Island of Prydain. Elmwr son of Cadeir; and Cynhafal son of Argat; and Afaon son of Taliessin. Three sons of bards were these."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three Humble Princes of the Island of Prydain. Llywarch Hen son of Elidyr Lydanwyn; and Manawydan son of Llyr Lledyeith; and Gwgawn Gwrawn son of Peredur son of Eliffer Gosgordvaur."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three princes of the Court of Arthur. Goronwy son of Echell Fordwyten; and Cadreith son of Porthfaurgaddu; and Fleidur Fflam."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three princes of Deira and Bernicia. Gall son of Desgyfedawdt and Ysgafnell son of Disgyfedawt; and Diffydell son of Disgyfedawt. Three sons of bards were these three."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three ruddy-speared bards of the Island of Prydain. Tristvardd bard of Urien; and Dygynelw bard of Owen; and Mainferdic, bard of Cadwallawn, son of Catfan; and they were sons of Morgant."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three supreme servants of the Island of Prydain. Caradawc son of Bran; and Caurdaf son of Caradawc; and Owen son of Maxen Guledic."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three fleet owners of the Island of Prydain. Gereint son of Erbin; and Gwenwywnwyn son of Naf; and March son of Meirchiaun."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three strong-crutched ones of the Island of Prydain. Rineri son of Tangwn; and Tinwaed faglaw; and Pryder son of Dolor of Deira and Bernicia."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three fettered ones of the Island of Prydain. Cadwaladyr the blessed; and Run son of Maelgwyn; and Rhiwallawn wallt Banadlen."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three cavaliers of battle of the Island of Prydain. Caradawg freichfras; Menwaed of Arllechwedd; and Llyr Lluydauc."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three hostile ovates of the Island of Prydain. Greidiawl Galovyd, son of Enfael Adran; and Gweyr of great manliness; and Trystan son of Tallwch."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three red-spotted ones of the Island of Prydain. Arthur; and Run son of Beli; and Morgant Mwynfawr."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three front leaders of battle of the Island of Prydain. Trystan son of Tallwch; and Huil son of Caw; and Cei son of Cynyr Cynfarfawc and one person was supreme over these three: Bedwyr son of Pedrawt was that one."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three heroes of the Island of Prydain. The three sons of Hayarnwed the treacherous: Grudnei and Henpen and Edenawc."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three arrogant ones of the Island of Prydain. Sawyl penuchel; and Pasgen son of Uryen; and Run son of Einiaun."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three obstructers of slaughter of the Island of Prydain. Gilbert son of Catgyffro; and Morfran son of Tegid; and Gwgun of the ruddy sword."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three powerful swineherds of the Islad of Prydain. Trystan son of Tallwch, who kept the swine of March, son of Meirchiawn, while the swineherd went on a message to Essyllt to desire a meeting with her, and Arthur desired one pig by deceit or by theft, and could not get it; and Pryderi son of Pwyll, who kept the swine of Pendaran Dyfed in Glencuwch in Emlyn; And Coll son of Collfrewy, who kept the ancient sow of Dallweir Dalben, who went burrowing as far as Penryn Awstin in Cornwall, and there going to the sea, landed at Abertorogi in Gwent Iscoed, and Coll son of Collfrewy having his hand on her bristles, wherever she went on the sea or on the land, and at Maes Gwenith in Gwent she dropped wheat and bees, and from henceforth there is the best wheat there, and from thence she went to Lonwen in Penbro, and there she dropped barley and bees, and from thence there is the best barley in Lonwen, and from thence she proceeded to the Riw Cyferthwch in Eryri, and there she dropped a wolf-cub and an eagle, and Coll son of Collfreuy gave the eagle to Brynach Gwyddel of the north, and the wolf he gave to Menwaed fo Arllechwedd, and these are the wolf of Menwaed and the eagle of Brynach, and thence going to Maendu in Llanfare, in Arvon, and there she dropped a kitten, and Coll son of Collfrewy threw the kitten in the Menai, and she became afterwards the Paluc cat."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three chief-gleaming ones of the Island of Prydain. Coll son of Collfrewy; and Meniw son of Teirgwaed; and Drych son of Kiwdar."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three primary illusions of the Island of Prydain. The illusion of Math son of Mathonwy; and the illusion of Uthyr Pendragon; and the illusion of Gwydelen Gor."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three loyal households of the Island of Prydain. The household of Catwallaun son of Cadfan, who were seven years in Ywerdon with him, and in that time demanded no pay nor compensation from him; and the household of Gafran son of Aedan, who went to sea with their lord; and the third the household of Gwendoleu son of Ceidyaw at Arderyd, who maintained the contest forty-six days after their lord was slain. The number of the households each one of their warriors one hundred men and a score."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three disloyal households of the Island of Prydain. The household of Goronw Pebyr of Penllyn who refused to stand in place of their lord to recieve the poisoned darts from Lew Law Gyffes in Lech Goronwy in Blaen Cynfael; and the household of Gwrgi and Peredur, who deserted their lords at Caer Greu, when there was appointment for battle next morning against Eda Glinmaur, and they were both slain; and the third, the household of Alan Fyrgan, who returned back by stealth from their lord, on the road at night with his servants at Camlan, and there he was slain."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three pass retinues of the Island of Prydain. The retinue of Mynydawg of Eidyn; the retinue of Melyn son of Cynvelyn; and the retinue of Dryan son of Nudd."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three warriors who made the three good assassinations of the Island of Prydain. Gall son of Dysgyfedawt, who slew the two birds of Gwendoleu, who had a yoke of gold about them, and devoured two bodies of the Cymry at their dinner and two at their supper; and Ysgafnell son of Dysgyfedawt, who slew Edelfled king of Lloegyr; and Diffedel son of Dysgyfedawt, who slew Gwrgi Garwlwyt, and this Gwrgi a male and female of the Cymry, and two on Saturday that he might not kill on Sunday."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three atrocious assassinations of the Island of Prydain. Eidyn son of Einygan, who slew Aneiryn Gwawdrud, the supreme of bards; and Llawgat Trumbargawt, who slew Afaon son of Taliessin; and Llovan Llawdino, who slew Urien son of Kynvarch."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three atrocious axe-strokes of the island of Prydain. The axe-stroke of Eidyn on the Head of Aneiryn; and the axe-stroke on the head of Godlan the bard; and the axe-stroke on the head of Iago son of Beli."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three oppressions came to this Island, and did not go out of it. The nation of the Coranyeit, who came in the time of Llud son of Beli, and did not go out of it; the Oppression of the Gwyddyl Fichti, and they did not again go out of it. The third, the oppression was the Saxons, and they did not again go out of it."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+- text: "Three closures and three disclosures of the Island of Prydain. The blessed head of Bran son of Llyr, which was buried in the Gwynfryn in London, and while the head remained in that state, no invasion would ever come to this island. The second, the bones of Gwerthefyr the blessed, which are buried in the principle ports of this island; and the third, the dragons which Llud son of Beli buried in Dinas Emreis in Eryri."
+  author: Unknown
+  source: Welsh Triads - Peniarth MS 54
+  tags:
+    - WelshTriads
+    - wisdomTriads
+    - wisdom
+
+
+
+
+
+
+
+# =======================
+# - text: 
+#   author: 
+#   source: 
+#   tags:
+#     - 
