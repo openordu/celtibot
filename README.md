@@ -12,7 +12,7 @@ Celtibot is a mastodon bot that runs on the [Openord server](https://mastodon.ce
 
 ## Dates
 Celtibot prioritizes information relevant to today. If no today specific objects are found in the `data` directory, it will switch to
-a random selection mode using python's `random.shuffle()` method.
+a random selection mode using python's `random.shuffle()` method, selecting from the data which does not have a `date` or `day` key.
 
 ```quotes.yaml|yaml
 # Today relevant Quotes in numerals
