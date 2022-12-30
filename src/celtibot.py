@@ -265,10 +265,12 @@ def quoteToots(toots):
     quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
     todayQuotes = getQuoteObjectsForToday(quoteObjectsFromYamlFile)
     if not len(todayQuotes):
-        random.shuffle(quoteObjectsFromYamlFile)   
-        quote = formatQuoteToot(quoteObjectsFromYamlFile[0])
-        toots[len(toots)] = quote
-        return toots
+        random.shuffle(quoteObjectsFromYamlFile)
+        for quote in quoteObjectsFromYamlFile:
+            if 'date' in quote.keys():
+                continue
+            toots[len(toots)] = quote
+            return toots
 
     for quote in todayQuotes:
         quote = formatQuoteToot(quote)
