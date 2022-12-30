@@ -6,8 +6,8 @@ import random
 
 import argparse
 
-allModes = ['holiday', 'quote', 'information', 'follow']
-tootModes =  ['holiday', 'information', 'quote']
+allModes = ['holiday', 'quote', 'topic', 'follow']
+tootModes =  ['holiday', 'topic', 'quote']
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dryrun", help="on/off/True/False",default="0",metavar='DRYRUN')
@@ -19,6 +19,9 @@ current_year = int(datetime.datetime.now().strftime('%Y'))
 day = int(str(args.date).split('-')[1])
 month = int(str(args.date).split('-')[0])
 doy = int(datetime.date(current_year, month, day).strftime('%j'))-1
+
+def usage():
+  print("Run with -h for usage")
 
 def switchHandler(flick):
     if flick in ['no','on', '1', 1, 'true', 'True', True]: return 1
@@ -136,11 +139,15 @@ def isDateToday(dateString):
         return True
     return False
 
+def dateStringFromTextOrWords(item):
+    dateString = item['date'] if 'date' in item.keys() else item['day']
+    return dateString
+
 def getHolidayObjectsForToday(yamlListOfHolidays):
     holidays = list()
     for item in yamlListOfHolidays['holidays']:
        
-        dateString = item['date'] if 'date' in item.keys() else item['day']
+        dateString = dateStringFromTextOrWords(item)
 
         if isDateToday(dateString):
             holidays.append(item)
@@ -148,13 +155,23 @@ def getHolidayObjectsForToday(yamlListOfHolidays):
 
 def getQuoteObjectsForToday(yamlListOfQuotes):
     quotes = list()
-    for item in [x for x in yamlListOfQuotes if 'date' in x.keys()]:
-        dateString = item['date']
+    for item in [x for x in yamlListOfQuotes if set(x.keys()).intersection(['day','date'])]:
+        
+        dateString = dateStringFromTextOrWords(item)
 
         if isDateToday(dateString):
             quotes.append(item)
     return quotes
 
+def getInfoObjectsForToday(yamlListOfTopics):
+    topics = list()
+    for item in [x for x in yamlListOfTopics if set(x.keys()).intersection(['day','date'])]:
+        
+        dateString = dateStringFromTextOrWords(item)
+
+        if isDateToday(dateString):
+            topics.append(item)
+    return topics
 
 def calcEasterDate(year):
     """returns the date of Easter Sunday of the given yyyy year"""
@@ -240,6 +257,21 @@ def holidayToots(toots):
         toots[i] = authorHolidayToots(holiday)
     return toots
 
+def formatTopicToot(topic):
+    toot = "`%s' - %s\n\n%s\n" % (topic['name'], topic['summary'], topic['wiki'])
+    hashTags = set(topic['tags']) if 'tags' in topic.keys() else []
+
+    toot += "\n#celtic #celtibot #CelticTopics "
+    if len(hashTags): toot += "\n"
+    while len(hashTags):
+        tag = list(hashTags)[0]
+        toot += "#%s " % hashTags.pop()
+    toot += "\nnote: if inappropriate or wrong pls flag"
+    # if len(info) > 500: print("topic %s exceeds length: %s" % (str((doy - 1)),info) )
+    # print(str(len(info))+':'+str(doy))
+    return toot
+    
+
 def formatQuoteToot(quote):
     toot = ''
     try:
@@ -251,8 +283,8 @@ def formatQuoteToot(quote):
             tag = list(hashTags)[0]
             toot += "#%s " % hashTags.pop()
         toot += "#celtic #celtibot #CelticQuotes"
-    except TypeError:
-        # No quotes for today
+    except TypeError as e:
+        pprint(e)
         pass
     except IndexError:
         print("no quote for day %s at index %s" % (doy, doy - 1))
@@ -273,8 +305,8 @@ def quoteToots(toots):
             return toots
 
     for quote in todayQuotes:
-        quote = formatQuoteToot(quote)
-        toots[len(toots)] = quote
+        toot = formatQuoteToot(quote)
+        toots[len(toots)] = toot
     return toots
 
 def followToots(toots):
@@ -295,27 +327,26 @@ def followToots(toots):
         if follower['id'] not in following_ids:
             mastodon.account_follow(id=follower['id'])
 
-def informationToots(toots):
+def topicToots(toots):
     infoObjectsFromYamlFile = yamlRead('%s/../data/info/topics.yaml' % str(scriptDirectory()))
-    random.shuffle(infoObjectsFromYamlFile)
-    try:
-        todaysinfo = infoObjectsFromYamlFile[0]
-        info = "`%s' - %s\n\n%s\n" % (todaysinfo['name'], todaysinfo['summary'], todaysinfo['wiki'])
-        hashTags = set(todaysinfo['tags']) if 'tags' in todaysinfo.keys() else []
-
-        info += "\n#celtic #celtibot #CelticTopics "
-        if len(hashTags): info += "\n"
-        while len(hashTags):
-            tag = list(hashTags)[0]
-            info += "#%s " % hashTags.pop()
-        info += "\nnote: if inappropriate or wrong pls flag"
-        # if len(info) > 500: print("topic %s exceeds length: %s" % (str((doy - 1)),info) )
-        # print(str(len(info))+':'+str(doy))
-        toots[len(toots)] = info
-    except TypeError as e:
-        # No quotes for today
-        print(e)
-        pass
+    todayTopics = getInfoObjectsForToday(infoObjectsFromYamlFile)
+    if not len(todayTopics):
+        random.shuffle(infoObjectsFromYamlFile)
+        for topic in infoObjectsFromYamlFile:
+            if set(['date','day']).intersection(topic.keys()):
+                continue
+            toots[len(toots)] = formatTopicToot(topic)
+            return toots
+    for topic in todayTopics:
+        toot = formatTopicToot(topic)
+        toots[len(toots)] = toot
+        
+    # try:
+    #     todaysinfo = infoObjectsFromYamlFile[0]
+    # except TypeError as e:
+    #     # No quotes for today
+    #     print(e)
+    #     pass
     return toots
 
 def makeToots(toots):
@@ -326,7 +357,11 @@ def init():
     import os, datetime
     toots = dict()
 
-    toots = eval("%sToots(toots)" % args.mode) if args.mode in allModes else "--mode must be one of holiday, quote, or information"
+    if args.mode in allModes:
+        toots = eval("%sToots(toots)" % args.mode)
+    else:
+        usage()
+        sys.exit(5)
     if args.mode not in tootModes: sys.exit()
     if switchHandler(args.dryrun) == 1: print(toots)
     else: makeToots(toots)
