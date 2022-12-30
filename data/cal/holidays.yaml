@@ -21,7 +21,6 @@ holidays:
     welshname: "Galan Gaeaf"
     bretonname: "Kalan Goañv"
     date: 11-01
-    time: 19:30
     tags:
       - pagan
       - witch
@@ -39,7 +38,6 @@ holidays:
   - name: "Martinmas Eve"
     irishname: "Sean Samhain"
     date: 11-10
-    time: 19:30
     tags:
       - catholic
   - name: "Martinmas"
@@ -82,7 +80,6 @@ holidays:
     welshname: "Canol Gaeaf"
     bretonname: "Dez Gouel Nedeleg"
     date: 12-20
-    time: 19:30
     tags:
       - wintersolstice
       - solstice
@@ -227,7 +224,6 @@ holidays:
     bretonname: "Gouel ar Gouloú"
     datekind: 
     date: 01-31
-    time: 19:30
     reconstructed: true
     tags:
       - pagan
@@ -330,7 +326,6 @@ holidays:
     welshname: "Cyhydnos y Gwanwyn"
     bretonname: "Deiz Benyn Hen"
     date: 03-25
-    time: 19:30
     reconstructed: true
     what: "The Cailleach loses to the power of the Spring goddess."
     tags:
@@ -393,7 +388,6 @@ holidays:
     welshname: "Galan Haf"
     bretonname: "Kalan-hañv"
     date: 04-30
-    time: 19:30
     tags:
       - may
       - mayday
@@ -440,7 +434,6 @@ holidays:
     welshname: "Canol Haf"
     bretonname: "Deiz Gouel Yann"
     date: 06-23
-    time: 19:30
     tags:
       - solstice
       - summersolstice
@@ -490,7 +483,6 @@ holidays:
     welshname: "Gŵyl Awst"
     bretonname: "Kalan Here"
     date: 08-01
-    time: 19:30
     tags:
       - pagan
       - witch
@@ -547,7 +539,6 @@ holidays:
     welshname: "Cyhydnos yr hydref"
     bretonname: "Dilost Hañv"
     date: 09-20
-    time: 19:30
     tags:
       - gooseHarvest
       - autumnalEquinox
