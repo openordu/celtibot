@@ -31,6 +31,16 @@ If `epoch` is a hyphenated numeric value like `01-01`, this value represents 'mo
 #### Usage
 You can use the reverse query language by placing it under the `day` attribute of an object(see the examples below). Since our forward query is always now(), Celtibot computes the query languages of each object for that year and compares it to the now() value. If they're the same, it selects that object as relevant to now. If this seems complicated, it is.
 
+You can select for pancake tuesday's date each year by the following attribute:
+
+`day: 47 - easter`
+
+And you can select for the third sunday of January by the following attribute:
+
+`day: third sunday after 01-01`
+
+#### Year is always current year, there is no way specify next or last year relevancy.
+
 ## Quotes
 ```quotes.yaml|yaml
 # Today relevant Quotes in numerals
