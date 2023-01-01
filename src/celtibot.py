@@ -3,6 +3,8 @@ from pprint import pprint
 import sys, datetime
 from os import environ as env
 import random
+import math
+import textwrap
 
 import argparse
 
@@ -207,15 +209,6 @@ def matchDateFormat(dateString):
         return True
     return False
 
-def tooter(toot):
-    from mastodon import Mastodon
-    mastodon = Mastodon(
-        access_token = env['ACCESS_TOKEN'],
-        api_base_url = env['SERVER']
-    )
-    mastodon.toot(toot)
-    #pprint(toot)
-
 def formatHolidayToots(holiday):
     holidayName     = holiday['name']
     blessName       = holiday['blessname'] if 'blessname' in holiday.keys() else holidayName
@@ -243,68 +236,50 @@ def formatHolidayToots(holiday):
     while len(hashTags):
         tag = list(hashTags)[0]
         string += "#%s " % hashTags.pop()
-    string += "#celtic #celtibot #CelticCalendar"
+    string += "#celtic #CelticCalendar"
     if reconstructed == True:
             string += "\n\n\nnote: contains some reconstructed elements"
     return string
 
-def holidayToots(toots):
-    # holidays
-    holidayObjectsFromYamlFile = yamlRead('%s/../data/cal/holidays.yaml' % str(scriptDirectory()))
-    relevantHolidaysFromFile = getHolidayObjectsForToday(holidayObjectsFromYamlFile)
-    for i in range(len(relevantHolidaysFromFile)):
-        holiday = relevantHolidaysFromFile[i]
-        toots[i] = formatHolidayToots(holiday)
-    return toots
-
 def formatTopicToot(topic):
+    tags = ''
+    toots = []
+    breakPoint = 400
+
     toot = "`%s' - %s\n\n%s\n" % (topic['name'], topic['summary'], topic['link'])
+    toots = textwrap.wrap(toot, breakPoint, break_long_words=False)
+
     hashTags = set(topic['tags']) if 'tags' in topic.keys() else []
 
-    toot += "\n#celtic #celtibot #CelticTopics "
-    if len(hashTags): toot += "\n"
+    tags += "\n#celtic"
     while len(hashTags):
         tag = list(hashTags)[0]
-        toot += "#%s " % hashTags.pop()
-    toot += "\nnote: edit this https://github.com/openordu/celtibot/edit/main/data/info/topics.yaml"
-    return toot
-    
+        tags += "\n#%s " % hashTags.pop()
+
+    for toot in toots:
+        toots[toots.index(toot)] = "%s%s%s" % (toot, '...' if (toots.index(toot) != len(toots)-1) else '',tags)
+
+    if len(toots): toots[len(toots)-1] = "%s %s" % (toots[len(toots)-1], "\nnote: edit this info: https://github.com/openordu/celtibot/edit/main/data/info/topics.yaml")
+    return toots
 
 def formatQuoteToot(quote):
-    toot = ''
-    try:
-        toot = "`%s' - %s, %s " % (quote['text'], quote['author'], quote['source'])
-        hashTags = set(quote['tags']) if 'tags' in quote.keys() else []
+    toots = []
+    tags = ''
+    breakPoint = 400
+    toot = "`%s' - %s, %s " % (quote['text'], quote['author'], quote['source'])
+    toots = textwrap.wrap(toot, breakPoint, break_long_words=False)
 
-        if len(hashTags): toot += "\n"
-        while len(hashTags):
-            tag = list(hashTags)[0]
-            toot += "#%s " % hashTags.pop()
-        toot += "#celtic #celtibot #CelticQuotes"
-    except TypeError as e:
-        pprint(e)
-        pass
-    except IndexError:
-        print("no quote for day %s at index %s" % (doy, doy - 1))
-        # No quotes for today
-        pass
-    return toot
+    
+    hashTags = set(quote['tags']) if 'tags' in quote.keys() else []
 
-def quoteToots(toots):
-    # quotes
-    quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
-    todayQuotes = getQuoteObjectsForToday(quoteObjectsFromYamlFile)
-    if not len(todayQuotes):
-        random.shuffle(quoteObjectsFromYamlFile)
-        for quote in quoteObjectsFromYamlFile:
-            if 'date' in quote.keys():
-                continue
-            toots[len(toots)] = quote
-            return toots
+    while len(hashTags):
+        tag = list(hashTags)[0]
+        tags += "\n#%s " % hashTags.pop()
+    tags += "\n#celtic"
 
-    for quote in todayQuotes:
-        toot = formatQuoteToot(quote)
-        toots[len(toots)] = toot
+    for toot in toots:
+        toots[toots.index(toot)] = "%s%s%s" % (toot, '...' if (toots.index(toot) != len(toots)-1) else '', tags)
+    
     return toots
 
 def followToots(toots):
@@ -325,6 +300,22 @@ def followToots(toots):
         if follower['id'] not in following_ids:
             mastodon.account_follow(id=follower['id'])
 
+def quoteToots(toots):
+    # quotes
+    quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
+    todayQuotes = getQuoteObjectsForToday(quoteObjectsFromYamlFile)
+    if not len(todayQuotes):
+        random.shuffle(quoteObjectsFromYamlFile)
+        for quote in quoteObjectsFromYamlFile:
+            if 'date' in quote.keys():
+                continue
+            toots = formatQuoteToot(quote)
+            return toots
+
+    for quote in todayQuotes:
+        toots = formatQuoteToot(quote)
+    return toots
+
 def topicToots(toots):
     infoObjectsFromYamlFile = yamlRead('%s/../data/info/topics.yaml' % str(scriptDirectory()))
     todayTopics = getInfoObjectsForToday(infoObjectsFromYamlFile)
@@ -333,16 +324,38 @@ def topicToots(toots):
         for topic in infoObjectsFromYamlFile:
             if set(['date','day']).intersection(topic.keys()):
                 continue
-            toots[len(toots)] = formatTopicToot(topic)
+            toots = formatTopicToot(topic)
             return toots
     for topic in todayTopics:
-        toot = formatTopicToot(topic)
-        toots[len(toots)] = toot
+        toots = formatTopicToot(topic)
     return toots
 
+def holidayToots(toots):
+    # holidays
+    holidayObjectsFromYamlFile = yamlRead('%s/../data/cal/holidays.yaml' % str(scriptDirectory()))
+    relevantHolidaysFromFile = getHolidayObjectsForToday(holidayObjectsFromYamlFile)
+    for i in range(len(relevantHolidaysFromFile)):
+        holiday = relevantHolidaysFromFile[i]
+        toots[i] = formatHolidayToots(holiday)
+    return toots
+
+def tooter(toot, replyid=0):
+    from mastodon import Mastodon
+    mastodon = Mastodon(
+        access_token = env['ACCESS_TOKEN'],
+        api_base_url = env['SERVER']
+    )
+    if replyid>0: return mastodon.status_post(toot, in_reply_to_id=replyid)
+    else: return mastodon.status_post(toot)
+
 def makeToots(toots):
+    if len(toots) == 1: status = tooter(toots[0])
+    else:
+        first_toot = tooter(toots[0])
     for toot in toots:
-        tooter(toots[toot])
+        if toots.index(toot) == 0:
+            continue
+        tooter(toots[toots.index(toot)], first_toot['id'])
 
 def init():
     import os, datetime
