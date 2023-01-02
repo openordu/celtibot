@@ -367,7 +367,7 @@ def makeToots(toots):
     for toot in toots:
         if toots.index(toot) == 0:
             continue
-        tooter(toots[toots.index(toot)], first_toot['id'])
+        tooter(toot, first_toot['id'])
 
 def init():
     import os, datetime
