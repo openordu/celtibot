@@ -364,8 +364,8 @@ def makeToots(toots):
     if len(toots) == 1: status = tooter(toots[0])
     else:
         first_toot = tooter(toots[0])
-    for toot in toots:
-        if toots.index(toot) == 0:
+    for k, toot in toots:
+        if k == 0:
             continue
         tooter(toot, first_toot['id'])
 
