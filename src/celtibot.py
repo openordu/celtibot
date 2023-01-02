@@ -5,7 +5,7 @@ from os import environ as env
 import random
 import math
 import textwrap
-
+import requests
 import argparse
 
 allModes = ['holiday', 'quote', 'topic', 'follow']
@@ -209,6 +209,18 @@ def matchDateFormat(dateString):
         return True
     return False
 
+def shorten_url(long_url):
+    api_url = "http://tinyurl.com/api-create.php"
+    params = { "url": long_url }
+    response = requests.get(api_url, params=params)
+    return response.text
+
+    if response.status_code == 200:
+        shortened_url = response.json()["results"][long_url]["shortUrl"]
+        return shortened_url
+    else:
+        return None
+
 def formatHolidayToots(holiday):
     holidayName     = holiday['name']
     blessName       = holiday['blessname'] if 'blessname' in holiday.keys() else holidayName
@@ -246,7 +258,7 @@ def formatTopicToot(topic):
     toots = []
     breakPoint = 400
 
-    toot = "`%s' - %s\n\n%s\n" % (topic['name'], topic['summary'], topic['link'])
+    toot = "`%s' - %s\n\n%s\n" % (topic['name'], topic['summary'], shorten_url(topic['link']))
     toots = textwrap.wrap(toot, breakPoint, break_long_words=False)
 
     hashTags = set(topic['tags']) if 'tags' in topic.keys() else []
@@ -259,7 +271,7 @@ def formatTopicToot(topic):
     for toot in toots:
         toots[toots.index(toot)] = "%s%s%s" % (toot, '...' if (toots.index(toot) != len(toots)-1) else '',tags)
 
-    if len(toots): toots[len(toots)-1] = "%s %s" % (toots[len(toots)-1], "\nnote: edit this info: https://github.com/openordu/celtibot/edit/main/data/info/topics.yaml")
+    if len(toots): toots[len(toots)-1] = "%s %s" % (toots[len(toots)-1], "\nnote: edit this info: https://dub.sh/FcTpgFK")
     return toots
 
 def formatQuoteToot(quote):
