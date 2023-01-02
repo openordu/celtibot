@@ -11,5 +11,6 @@ ADD . .
 RUN /usr/bin/fix-permissions /tmp/bot
 USER 1001
 WORKDIR /tmp/bot
-RUN /usr/bin/pip3 install --user -r requirements.txt
+RUN pip3 install -r requirements.txt;/usr/bin/pip3 install --user -r requirements.txt
+RUN /tmp/bot/test.sh
 ENTRYPOINT /usr/bin/python3 /tmp/bot/src/celtibot.py --mode ${MODE} --dryrun ${DRYRUN}

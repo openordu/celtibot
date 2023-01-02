@@ -318,9 +318,7 @@ def quoteToots(toots):
     todayQuotes = getQuoteObjectsForToday(quoteObjectsFromYamlFile)
     if not len(todayQuotes):
         random.shuffle(quoteObjectsFromYamlFile)
-        for quote in quoteObjectsFromYamlFile:
-            if 'date' in quote.keys():
-                continue
+        for quote in [x for x in quoteObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]:
             toots = formatQuoteToot(quote)
             return toots
 
