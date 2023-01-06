@@ -109,30 +109,46 @@
   source: Irish Saying
   tags:
     - Irish
-# - text: >
-#   
-#   author: 
-#   source: 
-#   tags:
-#     - 
-# - text: >
-#   
-#   author: 
-#   source: 
-#   tags:
-#     - 
-# - text: >
-#   
-#   author: 
-#   source: 
-#   tags:
-#     - 
-# - text: >
-#   
-#   author: 
-#   source: 
-#   tags:
-#     - 
+- text: >
+    Bran and Sceolaun, Fin Mac Cumhal's hounds were of a strong breed 
+    for Tyren, sister to Murna,the mother of Finn, had been changed 
+    into a hound by the enchantment of a woman of the Fairy Folk, who 
+    loved Tyren's husband Ullan; and the two hounds of Finn were the 
+    children of Tyren, born to her in that shape. Of all hounds in Ireland 
+    they were the best, and Finn loved them much, so that it was said that 
+    he wept but twice in his life, and once was for the death of Bran.
+  author: T. W. Rolleston
+  source: The High Deeds of Finn, 1910 
+  tags:
+    - Irish
+    - dogs
+    - hounds
+- text: >
+    Better snow than no rain-storm, when the seed is in the ground.
+  author: Edward Dwelly
+  source: The Illustrated Gaelic Dictionary
+  tags:
+    - Scottish
+- text: >
+    The mothan is one of the most prized plants in the occult science of the people as a love philtre
+  author: Alexander Carmichael
+  source: Carmina Gadelica, 1900
+  tags:
+    - Scottish
+    - witch
+    - druid
+    - herbs
+    - herbalism
+- text: >
+    This evening being May Eve I ought to have put some birch and 
+    wittan [mountain ash] over the door to help keep out the 
+    "old witch'. But I was too lazy to go out and get it. Let us 
+    hope the old witch will not come in during the night. The young 
+    witches are welcome.
+  author: Rev Francis Kilvert
+  source: Diary, 04-30-1870
+  tags:
+    - Welsh
 # - text: >
 #   
 #   author: 
@@ -707,8 +723,37 @@
     than cut down one of the ancient hawthorns sacred to the fairies.
   author: Lady Wilde
   source: Ancient Legends of Ireland, 1888
+  date: 04-29
   tags:
     - Irish
+- text: >
+    The preparations for the May Day sports and ceremonial in Dublin 
+    commenced about the middle of April. For weeks before a parcel of 
+    idle scamps devoted themselves to the task of collecting for the 
+    May, and parties, sometimes escorted by musicians, went from house 
+    to house to collect materials to adorn the May bush... Much as people 
+    venerated, at other seasons, their indigenous thorns, especially when 
+    growing on the ancient raths, they paid no respect to the sanctity 
+    of their character if marked for  the May bush.
+  author: Sir William Wilde
+  source: Irish Popular Superstitions
+  date: 04-15
+  tags:
+    - Irish
+    - Mayday
+    - Beltane
+- text: >
+    To make a capital plaster to cover burns and scalds: take the root of 
+    the white lily and boil it. Reduce it to a pulp and mix with oil and 
+    the white of egg, spreading it on lint. The oftener this is applied 
+    the better.
+  author: Meddygon Myddfai
+  source: Welsh, 13th century
+  tags:
+    - Welsh
+    - Herbs
+    - herbalsim
+    - folkMedicine
 - text: "The three rivers of Ireland: the Shannon, the Boyne, the Bann."
   author: Unknown
   source: Trecheng Breth Féne - A Triad of Judgments of the Irish
@@ -737,7 +782,7 @@
   author: Unknown
   source: Trecheng Breth Féne - A Triad of Judgments of the Irish
   tags:
-    - IrishTriads
+    - Iris*hTriads
     - wisdomTriads
     - wisdom
 - text: "Three wonders concerning the Táin Bó Cúailgne: the the 'cuilmen' came to Ireland in its stead; the dead relating it to the living, viz. Fergus mac Róig reciting it to Ninníne the poet in the time of Cormac mac Fáeláin; one year's protection to him to whom it is recited."
