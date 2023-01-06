@@ -1,5 +1,3 @@
-# TODO: label some of these as praxes(customary actions performed in a complete cultural context)
----
 - text: >
     Johannes Erigena, surnamed Scotus, a man renowned for Learning, 
     sitting at the Table in respect of his Learning with Charles the 
@@ -8,9 +6,9 @@
     "Quid interest inter Scotum et Sotum" - "Whats the difference between 
     a Scot and a Sot?" He merrily, but malapertly answered, "Mensa", "The 
     Table", as though the Emperour were the Sot and he the Scot.
-   author: William Camden
-   source: Remains concerning Britain
-   tags:
+  author: William Camden
+  source: Remains concerning Britain
+  tags:
      - Scottish
 - text: >
     From the 8th Kalends of glorious April to the 3rd Kalends of 
@@ -195,7 +193,6 @@
 #   source: 
 #   tags:
 #     - 
- 
 - text: "The best candle for man is good sense"
   author: Cynfelan
   source: Welsh by K.H. Jackson
