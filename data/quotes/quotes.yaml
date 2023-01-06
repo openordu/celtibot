@@ -1,10 +1,201 @@
 # TODO: label some of these as praxes(customary actions performed in a complete cultural context)
 ---
-# - text: 
+- text: >
+    Johannes Erigena, surnamed Scotus, a man renowned for Learning, 
+    sitting at the Table in respect of his Learning with Charles the 
+    Bauld, Emperour [sic] and King of France, behaved himself as a slovenly 
+    Scholar, nothing courtly; whereupon the Emperour asked him merrily, 
+    "Quid interest inter Scotum et Sotum" - "Whats the difference between 
+    a Scot and a Sot?" He merrily, but malapertly answered, "Mensa", "The 
+    Table", as though the Emperour were the Sot and he the Scot.
+   author: William Camden
+   source: Remains concerning Britain
+   tags:
+     - Scottish
+- text: >
+    From the 8th Kalends of glorious April to the 3rd Kalends of 
+    July, at that time, it is no great contention, it is the top 
+    of every herb that heals.
+  author: Irish
+  date: 04-08
+  source: British Library Add. MS 30512, early 16th century
+  tags:
+    - Herbalism
+    - Herbs
+- text: >
+    From the 8th Kalends of July after that to the 8th Kalends 
+    October, the stalk of every herb, a deed without prohibition, it 
+    is that which heals every distress.
+  author: Irish
+  date: 07-08
+  source: British Library Add. MS 30512, early 16th century
+  tags:
+    - Herbalism
+    - Herbs
+- text: >
+    The root of every herb, it is true, from the 8th Kalends October, 
+    Diancecht ordained it in his wisdom, to the 8th Kalends of noble 
+    April.
+  author: Irish
+  date: 10-08
+  source: British Library Add. MS 30512, early 16th century
+  tags:
+    - Herbalism
+    - Herbs
+- text: >
+    Three hundred and sixty-five herbs, that is their number, it is no great 
+    untruth, the herbs of every sickness, verses tell of it; let them all 
+    be plucked on the 8th Kalends.
+  author: Irish
+  date: 10-08
+  source: British Library Add. MS 30512, early 16th century
+  tags:
+    - Herbalism
+    - Herbs
+- text: >
+    Never tell your dreams until you have broken your [Lent] 
+    fast, and always tell them first to a woman called Mary.
+  author: Unknown
+  source: Irish Saying
+  tags:
+    - Irish
+- text: >
+    There is a remarkable thing about their hares; if they are put up by 
+    dogs, they always try, unlike other hares, to make their escape in 
+    cover, as does the fox, - in hidden country , and not in the open. 
+    They never make for the plains or rocky paths unless they are 
+    compelled to it.
+  author: Gerald of Wales
+  source: The History and Topography of Ireland, 1187
+  tags:
+    - Irish
+    - Hares
+    - NoSnakesInTheGrassInIreland
+- text: >
+    The month of April, the upland is misty,
+    the oxen are weary, the earth is bare,
+    feeble is the stag, playful the long-eared [hare];
+    usual is a guest though he be not invited;
+    everyone has many faults where he is not loved;
+    blessed is he that is faithful; 
+    usual is destruction upon the children of the wicked;
+    usual after arrogance is lasting death.
+  author: K. H. Jackson
+  source: late fifteenth century
+  tags:
+    - Welsh
+- text: >
+    Strathbogie was notorious for its practice of this 'heathenish' 
+    custom, and the Synod of Moray in April 1649, adopted a general 
+    rule to be applied to all offenders there - raisers of needfire 
+    in the Presbytery of Strathbogie were ordained to satisfy three 
+    days in sackcloth.
+  author: William Cramond
+  date: 04-02
+  source: Records from the Synod of Moray, 1906
+  tags:
+    - Scottish
+    - pagan
+    - heathen
+    - witch
+    - druid
+- text: >
+    The nobles shave their cheeks but let the moustache grow freely so that it covers the mouth.
+  author: Diodorus Siculus
+  source: Descriptions of the Celts, 1st century BCE
+  tags:
+    - Gaulish
+- text: >
+    An egg with two yolks means there will be twins in the family soon.
+  author: Unknown
+  source: Irish Saying
+  tags:
+    - Irish
+# - text: >
+#   
 #   author: 
 #   source: 
 #   tags:
 #     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+# - text: >
+#   
+#   author: 
+#   source: 
+#   tags:
+#     - 
+ 
 - text: "The best candle for man is good sense"
   author: Cynfelan
   source: Welsh by K.H. Jackson
@@ -18,6 +209,7 @@
     at the parish bounds and continue into darkness or a free fight.
   author: Sir Aeneas William Mackintosh of Mackintosh
   source: Notes, 1774-83
+  date: 01-01
   tags:
     - scottish
     - newYearsDay
@@ -222,6 +414,8 @@
   tags:
     - Welsh
     - folkMedicine
+    - herbs
+    - herbalism
 - text: >
     Put the [rosemary] flowers or leaves under your head in bed, and you will not 
     be troubled with disagreeable dreams, or oppressed with anxiety of mind.
@@ -230,6 +424,8 @@
   tags:
     - Welsh
     - folkMedicine
+    - herbs
+    - herbalism
 - text: >
     Macha's crop is the heads of those slaughtered.
   author: Whitley Stokes
@@ -249,12 +445,12 @@
     in any country. They are constantly cleaning them with green hazel shoots 
     and then rubbing them with woollen cloths until they shine like ivory.
   author: Gerald of Wales
-  source: Descriptins of Wales, 12th century
+  source: Descriptions of Wales, 12th century
   tags:
     - Welsh
 - text: >
     A man cannot thrive except is wife let him.
-  author: Fergusson
+  author: Ferguson
   source: Scottish Proverbs, 1641
   tags:
     - Scottish
@@ -292,8 +488,7 @@
   tags:
     - Scottish
 - text: >
-    A February clam, or a Dog Days' wind 
-    Never will be lasting
+    A February clam, or a Dog Days' wind never will be lasting
   author: Unknown
   source: Irish Saying
   tags:
@@ -369,12 +564,13 @@
     - Scottish
 - text: >
     At Tréguier the magpie begins her nest 
-    on the 24 February, and lays an egg on Good Friday.
+    on the 24th of February, and lays an egg on Good Friday.
   author: Unknown
   source: Breton Proverb
   date: 02-24
   tags:
     - Breton
+    - Magpie
 - text: >
     The wild Irish, or Welch [sic], who during eclipses run 
     about beating etc. Pans thinking their clamour and 
@@ -469,7 +665,8 @@
   author: Robert Kirk
   source: The Secret Commonwealth of Elves, Fauns, and Fairies
   tags:
-    - 
+    - Scottish
+    - Fairies
 - text: >
     When going into a new house everyone should bring a gift, 
     however small, and should tae nothing away.
@@ -510,7 +707,7 @@
 - text: >
     The favorite camp and resting place of the sidhe is 
     under a hawthorn tree, and a peasant would die sooner 
-    than cut down one of the hancient hawthorns sacred to the fairies.
+    than cut down one of the ancient hawthorns sacred to the fairies.
   author: Lady Wilde
   source: Ancient Legends of Ireland, 1888
   tags:
@@ -863,13 +1060,6 @@
     - wisdomTriads
     - wisdom
 - text: "Three obstructers of slaughter of the Island of Prydain. Gilbert son of Catgyffro; and Morfran son of Tegid; and Gwgun of the ruddy sword."
-  author: Unknown
-  source: Welsh Triads - Peniarth MS 54
-  tags:
-    - WelshTriads
-    - wisdomTriads
-    - wisdom
-- text: "Three powerful swineherds of the Islad of Prydain. Trystan son of Tallwch, who kept the swine of March, son of Meirchiawn, while the swineherd went on a message to Essyllt to desire a meeting with her, and Arthur desired one pig by deceit or by theft, and could not get it; and Pryderi son of Pwyll, who kept the swine of Pendaran Dyfed in Glencuwch in Emlyn; And Coll son of Collfrewy, who kept the ancient sow of Dallweir Dalben, who went burrowing as far as Penryn Awstin in Cornwall, and there going to the sea, landed at Abertorogi in Gwent Iscoed, and Coll son of Collfrewy having his hand on her bristles, wherever she went on the sea or on the land, and at Maes Gwenith in Gwent she dropped wheat and bees, and from henceforth there is the best wheat there, and from thence she went to Lonwen in Penbro, and there she dropped barley and bees, and from thence there is the best barley in Lonwen, and from thence she proceeded to the Riw Cyferthwch in Eryri, and there she dropped a wolf-cub and an eagle, and Coll son of Collfreuy gave the eagle to Brynach Gwyddel of the north, and the wolf he gave to Menwaed fo Arllechwedd, and these are the wolf of Menwaed and the eagle of Brynach, and thence going to Maendu in Llanfare, in Arvon, and there she dropped a kitten, and Coll son of Collfrewy threw the kitten in the Menai, and she became afterwards the Paluc cat."
   author: Unknown
   source: Welsh Triads - Peniarth MS 54
   tags:

@@ -332,6 +332,17 @@ holidays:
       - pagan
       - witch
       - druid
+  - name: "Palm Sunday"
+    scottishname: "Festival of St Kentigern"
+    irishname: "Domhnach an Iúir (Yew Sunday)"
+    welshname: "Sul y Blodau (Flower[ing] Sunday)"
+    day: 7 - easter
+    what: "In Wales they clean the graves and place flowers over them. In Ireland they wear Yew sprigs in their button holes, and char them fashioning them into crosses placed over unhatched eggs."
+    reconstructed: true
+    tags:
+      - pagan
+      - witch
+      - druid
   - name: "The Borrowin' Days"
     scottishname: "Laetheanta na riaibhche"
     date: 03-29
