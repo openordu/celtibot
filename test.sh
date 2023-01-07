@@ -27,3 +27,19 @@ test="Holiday test"
 echo "Running ${test}"
 SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode holiday --date 04-30 | grep "May Day" | wc -l >/dev/null
 passfail "${test}" $?
+test="AM topic test"
+echo "Running ${test}"
+[[ "`SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode topic --date 03-02 --pod 1| grep 'Fir Bolg'| wc -l`" == "1" ]] && true || false
+passfail "${test}" $?
+test="PM topic test"
+echo "Running ${test}"
+[[ "`SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode topic --date 03-02 --pod 2| grep 'The Blessed'| wc -l`" == "1" ]] && true || false
+passfail "${test}" $?
+test="PM quote test"
+echo "Running ${test}"
+[[ "`SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode quote --date 02-13 --pod 1| grep 'The Welsh go to' | wc -l`" == "1" ]] && true || false
+passfail "${test}" $?
+test="PM quote test"
+echo "Running ${test}"
+[[ "`SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode quote --date 02-13 --pod 2| grep 'Three bulls' | wc -l`" == "1" ]] && true || false
+passfail "${test}" $?

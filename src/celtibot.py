@@ -31,15 +31,21 @@ tootModes =  ['holiday', 'topic', 'quote']
 parser = argparse.ArgumentParser()
 parser.add_argument("--dryrun", help="on/off/True/False",default="0",metavar='DRYRUN')
 parser.add_argument("--date", help="set now date in %m-%d / mm-dd format.",default="%s-%s" % (datetime.datetime.now().strftime('%m'), datetime.datetime.now().strftime('%d')),metavar='DATE')
-parser.add_argument("--pod", help="part of day",default=0 ,metavar='PARTOFDAY')
+parser.add_argument("--pod", help="part of day",default=None,metavar='PARTOFDAY')
 parser.add_argument("--mode", help="must be one of %s" % " ".join(allModes),default=str('holiday'),metavar='INFO')
 
 args = parser.parse_args()
 current_year = int(datetime.datetime.now().strftime('%Y'))
 day = int(str(args.date).split('-')[1])
 month = int(str(args.date).split('-')[0])
-partOfDay = 1 if datetime.date(current_year, month, day).strftime('%j') == 'am' else 2
-doy = (int(datetime.date(current_year, month, day).strftime('%j')) * partOfDay) -1
+
+if not args.pod == None:
+    partOfDay = args.pod
+
+if args.pod == None:
+    partOfDay = 1 if datetime.date(current_year, month, day).strftime('%j') == 'am' else 2
+
+doy = (int(datetime.date(current_year, month, day).strftime('%j')) * int(partOfDay))-1
 
 def usage():
   print("Run with -h for usage")
@@ -248,7 +254,7 @@ def formatHolidayToots(holiday):
     irishName       = formatName(holiday['irishname']) if 'irishname' in holiday.keys() else None
     cornishName     = formatName(holiday['cornishname']) if 'cornishname' in holiday.keys() else None
     bretonName      = formatName(holiday['bretonname']) if 'bretonname' in holiday.keys() else None
-    welshName       = formatrmName(holiday['welshname']) if 'welshname' in holiday.keys() else None
+    welshName       = formatName(holiday['welshname']) if 'welshname' in holiday.keys() else None
     hashTags        = set(holiday['tags']) if 'tags' in holiday.keys() else []
     reconstructed   = holiday['reconstructed'] if 'reconstructed' in holiday.keys() else False
     

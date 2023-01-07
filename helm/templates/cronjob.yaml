@@ -54,7 +54,7 @@ spec:
             command:
             - /bin/sh
             - -c
-            - /usr/bin/python3 /tmp/bot/src/celtibot.py --mode quote;/usr/bin/python3 /tmp/bot/src/celtibot.py --mode follow
+            - /usr/bin/python3 /tmp/bot/src/celtibot.py --mode quote --pod 1;/usr/bin/python3 /tmp/bot/src/celtibot.py --mode follow
             image: {{.Values.image}}
             {{- if or .Values.env.config .Values.env.secrets}}
             envFrom:
@@ -89,7 +89,7 @@ spec:
             command:
             - /bin/sh
             - -c
-            - /usr/bin/python3 /tmp/bot/src/celtibot.py --mode topic;/usr/bin/python3 /tmp/bot/src/celtibot.py --mode follow
+            - /usr/bin/python3 /tmp/bot/src/celtibot.py --mode topic --pod 1;/usr/bin/python3 /tmp/bot/src/celtibot.py --mode follow
             image: {{.Values.image}}
             {{- if or .Values.env.config .Values.env.secrets}}
             envFrom:
@@ -123,7 +123,7 @@ spec:
             command:
             - /bin/sh
             - -c
-            - /usr/bin/python3 /tmp/bot/src/celtibot.py --mode topic;/usr/bin/python3 /tmp/bot/src/celtibot.py --mode follow
+            - /usr/bin/python3 /tmp/bot/src/celtibot.py --mode topic --pod 2;/usr/bin/python3 /tmp/bot/src/celtibot.py --mode follow
             image: {{.Values.image}}
             {{- if or .Values.env.config .Values.env.secrets}}
             envFrom:
