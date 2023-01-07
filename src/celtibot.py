@@ -353,7 +353,7 @@ def quoteToots(toots):
 def topicToots(toots):
     infoObjectsFromYamlFile = yamlRead('%s/../data/info/topics.yaml' % str(scriptDirectory()))
     todayTopics = getInfoObjectsForToday(infoObjectsFromYamlFile)
-    if not len(todayTopics) or partOfDay == 2:
+    if not len(todayTopics) or int(partOfDay) == 2:
         undatedInfoObjects = [x for x in infoObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]
         toots = formatTopicToot(undatedInfoObjects[doy])
         return toots
