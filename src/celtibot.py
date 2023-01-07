@@ -38,7 +38,6 @@ current_year = int(datetime.datetime.now().strftime('%Y'))
 day = int(str(args.date).split('-')[1])
 month = int(str(args.date).split('-')[0])
 doy = int(datetime.date(current_year, month, day).strftime('%j'))-1
-
 def usage():
   print("Run with -h for usage")
 
@@ -334,10 +333,9 @@ def quoteToots(toots):
     quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
     todayQuotes = getQuoteObjectsForToday(quoteObjectsFromYamlFile)
     if not len(todayQuotes):
-        random.shuffle(quoteObjectsFromYamlFile)
-        for quote in [x for x in quoteObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]:
-            toots = formatQuoteToot(quote)
-            return toots
+        undatedQuotesObjects = [x for x in quoteObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]
+        toots = formatQuoteToot(undatedQuotesObjects[doy])
+        return toots
 
     for quote in todayQuotes:
         toots = formatQuoteToot(quote)
