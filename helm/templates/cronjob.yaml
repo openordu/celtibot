@@ -1,0 +1,171 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{.Values.name}}-holiday
+  namespace: {{.Values.namespace}}
+spec:
+  schedule: "0 12 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          {{- if .Values.dockercfg}}
+          imagePullSecrets:
+          - name: {{.Values.name}}-dockercfg
+          {{- end}}
+          containers:
+          - name: {{.Values.name}}
+            command:
+            - /bin/sh
+            - -c
+            - /usr/bin/python3 /tmp/bot/src/celtibot.py --mode holiday;/usr/bin/python3 /tmp/bot/src/celtibot.py --mode follow
+            image: {{.Values.image}}
+            {{- if or .Values.env.config .Values.env.secrets}}
+            envFrom:
+            {{- if .Values.env.config}}
+            - configMapRef:
+                name: {{.Values.name}}
+            {{- end}}
+            {{- if .Values.env.secrets}}
+            - secretRef:
+                name: {{.Values.name}}
+            {{- end}}
+            {{- end}}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{.Values.name}}-quote-am
+  namespace: {{.Values.namespace}}
+spec:
+  schedule: "0 14 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          {{- if .Values.dockercfg}}
+          imagePullSecrets:
+          - name: {{.Values.name}}-dockercfg
+          {{- end}}
+          containers:
+          - name: {{.Values.name}}
+            command:
+            - /bin/sh
+            - -c
+            - /usr/bin/python3 /tmp/bot/src/celtibot.py --mode quote --pod 1;/usr/bin/python3 /tmp/bot/src/celtibot.py --mode follow
+            image: {{.Values.image}}
+            {{- if or .Values.env.config .Values.env.secrets}}
+            envFrom:
+            {{- if .Values.env.config}}
+            - configMapRef:
+                name: {{.Values.name}}
+            {{- end}}
+            {{- if .Values.env.secrets}}
+            - secretRef:
+                name: {{.Values.name}}
+            {{- end}}
+            {{- end}}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{.Values.name}}-topic-am
+  namespace: {{.Values.namespace}}
+spec:
+  schedule: "0 16 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          {{- if .Values.dockercfg}}
+          imagePullSecrets:
+          - name: {{.Values.name}}-dockercfg
+          {{- end}}
+          containers:
+          - name: {{.Values.name}}
+            command:
+            - /bin/sh
+            - -c
+            - /usr/bin/python3 /tmp/bot/src/celtibot.py --mode topic --pod 1;/usr/bin/python3 /tmp/bot/src/celtibot.py --mode follow
+            image: {{.Values.image}}
+            {{- if or .Values.env.config .Values.env.secrets}}
+            envFrom:
+            {{- if .Values.env.config}}
+            - configMapRef:
+                name: {{.Values.name}}
+            {{- end}}
+            {{- if .Values.env.secrets}}
+            - secretRef:
+                name: {{.Values.name}}
+            {{- end}}
+            {{- end}}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{.Values.name}}-topic-pm
+spec:
+  schedule: "0 21 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          {{- if .Values.dockercfg}}
+          imagePullSecrets:
+          - name: {{.Values.name}}-dockercfg
+          {{- end}}
+          containers:
+          - name: {{.Values.name}}
+            command:
+            - /bin/sh
+            - -c
+            - /usr/bin/python3 /tmp/bot/src/celtibot.py --mode topic --pod 2;/usr/bin/python3 /tmp/bot/src/celtibot.py --mode follow
+            image: {{.Values.image}}
+            {{- if or .Values.env.config .Values.env.secrets}}
+            envFrom:
+            {{- if .Values.env.config}}
+            - configMapRef:
+                name: {{.Values.name}}
+            {{- end}}
+            {{- if .Values.env.secrets}}
+            - secretRef:
+                name: {{.Values.name}}
+            {{- end}}
+            {{- end}}
+---
+{{- if .Values.env.config}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{.Values.name}}
+data:
+{{.Values.env.config | toYaml | indent 2}}
+---
+{{- end}}
+
+{{- if .Values.env.secrets}}
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{.Values.name}}
+stringData:
+{{.Values.env.secrets | toYaml | indent 2}}
+---
+{{- end}}
+
+{{- if .Values.dockercfg}}
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{.Values.name}}-dockercfg
+  annotations:
+    harness.io/skip-versioning: "true"
+data:
+  .dockercfg: {{.Values.dockercfg}}
+type: kubernetes.io/dockercfg
+---
+{{- end}}
