@@ -341,7 +341,7 @@ def quoteToots(toots):
     # quotes
     quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
     todayQuotes = getQuoteObjectsForToday(quoteObjectsFromYamlFile)
-    if not len(todayQuotes):
+    if not len(todayQuotes) or int(partOfDay) == 2:
         undatedQuotesObjects = [x for x in quoteObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]
         toots = formatQuoteToot(undatedQuotesObjects[doy])
         return toots
@@ -353,7 +353,7 @@ def quoteToots(toots):
 def topicToots(toots):
     infoObjectsFromYamlFile = yamlRead('%s/../data/info/topics.yaml' % str(scriptDirectory()))
     todayTopics = getInfoObjectsForToday(infoObjectsFromYamlFile)
-    if not len(todayTopics):
+    if not len(todayTopics) or partOfDay == 2:
         undatedInfoObjects = [x for x in infoObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]
         toots = formatTopicToot(undatedInfoObjects[doy])
         return toots
