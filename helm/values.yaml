@@ -1,0 +1,32 @@
+name: ${service.name}
+replicas: 1
+
+image: ${artifact.metadata.image}
+# dockercfg: ${artifact.source.dockerconfig}
+
+createNamespace: true
+namespace: ${infra.kubernetes.namespace}
+
+# Service Type allow you to specify what kind of service you want.
+# Possible values for ServiceVariableType are:
+# ClusterIP | NodePort | LoadBalancer | ExternalName
+createServer: false
+serviceType: ClusterIP
+
+# A Service can map an incoming port to any targetPort.
+# targetPort is where application is listening on inside the container.
+servicePort: 80
+serviceTargetPort: 80
+
+serviceAccount:
+  create: false
+# Specify all environment variables to be added to the container.
+# The following two maps, config and secrets, are put into a ConfigMap
+# and a Secret, respectively.
+# Both are added to the container environment in podSpec as envFrom source.
+env:
+  config:
+    SERVER: ${serviceVariable.mastodon_server}
+  secrets:
+    ACCESS_TOKEN: '${secrets.getValue("celtoken")}'
+    BOT_ACCOUNT_ID:  '${serviceVariable.bot_account_id}'
