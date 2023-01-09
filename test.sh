@@ -37,13 +37,13 @@ echo "Running ${test}"
 passfail "${test}" $?
 test="AM quote test"
 echo "Running ${test}"
-[[ "`SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode quote --date 02-13 --pod 1| grep 'The Welsh go to' | wc -l`" == "1" ]] && true || false
+[[ "`SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode quote --date 02-13 --pod 1| grep 'Nest at Bride' | wc -l`" == "1" ]] && true || false
 passfail "${test}" $?
 test="PM quote test"
 echo "Running ${test}"
-[[ "`SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode quote --date 02-13 --pod 2| grep 'Three bulls' | wc -l`" == "1" ]] && true || false
+[[ "`SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode quote --date 02-13 --pod 2| grep 'Three fair lords' | wc -l`" == "1" ]] && true || false
 passfail "${test}" $?
 test="PM quote undated test"
 echo "Running ${test}"
-[[ "`SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode quote --date 01-01 --pod 2| grep 'On New Year' | wc -l`" != "1" ]] && true || false
+[[ "`SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode quote --date 01-08 --pod 2| grep 'Better snow than no rain-storm' | wc -l`" != "1" ]] && true || false
 passfail "${test}" $?
