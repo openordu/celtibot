@@ -149,12 +149,222 @@
   source: Diary, 04-30-1870
   tags:
     - Welsh
-# - text: >
-#   
-#   author: 
-#   source: 
-#   tags:
-#     - 
+- text: >
+      On the first of May in the herds[men] of every village hold their Beltein ... They make a fire of wood, 
+      on which they dress a large caudle of eggs, butter, oatmeal and milk; and bring ... plenty of beer 
+      and whiskey, for each of the company must contribute something. The rites begin with spilling some 
+      of the caudle on the ground, by way of libation; on that every one takes a cake of oatmeal, upon which 
+      are raised nine square knobs, each dedicated to some particular being, the supposed preserver of their 
+      flocks and herds, or to some particular animal the real destroyer of them; each person then turns his 
+      face to the fire, breaks off a knob and flinging it over his shoulder, says "This I give to thee, 
+      preserve thou my horses; this to thee, preserve thou my sheep" and so on. After that they use the 
+      same ceremony to the noxious animals. "This I give to thee, O fox! spare thou my lambs; this to thee, 
+      O hooded-crow! and this to thee, O eagle!"
+  date: 05-01
+  author: Thomas Pennant
+  source: A tour in Scotland, 1772, part II
+  tags:
+    - Beltane
+      - Bealtainne
+      - MayDay
+      - May
+      - Scottish
+      - witch
+      - pagan
+      - druid
+- text: >
+    The night before, all the fires in the country were carefully extinguished, and next morning the 
+    materials for exciting this sacred fire were prepared. The most primitive method seems to be that 
+    which was used in the islands of Skye, Mull, and Tiree. A well-seasoned plank of oak was procured, 
+    in the midst of which a hole was bored. A wimble of the same timber was then applied, the end of 
+    which they fitted to the hole. But in some parts of the mainland the machinery was different. They 
+    used a frame of green wood, of a square form, in the centre of which was an axle-tree. In some 
+    places three times three persons, in others three times nine, were required for turning round 
+    by turns the axle-tree or wimble. If any of them had been guilty of murder, adultery, theft, 
+    or other atrocious crime, it was imagined either that the fire would not kindle, or that it 
+    would be devoid of its usual virtue. So soon as any sparks were emitted by means of the violent 
+    friction, they applied a species of agaric which grows on old birch-trees, and is very combustible. 
+    This fire had the appearance of being immediately derived from heaven, and manifold were the virtues 
+    ascribed to it. They esteemed it a preservative against witch-craft, and a sovereign remedy against 
+    malignant diseases, both in the human species and in cattle; and by it the strongest poisons were 
+    supposed to have their nature changed.
+  author: Sir Walter Scott
+  source: James Frazier's The Golden Bough
+  tags:
+    - Beltane
+    - Bealtainne
+    - MayDay
+    - May
+    - Scottish
+    - witch
+    - pagan
+    - druid
+- text: >
+    After kindling the bonfire with the tein-eigin the company prepared their victuals. And as soon 
+    as they had finished their meal, they amused themselves a while in singing and dancing round the 
+    fire. Towards the close of the entertainment, the person who officiated as master of the feast 
+    produced a large cake baked with eggs and scalloped round the edge, called am bonnach bea-tine—i.e., 
+    the Beltane cake. It was divided into a number of pieces, and distributed in great form to the company. 
+    There was one particular piece which whoever got was called cailleach beal-tine—i.e., the Beltane carline, 
+    a term of great reproach. Upon his being known, part of the company laid hold of him and made a show of putting 
+    him into the fire; but the majority interposing, he was rescued. And in some places they laid him flat on the ground, 
+    making as if they would quarter him. Afterwards, he was pelted with egg-shells, and retained the odious 
+    appellation during the whole year. And while the feast was fresh in people’s memory, they affected to 
+    speak of the cailleach beal-tine as dead.
+  author: Sir Walter Scott
+  source: James Frazier's The Golden Bough
+  tags:
+    - Beltane
+    - Bealtainne
+    - MayDay
+    - May
+    - Scottish
+    - witch
+    - pagan
+    - druid
+- text: >
+    The great Sabbats of the Forfarshire witches were held four times a year at 
+    Candlemas, Roodday, Lammas, and Halloween. In the Aberdeen area, Roodday 
+    and All Halloweve witnessed the great Conventions. Witches convened upon the 
+    Roodday early in the morning upon Saint Katherine's Hill at the head of 
+    Andrew Gowis close.
+  date: 05-03
+  author: J.M. McPherson
+  source: Primitive Beliefs in the North East of Scotland, 1929
+  tags:
+    - Beltane
+    - Bealtainne
+    - MayDay
+    - May
+    - Scottish
+    - witch
+    - pagan
+    - druid
+- text: >
+    It is also considered very dangerous to sleep in the open air on May day, 
+    or at any time during the month of May. Several of the diseases to which 
+    the Irish peasantry are liable are attributed to "sleeping out".
+  date: 05-04
+  author: Sir William Wilde
+  source: Irish Popular Superstitions
+  tags:
+    - Beltane
+    - Bealtainne
+    - MayDay
+    - May
+    - Scottish
+    - witch
+    - pagan
+    - druid
+- text: >
+    May showers make milk and meal.
+  author: Unknown
+  source: Highland Proverb
+  date: 05-05
+  tags:
+    - Scottish
+    - Highlands
+    - proverb
+- text: >
+    May showers make milk and meal.
+  author: Unknown
+  source: Highland Proverb
+  date: 05-04
+  tags:
+    - Scottish
+    - Highlands
+    - proverb
+    - Beltane
+    - Bealtainne
+- text: >
+    Water in May, bread all year.
+  author: Unknown
+  date: 05-06
+  source: Highland Proverb
+  tags:
+    - Scottish
+    - Highlands
+    - proverb
+- text: >
+    Better is snow in May, than to be without rain.
+  author: Unknown
+  date: 05-07
+  source: Highland Proverb
+  tags:
+    - Scottish
+    - Highlands
+    - proverb
+- text: >
+    The cheese of sheep, the milk of goats and the butter of cows are at the best.
+  author: '#Welsh'
+  source: Book of Iago ab Dewi
+  tags:
+    - Wales
+- text: >
+    If anyone comes to ask them [Irish people] for fire during the month of May, 
+    they not only refuse it, but drive him out of doors with curses. imagining this to 
+    be an omen that their butter will be stolen all summer long.
+  date: 05-09
+  author: F.M. Mission
+  source: Memoirs and Observations on his Travels through England, 1719
+  tags:
+    - Irish
+    - ButterStealing
+    - Beltane
+    - Bealtainne
+- text: >
+    At Helston, a genteel and populous borough town in Cornwall, it is customary to devote the 8th 
+    of May to revelry ... It is called Furry Day, supposed Flora's Day. In the morning, 
+    very early, some troublesome roues go round the streets with drums, or other noisy instruments, 
+    disturbing their their sober neighbors, if they find any person at work they make him ride on a 
+    pole carried on men's shoulders, to the river.
+  date: 05-08
+  author: Unknown
+  source: The Gentleman's Magazine, 1790
+  tags:
+    - Cornish
+- text: |
+    ... after sunset on May Eve, to a bank on which the yarrow grows plentifully, and gather therefrom nine sprigs of the plant, repeating:
+    
+    "Good morrow, good morrow, fair yarrow
+    And thrice good morrow to thee
+    Come tell me before tomorrow
+    Who my true love shall be."
+
+    The Yarrow is brought home, put into the right-foot stocking, placed under the pillow, and the mystic dream is confidently expected. But if the girl opens her lips to speak after she has pulled the yarrow, the charm is broken.
+  date: 04-30
+  author: Michael Ó hAinnín
+  source: Dúchas
+  tags:
+    - Irish
+    - Herbs
+    - Herbalism
+    - divination
+    - witch
+    - pagan
+    - druid
+- text: >
+    The Welsh are extremely particular in keeping up the history of their genealogy; every Welshman being more or less a herald.
+  author: Francis Grose
+  source: Provincial Glossary, 1811
+  tags:
+    - Welsh
+- text: >
+    If the good housewife perceives the effect of the malicious on any of her kind, she 
+    takes as much milk as she can drain from the enchanted herd, for the witch commonly 
+    leaves very little. She then boils it with certain herbs and adds to them flints 
+    and untempered steel; after she secures the door, and invokes the three sacred 
+    persons. This puts the witch into such and agony, that she comes nilling-willing 
+    to the house, begs to be admitted, to obtain relief by touching the powerful pot; 
+    the good woman then makes her terms; the witch restores the milk t the cattle and 
+    in return is freed from her pains.
+  date: 05-10
+  author: Thomas Pennant
+  source: A Tour in Scotland and Voyage to the Hebrides 1772
+  tags:
+    - Scottish
+    - Scotland
+    - ButterStealing
 # - text: >
 #   
 #   author: 
@@ -231,6 +441,7 @@
     Matrimony is avoided in the month of January, which is called in the Erse the 'cold month'.
   author: Thomas Pennant
   source: A Tour in Scotland and Voyage to the Hebrides 1772
+  date: 01-09
   tags:
     - Scottish
     - Scotland
@@ -723,7 +934,7 @@
     than cut down one of the ancient hawthorns sacred to the fairies.
   author: Lady Wilde
   source: Ancient Legends of Ireland, 1888
-  date: 04-29
+  date: 04-20
   tags:
     - Irish
 - text: >
