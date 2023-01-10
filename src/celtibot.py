@@ -24,6 +24,7 @@ import math
 import textwrap
 import requests
 import argparse
+from dateutil.easter import *
 
 allModes = ['holiday', 'quote', 'topic', 'follow']
 tootModes =  ['holiday', 'topic', 'quote']
@@ -201,7 +202,8 @@ def getInfoObjectsForToday(yamlListOfTopics):
     return topics
 
 def calcEasterDate(year):
-    from dateutil.easter import *
+    #return datetime.datetime(easter(int(year)).strptime('%Y'),easter(int(year)).strptime('%m'),easter(int(year)).strptime('%d'))
+    #date = datetime.datetime.strptime("%s-%s" % (dateString, current_year), '%m-%d-%Y')
     return easter(int(year))
 
 def matchDateFormat(dateString):
