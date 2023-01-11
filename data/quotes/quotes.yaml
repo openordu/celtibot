@@ -510,72 +510,123 @@
   tags:
     - Welsh
     - SecondSight
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+- text: >
+    No one is bound to pay for the act of a tamed animal; that is to say, one which has ben 
+    brought from being a wild beast to being tame, such as a fawn or a fox.
+  author: '#Welsh'
+  source: 'The Laws of Hywel Dda'
+  tags:
+    - Wales
+- text: >
+    For a dry scurfy disease of the eyelids. Take strawberry juice, hen's fat and May butter, pound them well together and keep in a horn box. Anoint thine eyelids well when going to bed, and they will be cured.
+  author: Meddygon Myddfai
+  source: Welsh, 13th century
+  tags:
+    - Welsh
+    - folkMedicine
+- text: |
+    St John's Wort is called the Achlasan-Chailum-Chille or the Armpit package of Columba:
+
+    Armpit package of Columba, kindly
+    Unsought by me Unlooked for
+    I shall not be carried away in my sleep
+    And I shall not be thrust upon iron.
+  author: Alexander Carmichael
+  source: Carmina Gadelica
+  tags:
+    - Scottish
+    - Highlands
+    - StJohnsWort
+    - Herbs
+    - Herbalism
+- text: >
+    The virtue of it [St John's Wort] is thus. If it be put in a man's house, there shall come no wicket sprite therein.
+  author: Banckes
+  source: Herball, 1521
+  date: 06-19
+  tags:
+    - StJohnsWort
+    - Herbs
+    - Herbalism
+- text: >
+    Opposite the coast of Celtic Gaul there is an island in the ocean, not smaller than Sicily, lying to the north which
+    is inhabited by the Hyperboreans, who are so named because they dwell beyond the North Wind. Tradition says that 
+    Latona was born there and for that reason the inhabitants venerate Apollo more than any other god. They are, 
+    in manner, his priests, for they daily celebrate him with continual songs of praise and pay him abundant honours. 
+    In this island there is a magnificent grove or precinct of Apollo, and a remarkable temple of a round form, 
+    adorned with many consecrated gifts. There is also a city sacred to the god, most of the inhabitants of 
+    which are harpers, who continually play upon their harps in this temple.
+  author: Abdera
+  source: History of the Hyperboreans
+  tags: 
+    - GreekHistorians
+    - Brittons
+- text: |
+    Let me put the fáth-fith on you,
+    From dog, from cat
+    From cow, form horse
+    From man, from woman
+    From boy, from girl
+    From little child
+    Till I come again.
+  author: '#Scottish'
+  source: Scottish Calendar Customers, 1941
+  tags:
+    - Scottland
+    - SpellOfInvisibility
+- text: >
+    On #StJohnsEve, the 23rd June, it was formerly held that if an unmarried
+    woman laid upon her parlour table a clean cloth, with bread, cheese and ale,
+    and then sat down as about to eat, the door of her house being left open, the
+    person who she was afterwards to marry would come into the room and make obeisance to her.
+  author: ''
+  source: '#Scottish Calendar Customers, 1941'
+  date: 06-22
+  tags:
+    - StJohnsEve
+    - Midsummer
+    - SummerSolstice
+- text: >
+    At the house where I was entertained, it was told me that we should see at midnight
+    the most singular sight in Ireland, which was the lighting of Fires in honour of the
+    Sun. Accordingly, exactly at midnight, the Fires began to appear; and taking the
+    advantage of going up to the leads of the house which had a widely extended view,
+    I saw on a radius of thirty miles all around, the Fires burning on every eminence which
+    the country afforded. I had farther satisfaction in learning, from and undoubted
+    authority, that the people danced round the Fires, and at the close went through
+    these fires, and made their sons and daughters, together with their cattle, pass
+    through the Fire, and the whole was conducted with religious solemnity.
+  author: Unknown
+  date: 06-23
+  source: The Gentleman's Magazine, 1795
+  tags:
+    - Irish
+- text: >
+    For every apple seen on #StJohnsDay one hundred will be seen on St Michael's.
+  date: 06-24
+  author: Unknown
+  source: '#Breton Proverb'
+  tags:
+    - Brittany
+    - Midsummer
+- text: >
+    Some used after #Midsummer Day is past, to hang it [orpine] it up over their chamber
+    doors, or upon the walls, which will be fresh and green at Christmas ... with this
+    persuasion that they that hanged in up, shall eel no disease so long as it abideth green.
+  author: John Parkinson
+  source: Theatrum Botanicus, 1640
+  tags:
+    - Herbs
+    - Herbalism
+    - British
+- text: >
+    Take orpines, bastard balm, small burdock, stinging goose-foot, pimpernel, water avens and the ashes
+    of a stag's horns, boil them in red wine, strain, and drink it daily until it is finished. being
+    restrained by this potion, the blood will habitually be diverted to the hights and ankles.
+  author: Meddygon Myddfai
+  source: '#Welsh, 13th century'
+  tags:
+    - folkMedicine
 # - text: >
 # 
 #   author:
