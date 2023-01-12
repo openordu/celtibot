@@ -145,6 +145,7 @@
     "old witch'. But I was too lazy to go out and get it. Let us
     hope the old witch will not come in during the night. The young
     witches are welcome.
+  date: 04-28
   author: Rev Francis Kilvert
   source: Diary, 04-30-1870
   tags:
@@ -189,6 +190,7 @@
     malignant diseases, both in the human species and in cattle; and by it the strongest poisons were
     supposed to have their nature changed.
   author: Sir Walter Scott
+  date: 04-29
   source: James Frazier's The Golden Bough
   tags:
     - Beltane
@@ -620,19 +622,35 @@
     - Herbalism
     - British
 - text: >
-    Take orpines, bastard balm, small burdock, stinging goose-foot, pimpernel, water avens and the ashes
+    Take orpines [heal-all], bastard balm, small burdock, stinging goose-foot, pimpernel, water avens and the ashes
     of a stag's horns, boil them in red wine, strain, and drink it daily until it is finished. being
     restrained by this potion, the blood will habitually be diverted to the hights and ankles.
   author: Meddygon Myddfai
   source: '#Welsh, 13th century'
   tags:
     - folkMedicine
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+- text: |
+    I am Taliesin, I sing perfect meter,
+    My original country is the Land of the #Summer Stars...
+    I was with my Lord in the highest sphere
+    When Lucifer fell to the depths of Hell...
+    I have borne a standard before Alexander,
+    I know the names of the stars from north to south,
+    I have been a blue salmon
+    A #dog, a #stag, a #buck on the mountain
+    A stock, a spade, an axe in the hand
+    A #stallion, a #bull, a #roebuck
+    A #grain which grew on the hill
+    I was reaped an cast in an oven
+    I have been dead, I have been alive
+    I am Taliesin.
+  author: Taliesin
+  source: Hanes Taliesin, 13th century
+  tags:
+    - Welsh
+    - Druid
+    - Witch
+    - Seer
 # - text: >
 # 
 #   author:

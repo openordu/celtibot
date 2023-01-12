@@ -292,8 +292,10 @@ def formatQuoteToot(quote):
         tags += "\n#%s " % hashTags.pop()
     tags += "\n#celtic"
 
+    tags = textwrap.wrap(tags, 100, break_long_words=False)
+
     for toot in toots:
-        toots[toots.index(toot)] = "%s%s%s" % (toot, '...' if (toots.index(toot) != len(toots)-1) else '', tags)
+        toots[toots.index(toot)] = "%s%s%s" % (toot, '...' if (toots.index(toot) != len(toots)-1) else '', tags[0])
     
     return toots
 
@@ -361,9 +363,10 @@ def makeToots(toots):
     if len(toots) == 1: status = tooter(toots[0])
     else:
         first_toot = tooter(toots[0])
-    for k, toot in toots:
-        if k == 0:
+    for toot in toots:
+        if toots.index(toot) == 0:
             continue
+        pprint(first_toot['id'])
         tooter(toot, first_toot['id'])
 
 def init():
