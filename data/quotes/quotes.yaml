@@ -487,13 +487,19 @@
     - Pagan
     - Oak
 - text: >
-    Fiercest heat-giver of all timber is green oak, from him none may escape unhurt; by partiality for him the head
+    Fiercest heat-giver of all timber is green #oak, from him none may escape unhurt; by partiality for him the head
     is set on aching and by his acrid embers the eye is made sore.
   author: Death of Fergus
   source: B.L. Egerton MS 1782
   tags:
     - Irish
-    - Oak
+    - Trees
+- text: >
+    Holly, burn it green; #holly burn it dry: of all the #trees whatsoever the critically best is holly.
+  author: Death of Fergus
+  source: B.L. Egerton MS 1782
+  tags:
+    - Irish
 - text: >
     There be odd Solemnities at investing a Man with the Privileges of the whole Mystery of this Second Sight. He
     must run a Tether of Hair (which bound a Corpse to the Beir) in a helix about his Middle, from End to E; the
@@ -518,7 +524,6 @@
   author: '#Welsh'
   source: 'The Laws of Hywel Dda'
   tags:
-    - Wales
 - text: >
     For a dry scurfy disease of the eyelids. Take strawberry juice, hen's fat and May butter, pound them well together and keep in a horn box. Anoint thine eyelids well when going to bed, and they will be cured.
   author: Meddygon Myddfai
@@ -649,92 +654,181 @@
   tags:
     - Welsh
     - Druid
+    - Bard
     - Witch
     - Seer
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+    - MysticalExperience
+- text: >
+    These Siths [Shee] or fairies they call Sleagh Maith [Slay Ma], or the Good People, it would seem, to prevent
+    the Dint of their ill Attempts (for the #Irish used to bless all they fear Harm of) and are
+    said to be of a Middle Nature between Man and Angel, as were Daemons thought to be of old;
+    of intelligent studious Spiritus, and light changeable Bodies (like those called Astral)
+    somewhat of the nature of a condensed Cloud, and best seen at Twilight. These Bodies be so
+    pliable though the Sublety of the Spirits that agitate them that they can make them appear
+    or disappear at Pleasure.
+  author: Revd Robert Kirk
+  source: The Secret Commonwealth, 1691
+  tags:
+    - Irish
+    - Scottish
+    - Fairies
+    - Paranormal
+    - pagan
+    - witch
+    - druid
+- text: >
+    In #Cornwall, the Festive Fires, call'd Bonfires, are kindled on the Eve of St John Baptist,
+    and St Peter's Days, and Midsummer is thence, in the Cornish tongue, call'd Goluan, which
+    signifies both Light and Rejoicing.
+  author: William Borlase
+  date: 06-27
+  source: Observations on the antiquities historical & monumental, of the county of Cornwall
+  tags:
+    - Cornish
+    - Fire
+    - StPetersEve
+    - FromStJohnsEveToStPetersEve
+    - Midsummer
+- text: >
+    This year, 1881, on the 28th June, the town of Penzance presented
+    a spectacle rarely now seen in Europe. In most of the chief streets,
+    as the summer twilight waned, large bonfires were lighted, and also
+    tar barrels. The Cornish custom of waving torches, i.e. blazing
+    masses of rope dipped in tar and hung from and iron chain, was
+    extensively celebrated. Te directors of the fire festival,
+    dressed in hunter's red coats and leathern gauntlets,
+    went among the group wth squibs and roman candles.
+  author: Unknown
+  source: The Antiquary, 1881
+  date: 06-28
+  tags:
+    - Corish
+    - Fire
+    - Midsummer
+- text: >
+    On St Peter's Day the cuckoo goes to her winter house.
+  author: Unknown
+  source: Highland Saying
+  date: 06-29
+  tags:
+    - Scottish
+    - StPetersDay
+    - Midsummer
+- text: >
+    If you would not be weary on a journey, drink in the morning an egg-shell full of the juice of mugwort and garlic,
+    and you will never be hurt nor tired, whatever distance you may walk that day.
+  author: ''
+  source: The Book of Ieuan of Sarn
+  tags:
+    - Welsh
+    - Herbalism
+    - Herbs
+    - witchcraft
+- text: >
+    If the first of July be rainy weather
+    It will rain, more or less, for four
+    months together.
+  author: '#Welsh'
+  source: 'The Laws of Hywel Dda'
+  tags:
+- text: >
+    Whoever wants a meadow, let him keep it rom St Patrick's Day
+    until the Winter Calends [Samhain]. A meadow is land without
+    use save for hay, with a bank around it. That is why it is kept
+    until the Winter Calends, because it is right to mow it twice
+    in the year. Meadows are forbidden to pigs because they damage
+    the land. He who finds pigs on his meadow, let him take four
+    legal pence from the owner.
+  author: '#Welsh'
+  source: 'The Laws of Hywel Dda'
+  tags:
+- text: >
+    For and intermittent fever. Take dandelion and fumitory infused
+    in water, first thing in the morning. Then about noon take wormwood
+    in tepid water, at ten draughts. Eat wheaten bread, oatcakes and young
+    chickens, but no milk foods. If the fever does not end, put the patient
+    in a bath when the fever is on him, and give him and emetic, which will
+    then act more strongly.
+  author: Meddygon Myddfai
+  source: Welsh, 13th century
+  tags:
+    - Welsh
+    - folkMedicine
+- text: >
+    Under the ancient Brehon laws of #Ireland the owner of a #dog which
+    defecates on a neighbour's land has not only to remove the offending
+    article but to present his neighbour with a like quantity of butter
+    in compensation.
+  author: Sarah Costley
+  source: A Celtic Book of Days, 1998
+  tags:
+    - DogsOfMastodon
+    - Irish
+- text: >
+    In most parts of Wales, and throughout all Scotland, and in Cornwall,
+    we find it a common opinion of the vulgar, that about Midsummer-eve... it
+    is usually for snakes to meet in companies, and that by joyning heads
+    together and hissing, a kind of bubble is formed, which the rest, by
+    continual hissing, blow on till it passes quite through the body, and
+    then it immediately hardens, and resembles a glass-ring, which whoever
+    finds ( as some old women are persuaded) shall prosper in all his undertakings.
+    The Rings thus generated, are called Gleinau Nadroeth; in English, Snake-Stones.
+    They are small glass amulets, commonly about half as wide as our finger-rings,
+    but much thicker, and of a green colour usually, though sometime blue, and waved
+    with red and white.
+  author: Edward Lhwyd
+  source: Written Letter, 1701, Rowland, Mona Antiqua
+  tags:
+    - Welsh
+- text: >
+    After the introduction of railways into the island neither #Phynodderree nor #fairy
+    of any kind has ever been met with by any sober man. It is currently supposed by
+    the Manx people that the shrill, discordant blast of the railway whistle has been
+    more than the delicate aural organs of so sensitive a race as the fairies could stand,
+    and that, disgusted with the inventions of men ... they have taken their departure from
+    the shores of #Mona's Isle forever.
+  author: E. Callow
+  date: 07-06
+  source: 'The Phynodderree and Other Legends of the #IsleOfMan, 1882'
+  tags:
+    - Manx
+    - Fairies
+- text: >
+    When badly treated or provoked, the Phynodderree could be spiteful... An ungrateful
+    farmer found fault with the way Phynodderree had mown his field, saying he could have
+    done it better himself. This enraged Phynodderree, who waited till next year, and when
+    the farmer set work to mow it he came with a scythe in his hand and chased him off the
+    field. For many years after this the grass remained uncut, everyone being afraid to
+    attempt to mow it.
+  author: E. Callow
+  source: 'The Phynodderree and Other Legends of the #IsleOfMan, 1882'
+  tags:
+    - Manx
+    - Fairies
+- text: >
+    And then Brand the Blessed commanded his head to be struck off. "And
+    take my head", he said, "and carry it to the White Mount in London,
+    and bury its face towards France." And when it was buried, that was
+    one of the Three Happy Concealments of the Island of Britain, and it
+    was one of the Three Unhappy Disclosures when it was dug up, for no
+    plague would ever come across the sea to this Island so long as Bran's
+    head was in that concealment.
+  author: 'G. & T. Jones'
+  source: 'Second Branch of the #Mabinogion, 11th century'
+  tags:
+    - pagan
+    - witch
+    - druid
+- text: >
+    They [Celts] embalm in cedar oil the heads of their ost prominent
+    enemies preserver them carefully in a chest and display them with pride
+    to visitors, saying that for this head their ancestors, or the owner himself,
+    refused a large sum of money. It is said that some boast that they even
+    refused the wight of the head in gold.
+  author: Diodorus Siculus
+  source: The Library of History
+  tags:
+    - Gaul
 # - text: >
 # 
 #   author:
