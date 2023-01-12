@@ -24,6 +24,7 @@ import math
 import textwrap
 import requests
 import argparse
+from dateutil.easter import *
 
 allModes = ['holiday', 'quote', 'topic', 'follow']
 tootModes =  ['holiday', 'topic', 'quote']
@@ -201,32 +202,9 @@ def getInfoObjectsForToday(yamlListOfTopics):
     return topics
 
 def calcEasterDate(year):
-    """returns the date of Easter Sunday of the given yyyy year"""
-    y = int(year)
-    # golden year - 1
-    g = y % 19
-    # offset
-    e = 0
-    # century
-    c = y/100
-    # h is (23 - Epact) mod 30
-    h = (c-c/4-(8*c+13)/25+19*g+15)%30
-    # number of days from March 21 to Paschal Full Moon
-    i = h-(h/28)*(1-(h/28)*(29/(h+1))*((21-g)/11))
-    # weekday for Paschal Full Moon (0=Sunday)
-    j = (y+y/4+i+2-c+c/4)%7
-    # number of days from March 21 to Sunday on or before Paschal Full Moon
-    # p can be from -6 to 28
-    p = i-j+e
-    d = int(1+(p+27+(p+6)/40)%31)
-    m = int(3+(p+26)/30)
-    return datetime.date(y,m,d)
-  
-    if year in special_years:
-        dateofeaster = (22 + d + e) - specyr_sub
-    else:
-        dateofeaster = 22 + d + e
-    return dateofeaster
+    #return datetime.datetime(easter(int(year)).strptime('%Y'),easter(int(year)).strptime('%m'),easter(int(year)).strptime('%d'))
+    #date = datetime.datetime.strptime("%s-%s" % (dateString, current_year), '%m-%d-%Y')
+    return easter(int(year))
 
 def matchDateFormat(dateString):
     import re
@@ -314,8 +292,10 @@ def formatQuoteToot(quote):
         tags += "\n#%s " % hashTags.pop()
     tags += "\n#celtic"
 
+    tags = textwrap.wrap(tags, 100, break_long_words=False)
+
     for toot in toots:
-        toots[toots.index(toot)] = "%s%s%s" % (toot, '...' if (toots.index(toot) != len(toots)-1) else '', tags)
+        toots[toots.index(toot)] = "%s%s%s" % (toot, '...' if (toots.index(toot) != len(toots)-1) else '', tags[0])
     
     return toots
 
@@ -383,9 +363,10 @@ def makeToots(toots):
     if len(toots) == 1: status = tooter(toots[0])
     else:
         first_toot = tooter(toots[0])
-    for k, toot in toots:
-        if k == 0:
+    for toot in toots:
+        if toots.index(toot) == 0:
             continue
+        pprint(first_toot['id'])
         tooter(toot, first_toot['id'])
 
 def init():
