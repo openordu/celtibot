@@ -806,7 +806,7 @@
     - Manx
     - Fairies
 - text: >
-    And then Brand the Blessed commanded his head to be struck off. "And
+    And then Bran the Blessed commanded his head to be struck off. "And
     take my head", he said, "and carry it to the White Mount in London,
     and bury its face towards France." And when it was buried, that was
     one of the Three Happy Concealments of the Island of Britain, and it
@@ -829,90 +829,167 @@
   source: The Library of History
   tags:
     - Gaul
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+- text: >
+    They striped his [Lucius] body, cut off his head, and carried their spoils
+    to the holiest of their shrines. There they cleaned out the head, as is
+    their custom, and gilded the skull, which thereafter served as a holy vessel
+    to pour libations and as a drinking cup for the priest and temple attendants.
+  author: Titus Livius
+  source: History of Rome
+  tags:
+    - Gaulish
+    - Gaul
+- text: |
+    Dinogad's speckled petticoat
+    was made from skins of speckled stoat
+    whip whip whipalong
+    eight times we'll sing this song.
+    When you father hunted the land
+    spear on shoulder, club in hand
+    thus his speedy dogs he'd teach
+    Giff Gaff catch her, catch her fetch.
+    In his coracle he'd slay
+    fish as lion does his prey.
+    When your father went to the moor
+    he'd bring back heads of stag, fawn and boar,
+    the speckled grouse's head from the mountain
+    fishes' heads from the falls of Oak Fountain.
+    Whatever your dad struck with his spear
+    wild pig, wild cat, fox from his lair
+    unless it had wings it would never get clear.
+  author: Translated by Gwyn Williams
+  source: The Book of Aneirin, 7th century
+  tags:
+    - Welsh
+    - lullaby
+- text: >
+    For Cloudiness of the eyes. Tae the juice of celandine,
+    drop into the eye, and close it as long as a hundred is
+    counted; let this treatment be perseveringly continued.
+  author: Meddygon Myddfai
+  source: Welsh, 13th century
+  tags:
+    - Welsh
+    - folkMedicine
+    - herbs
+    - herbalism
+    - yellowEyeBright
+    - EuphrasiaOfficianalis
+- text: >
+    Cornineus got great pleasure from wrestling with giants of Cornwall,
+    of whom there were far more than in any other region of Britain.
+    There was a particularly repulsive one called Gogmagog, who was
+    twelve feet tall, and so strong that he could tear up an oak tree
+    as if it was a hazel want.
+  author: Geoffrey of Monmouth
+  source: History of the Kings of Britain, 1136
+  tags:
+    - British
+    - Cornish
+- text: |
+    Fair and foolish, little and loud
+    Long and lush, black and proud
+    Fat and merry, lean and sad
+    Pale and pettish, red and bad
+    High coulour choler shows
+    And she's unwholesome like that sorrel grows
+    Nought are the peevish, proud, malicious
+    But worst are the red, shrill and jealous.
+  author: Ferguson
+  source: Scottish Proverbs, 1641
+  tags:
+    - Scottish
+- text: >
+    Parson Jones summoned the spirit to meet him in Disserth church, and there with three other
+    parsons he faced the spirit, his awed congregation crowding into the churchyard. They saw for
+    parsons enter, armed with books and candles. Presently three of the parsons, paralyzed with
+    fear, joined the crowd outside; the devil had blown out their candles. Parson Jones
+    saved his light by hiding it in his top-boot and ... at last he emerged triumphant,
+    carrying in his hand a silver snuff box, in which he said was the evil spirit ... reduced
+    to the sized of a blue-bottle fly. It was tied to the top of an iron bar and forced into
+    the depths of a quaking mire.
+  author: W.H. Howse
+  source: Disserth, Radnorshire, Its Church and its History and Folk-Lore
+  tags:
+    - Welsh
+- text: >
+    A guard dog, if it is killed more than nine paces from the door, is not paid for. If it is
+    killed within nine paces, it is worth twenty-four pence fine. If a dog attacks any person
+    to tear him, and that person kill the dog with a weapon, there is no fine. If a dog bites a
+    person so that blood flows, let the dog's owner pay for the blood: but if a bitten person
+    kill the dog, he will only get sixteen pence. If a notorious dog tears a person on three
+    occasions, it must be killed by their owner; if not, it must be tied to the owner's foot,
+    two spans away from him, and so killed, and let him pay three cows fine to the King. There
+    is no compensation for the evil done by a rabid dog, because no on can control it.
+  author: '#Welsh'
+  source: 'The Laws of Hywel Dda'
+  tags:
+- text: >
+    For the bite of a mad dog. Six ounces of rue, four ounces of garlic, two ounces of Venice
+    treacle and two ounces of pewter filings. Boil for two hours in a closed vessel in two
+    quarters of ale, strain, and give a spoonful fasting each morning.
+  author: Lady Wilde
+  source: Ancient Legends of Ireland, 1888
+  tags:
+    - Irish
+    - folkMedicine
+- text: >
+    It is reported that the flowers boiled in wine and drunk do make the heart merry. The leaves
+    and flowers far excel all other strewing herbs, for to deck up houses, to strew in chambers,
+    all and banqueting houses in the Summer time: for the smell thereof makes the heart merry,
+    delightth the senses. Neither does it cause head-ache or loathsomeness to meat, as some other
+    sweet smelling herbs do.
+  author: Gerard
+  source: Herball, 1636
+  tags:
+    - British
+    - Cornish
+- text: >
+    Duvenaldus, King of Limerick, had a woman with a beard down to her waist. She also had a crest
+    from her neck down to her spine, like a one-year-old foal. In spite of these two enormities,
+    she was not an hermaphrodite, but in other respects was quite normally feminine.
+  author: Gerald of Wales
+  source: The History and Topography of Ireland, 1187
+  tags:
+    - Irish
+- text: >
+    Wome are yet alive who tell they were taken away when in Child-bed to nurse Fairy Children, a linger
+    Veracious Image of them being left in their place (like their Reflection in a Mirror) ... The Child,
+    and Fire, with Food and other Necessaries, are set before the Nurse as soon as she enters: but she
+    neither perceives any Passage out,, nor sees what those People do in other Rooms of the Lodging. When
+    the Child is weaned, the Nurse dies, or is conveyed back, or gets it her choice to stay there... The
+    Tramountains [Highlanders] to this Day put Bread, the Bible, or a piece of Iron, in Women's beds when
+    travailing [in childbirth], to save them from thus being stolen.
+  author: Revd Robert Kirk
+  source: The Secret Commonwealth
+  tags:
+    - Scottish
+- text: >
+    An Irish Battle charm: "O Mary who had the victory over all women, give me victory over my enemies,
+    that they may all to the ground, as wheat when it is mown."
+  author: Lady Wilde
+  source: Ancient Legends of Ireland, 1888
+  tags:
+    - Irish
+- text: >
+    On the road side is a venerable oak in its last stage of decay, and pierced by age into the form
+    of a Gothic arch; yet its present growth is twenty-seven feet and a half. The very name is classical,
+    Derwen Ceubren yr Ellyll, "the hollow oak, haunt of demons".
+  author: Thomas Pennant
+  source: Tours in Wales, 1810
+  tags:
+    - Welsh
+    - trees
+- text: >
+    Oats being so general a crop in #Ireland, one might expect them to be very cheap, but, however, though
+    a great many are grown, there is also a great consumption as all the poor in general eat no sort of bread
+    except that made of oats; and the time of the year when potatoes are out of season (May, June and July)
+    their whole living is oat bread and buttermilk, but so long as potatoes are good they supply the place of
+    bread; therefore oats bear a better price than would be expected, being so general a crop.
+  author: C. Varley
+  source: A New System of Husbandry, 1770
+  tags:
+    -
 # - text: >
 # 
 #   author:
