@@ -989,25 +989,27 @@
   author: C. Varley
   source: A New System of Husbandry, 1770
   tags:
-    -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+    - Irish
+- text: >
+    Spare the limber tree: burn no the slender hazel.
+  author: Death of Fergus
+  source: B.L. Egerton MS 1782
+  tags:
+    - Irish
+    - Trees
+- text: >
+    He himself went to learn the accomplishments of poetry and science from an ancient sage and Druid named Fenegas,
+    who dwelt on the Rover Boyne. Here, in a pool of this river, under boughs of hazel from which dropped the Nuts
+    of Knowledge on the stream, lived Fintan the Salmon of Knowledge, which whoso ate of him would enjoy all the wisdom of the ages.
+  author: T.W. Rolleston
+  source: Celtic Myths and Legends
+  tags:
+    - SalmonOfWisdom
+- text: >
+    May you sleep like a landrail
+  author: Unknown
+  source: '#Irish Malediction'
+  tags:
 # - text: >
 # 
 #   author:

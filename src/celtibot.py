@@ -43,10 +43,12 @@ month = int(str(args.date).split('-')[0])
 if not args.pod == None:
     partOfDay = args.pod
 
-if args.pod == None:
-    partOfDay = 1 if datetime.date(current_year, month, day).strftime('%j') == 'am' else 2
+partOfDay = args.pod if args.pod != None else None
 
-doy = (int(datetime.date(current_year, month, day).strftime('%j')) * int(partOfDay))-1
+if partOfDay == None: partOfDay = 1 if datetime.date(current_year, month, day).strftime('%j') == 'am' else 2
+    
+
+doy = (int(datetime.date(current_year, month, day).strftime('%j')))-1
 
 def usage():
   print("Run with -h for usage")
