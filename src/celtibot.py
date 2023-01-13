@@ -40,15 +40,12 @@ current_year = int(datetime.datetime.now().strftime('%Y'))
 day = int(str(args.date).split('-')[1])
 month = int(str(args.date).split('-')[0])
 
-if not args.pod == None:
-    partOfDay = args.pod
-
-partOfDay = args.pod if args.pod != None else None
+partOfDay = int(args.pod) if args.pod != None else None
 
 if partOfDay == None: partOfDay = 1 if datetime.date(current_year, month, day).strftime('%j') == 'am' else 2
     
 
-doy = (int(datetime.date(current_year, month, day).strftime('%j')))-1
+doy = (int(datetime.date(current_year, month, day).strftime('%j')))-1 if partOfDay == 1 else int(datetime.date(current_year, month, day).strftime('%j'))+364
 
 def usage():
   print("Run with -h for usage")
@@ -325,7 +322,10 @@ def quoteToots(toots):
     todayQuotes = getQuoteObjectsForToday(quoteObjectsFromYamlFile)
     if not len(todayQuotes) or int(partOfDay) == 2:
         undatedQuotesObjects = [x for x in quoteObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]
-        toots = formatQuoteToot(undatedQuotesObjects[doy])
+        try:
+            toots = formatQuoteToot(undatedQuotesObjects[doy])
+        except IndexError:
+            sys.exit()
         return toots
 
     for quote in todayQuotes:
@@ -337,7 +337,10 @@ def topicToots(toots):
     todayTopics = getInfoObjectsForToday(infoObjectsFromYamlFile)
     if not len(todayTopics) or int(partOfDay) == 2:
         undatedInfoObjects = [x for x in infoObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]
-        toots = formatTopicToot(undatedInfoObjects[doy])
+        try:
+            toots = formatTopicToot(undatedInfoObjects[doy])
+        except IndexError:
+            sys.exit()
         return toots
     for topic in todayTopics:
         toots = formatTopicToot(topic)
