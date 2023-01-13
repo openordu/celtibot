@@ -1006,94 +1006,132 @@
   tags:
     - SalmonOfWisdom
 - text: >
-    May you sleep like a landrail
+    May you sleep like a landrail.
   author: Unknown
   source: '#Irish Malediction'
   tags:
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+- text: |
+    In Cornwall bramble leaves are made use of in cases of scalds and Inflammatory diseases. Xine leaves are moistened with springwater, and " these are applied to the burned or diseased parts." While this is being done, for every bramble leaf the following charm is repeated three times
+    
+    "There came three angels out of the east,
+    One brought fire and two brought frost ;
+    Out fire and in frost,
+    In the name of the Father, Son, and Holy Ghost."
+  author: T. F. Thiselton Dyer
+  source: Folklore of Plants
+  tags:
+    - Cornish
+- text: >
+    The people afterwards [of Trinity Sunday] retire to a green spot for dancing, etc, And old Welsh calendar said that on the eve of Trinity Sunday it is customary to wash or bathe to prevent the tertian ague.
+  author: Rev John Foster
+  source: 'The #Welsh Calendar'
+  day: 56 + easter
+  tags:
+    - Catholic
+    - TrinitySunday
+- text: >
+    Then the warriors of Emain seized him [#Cúchullain] and cast him into a tub of cold water.
+    That tub burst about him. The second tub into which he was plunged boiled
+    hands high therefrom. The third tub into which he went after that he warmed
+    so that its heat and cold were properly adjusted for him.
+  author: Transl. Cecil O'Rahilly
+  source: Tain Bo Cuailnge
+  tags:
+    - Irish
+    - Tain
+- text: >
+    ... the fame of Crom Dubh (The Black-Stooped) and his two sons and his two mastiffs,
+    went far and wide, for their evil-doing; and people were so terrified at his name,
+    not to speak of himself, that they used to hide their faces in their bosoms when
+    they used to hear it mentioned in their ears... they say that he was a native
+    from hell in the skin of a biped ... and was the second man that midges ate.
+  author: Douglas Hyde
+  source: Legends of Saints and Sinners, 1900
+  tags:
+    - Irish
+- text: >
+    Áine is the queen of the #fairies, the #moon, mother of the gods, and represented as benign -
+    indeed, the patroness of literature. Bloody sacrifices were made to her. She is on the hills
+    at #midsummer, and at the winter feasts, when the spirits of the dead are propitiated.
+    Her influence is particularly powerful on the Friday, Saturday and Sunday following
+    Lammas Day. Her seat at Dunany (Dún Áine, County Louth) is said to have a powerful
+    allure for lunatics, and the sane who sat upon it were risking the sanity. Fairy,
+    herb and charm mongers believed that Áine possessed unlimited influence over human
+    frame, regarding her as the "vital spark" which traversed the entire body once every
+    twenty-four hours. Blood-letter would decline to work on a day devoted to Áine, for
+    fear of letting out the vital spark.
+  author: W.G. Wood-Martin
+  source: Traces of the Elder Faiths of Ireland, 1902
+  day: first sunday after 08-01
+  tags:
+    - Irish
+    - Fairy
+    - Pagan
+    - Witch
+    - Druid
+- text: >
+    When the Fir Volgans [Bolg] reigned in #Ireland, the land was overrun with pigs,
+    which committed vas depredations. The Tuatha de Dananns on conquering the country
+    extirpated all these animals, except one furious herd which devastated the maritime
+    districts of the county of Clare by day, and retired to an island in Malbay, called
+    Muc Inis, now Mutton Island.
+  author: William Hackett
+  source: Porcine Legends, Kilkenny Archeological Society, 1852
+  tags:
+    - Irish
+- text: >
+    Damn nervous energy and damn efficiency. They have killed good manners as they have
+    killed conversation, for sake of which good manners exist, and they have killed art
+    and literature.
+  author: John Butler Yeats to W.B. Yeats
+  source: A Letter, 1908
+  tags:
+    - Irish
+- text: >
+    Take some lizards, and some of those nasty beetles which are found in ferns in summer
+    time, and burn them to powder in an iron pot. Wet the forefinger of the right hand
+    with the powder, and apply it to the tooth frequently, refraining from licking or spitting
+    it off. Then the tooth will fall away without pain. It is proven.
+  author: Meddygon Myddfai
+  source: Welsh, 13th century
+  tags:
+    - Welsh
+    - folkMedicine
+- text: >
+    In 1861 some tin miners dug up a huge coffin in the defunct church of St James, Tregoney,
+    #Cornwall, containing the skeleton of a Cornish giant, who owned a tooth measuring two and a half inches.
+  author: S.P.B. Mais
+  source: 'The #Cornish Riviera, 1934'
+  tags:
+- text: >
+    To avoid toothache, never shave on a Sunday.
+  author: Lady Wilde
+  source: Medical Superstitions and Ancient Charms, 1888
+  tags:
+    - Irish
+- text: >
+    He [Macbeth] seems to have represented the Celtic and northern element in the
+    population as against Duncan and his family who were gradually drawing south
+    and connecting themselves by intermarriage and customs with the Saxons of
+    England and Lothian.
+  author: 'National Biography'
+  source: Dictionary of, 1893
+  tags:
+    - Scottish
+    - Macbeth
+- text: >
+    On the evening of the 14th August, 1822, his magesty King George IV visiting Scotland, Sir Walter Scott went out in a boat to welcome him  and present him with an elegant jewelled cross of St Andrew. When the king was informed of Sir Walter's approach, he exclaimed, "What?! Sir Walter Scott? The man in Scotland I most wish to see! Let him come up."
+  author: Chambers and Thomson
+  source: Eminent Scotsmen, 1870
+  tags:
+    - Scottish
+    - SirWalterScott
+- text: >
+    
+  author:
+  source:
+  tags:
+    -
 # - text: >
 # 
 #   author:
