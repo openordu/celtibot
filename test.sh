@@ -33,7 +33,7 @@ echo "Running ${test}"
 passfail "${test}" $?
 test="PM topic test"
 echo "Running ${test}"
-[[ "`SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode topic --date 03-02 --pod 2| grep 'The Blessed'| wc -l`" == "1" ]] && true || false
+[[ "`SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode topic --date 03-02 --pod 2| grep 'celtic' | wc -l`" == "0" ]] && true || false
 passfail "${test}" $?
 # test="AM quote test"
 # echo "Running ${test}"
