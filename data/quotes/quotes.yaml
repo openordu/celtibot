@@ -420,16 +420,16 @@
     - Catholic
 - text: >
     Some months ago I was on a visit to some friends in the south of Ireland, and one
-      morning ... a servant rushed into the room, screaming hysterically that the dairymaid
-      had just found pishogue on the dairy floor. Pishogue is a white, yellowish fungus made
-      at dead of night, after a solemn incantation of the devil according to a secret rite
-      which has been handed down from generation to generation ... In the cool, trim dairy,
-      upon the post of the door, I saw daubs of pishogue. My host ... informed me under his
-      breath that he might expect bad luck with the dairy, as it was indeed the cursed
-      pishogue. That very evening ... his twenty splendid milch cows ... were absolutely dry,
-      and for months they remained so, while a tenant who was noticed to give up his weekly
-      attendance at mass, his dairy stock suddenly too on the appearance of well-fed cattle.
-      Everyone knew he was the man who had put pishogue on his master.
+    morning ... a servant rushed into the room, screaming hysterically that the dairymaid
+    had just found pishogue on the dairy floor. Pishogue is a white, yellowish fungus made
+    at dead of night, after a solemn incantation of the devil according to a secret rite
+    which has been handed down from generation to generation ... In the cool, trim dairy,
+    upon the post of the door, I saw daubs of pishogue. My host ... informed me under his
+    breath that he might expect bad luck with the dairy, as it was indeed the cursed
+    pishogue. That very evening ... his twenty splendid milch cows ... were absolutely dry,
+    and for months they remained so, while a tenant who was noticed to give up his weekly
+    attendance at mass, his dairy stock suddenly too on the appearance of well-fed cattle.
+    Everyone knew he was the man who had put pishogue on his master.
   author: Knowlson
   source: A London Journal, 1909
   tags:
@@ -1120,66 +1120,100 @@
     - Scottish
     - Macbeth
 - text: >
-    On the evening of the 14th August, 1822, his magesty King George IV visiting Scotland, Sir Walter Scott went out in a boat to welcome him  and present him with an elegant jewelled cross of St Andrew. When the king was informed of Sir Walter's approach, he exclaimed, "What?! Sir Walter Scott? The man in Scotland I most wish to see! Let him come up."
+    On the evening of the 14th August, 1822, his majesty King George IV visiting Scotland, Sir Walter Scott went out in a boat to welcome him  and present him with an elegant jewelled cross of St Andrew. When the king was informed of Sir Walter's approach, he exclaimed, "What?! Sir Walter Scott? The man in Scotland I most wish to see! Let him come up."
   author: Chambers and Thomson
   source: Eminent Scotsmen, 1870
+  date: 08-14
   tags:
     - Scottish
     - SirWalterScott
 - text: >
-    
-  author:
-  source:
+    Early in the morning the people go to the fields and pluck ears of corn, generally bere [six rowed barley].
+    These are laid to dry on a rock. When dry they are husked in the hand, winnowed in a fan, ground in a quern,
+    kneaded on a sheep-skin, and formed into a bannock which is called Moilean Móire, the fatling of Mary.
+    Bannock toasted before a fire on faggots of rowan, or some other sacred wood and eaten by the family
+    walking sunwise round the fire, singing the Paean of Mary who promised to shield them from scath till
+    the death of death. After going around the fire the man puts the embers of the faggot fire with bits
+    of old iron, into a pot which he carries sunwise round the outside of the house and sometimes around
+    the fields and flocks.
+  author: Alexander Carmichael
+  date: 08-15
+  source: Carmina Gadelica, 1900
   tags:
-    -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+    - Scottish
+    - Catholic
+- text: >
+    According to Arnot's Edinburgh, the elders of the Scottish church in 1594 exerted
+    their utmost influence to abolish an irrational custom among the husbandmen. The
+    farmers were apt to leave a portion of their land untilled and uncropped year after
+    year; and this spot, which was supposed to be dedicated to Satan, was styled "the
+    Good Man's Croft", that is to say, the landlord's acre. Some pagan ceremony probably
+    had given rise to so strange a superstition; which it is easy to see was designed as
+    a charm or peace offering in behalf of the fertility of the rest of the land.
+  author: John Brand
+  source: Observations in Popular Antiquities, 1900
+  tags:
+    - Scottish
+    - Boggart
+    - theGoodGod
+- text: >
+    Four men of the isle of Skye and Harries having gone to Barbadoes, stayed there for
+    fourteen years; and though they were wont to see the Second Sight in their native
+    country, they never saw it in Barbadoes.
+  author: Revd M. Fraser
+  source: A Treatise on the Second Sight, 1819
+  tags:
+    - Scottish
+    - SecondSight
+- text: >
+    The Druids were ranged in order, with hands uplifted, invoking the gods,
+    and pouring forth horrible imprecations. The novelty of the sight struck
+    the Romans with awe and terror... they felt the disgrace of yielding to a
+    troop of women and a band of fanatic priests. The island fell ... the
+    religious groves, dedicated to superstition and barbarous rites were levelled.
+  author: Tacitus
+  source: Annals
+  tags:
+    - Gaulish
+- text: >
+    When a patient is in desperation put a rope around his feet and hang him by
+    the heels from the rafters. Repeat at reasonable intervals: "This will undo
+    the knot in the guts."
+  author: Old Cures
+  source: From South Uist
+  tags:
+    - Scottish
+    - Guts
+    - folkMedicine
+- text: >
+    It was not permitted when fishing to mention anything rua (brown or red-haired).
+    When I used to go fishing I remember whe Peaidi Rua, a man who lived in Ventry
+    parish, was mentioned that he was not called Paddy the Red but Peaidi Deaghdhathach
+    (the good-coloured).
+  author: Unknown
+  source: Béaloideas
+  tags:
+    - Irish
+    - Fox
+    - Fairy
+    - Red
+- text: >
+    May there be a fox on your fishing-hook and a hare on
+    your bait, and may you kill no fish until St Brighid's Day!
+  author: Seán Ó Súilleabháin
+  source: '#Irish Folk Custom and Belief 1967'
+  tags:
+- text: >
+    He was born in August. He sees an inch before his nose.
+  author: '#Scottish'
+  date: 08-05
+  source: Proverb
+  tags:
+- text: >
+    A quiet pig eats most.
+  author: '#Hebridean'
+  source: Proverb
+  tags:
 # - text: >
 # 
 #   author:
