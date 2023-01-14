@@ -1201,7 +1201,7 @@
     May there be a fox on your fishing-hook and a hare on
     your bait, and may you kill no fish until St Brighid's Day!
   author: Seán Ó Súilleabháin
-  source: '#Irish Folk Custom and Belief 1967'
+  source: '#Irish Folk Custom and Belief, 1967'
   tags:
 - text: >
     He was born in August. He sees an inch before his nose.
@@ -1214,114 +1214,169 @@
   author: '#Hebridean'
   source: Proverb
   tags:
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+- text: >
+    Fluxes were cured by the use of meadow sweet, or jelly of bilberry,
+    or a poultice of flour and suet; or newly churned butter; or strong
+    creme and fresh suet boiled, and drank plentifully morning and evening.
+  author: Thomas Pennant
+  source: A Tour in Scotland and Voyage to the Hebrides 1772
+  date: 01-09
+  tags:
+    - Scottish
+    - Scotland
+    - january
+    - folkMedicine
+    - Herbs
+    - Herbalism
+- text: >
+    Take a bunch of sea pinks pulled with the roots. Boil for an hour or more. Leave to cool. Drink slowly and you are ready for the next night ashore.
+  author: Unknown
+  source: Old Cures from South Uist
+  tags:
+    - Scottish
+    - Scotland
+    - january
+    - folkMedicine
+    - Herbs
+    - Herbalism
+- text: >
+    Animals were known to be offered by Irish and Scotch down to the last century, and it is recorded that a calf was publicly burnt in 1800 by Cornishmen to stop a murrain. A sheep was sometimes offered for the like purpose in some parts of England. In 1678 four men were tried "for sacrificing a bull in a heathenish manner in the Island of St. Ruffus—for the recovery of health of Cirstane Mackenzie." Animals were also killed in honour of St. Martin's day.
+  author:
+  source:
+  tags:
+    -
+- text: >
+    In pagan times, the pig was held as sacred in Ireland as it is held at the present day in the religious systems of India and China.
+  author: William Hackett
+  source: Porcine Legends, Kilkenny Archeological Society, 1852
+  tags:
+    - Irish
+- text: >
+    All the legends of porcine animals, which abound in Ireland, Wales, and Scotland, had reference to the suppression of a form of idolatry, analogous to, if not identical with, the existing worship of the Hindoo deity, Vishnu, in his Avatar as a Boar.
+  author: William Hackett
+  source: Porcine Legends, Kilkenny Archeological Society, 1852
+  tags:
+    - Irish
+    - Welsh
+    - Scottish
+- text: >
+    In 1678 four men were tried 'for sacrificing a bull in a heathenish manner in the Island of St Ruffus, for the recovery of health of Cirstane Mackenzie.'
+  author: James Bonwick
+  source: '#Irish #Druid and Old Irish Religions, 1894'
+  tags:
+- text: >
+    The connection between #witches and the lower animals is a very close one.
+  author: Gomme
+  source: Ethnology in Folklore
+  tags:
+    - Witchcraft
+- text: >
+    It was commonly said in Ireland that bull's blood was used in mixing the
+      mortar for castles. There certainly seem to have been animal sacrifices
+      under the sites of buildings, either to assuage the feelings of the
+      displaced spirit of the site, or to provide a guardian spirit for the
+      house. One explanation, however, for the burial of horse skulls found
+      under floors and in walls is that they gave the room a resonant sound
+      for dancing.
+  author: Seán Ó Súilleabháin
+  source: '#Irish Folk Custom and Belief, 1967'
+- text: >
+    There are in Skye neither rats or mice but the weasel is so frequent,
+    that he is heard in houses rattling behind chests or beds, as rats in
+    England.
+  author: Dr Johnson
+  source: September, 1773
+  tags:
+    - Scottish
+- text: >
+    Dr Matheson was at the time enjoying a sail on Loch Alsh, which separates
+    the Island of Skye from the mainland. We were going gaily along, when
+    suddenly I saw something rise out of the Loch in front of us, a long,
+    straight, neck-like thing as tall as my mast. It was not a sea-serpent,
+    but a much larger and more substantial bast, something in the nature of
+    a giant lizard, I should think.
+  author: Unknown
+  source: The Strand Magazine, Sept 1893
+  tags:
+    - Wurrums
+    - Scottish
+- text: >
+    In Upper #Brittany the last sheaf is always made into human shape; but if the
+    farmer is a married man, it is made double and consists of a little corn-puppet
+    placed inside a large one. This is called the Mother-sheaf. It is delivered to
+    the farmer's wife who unties it and gives drink-money in return.
+  author: Unknown
+  source: The Gentleman's Magazine, 1795
+  tags:
+    - Breton
+- text: >
+    Their Apparell and Speech is like that of the people and Countrey under which they
+    live, so are they seen to wear Plaids and variegated Garments in the Highlands of
+    Scotland, and Suanochs therefore in Ireland. They speak but little, and that by
+    way os whistling, clear, not rough.
+  author: Revd Robert Kirk
+  source: The Secret Commonwealth, 1691
+  tags:
+    - Fairies
+    - Scottish
+    - Irish
+- text: >
+    Specimens of this Danann race still exist, but have gradually mixed with their forerunners [the Gaels]
+    to the present day. Every one who is fair-hared, vengeful, large, and every plunderer, professors
+    of musical and entertaining performances, who are adepts of Druidical and magical arts, they are
+    the descendants of the Tuatha-de-Dananns.
+  author: Dubhalthach
+  source: MacFirbisigh
+  tags:
+- text: >
+    The people have a singular custom whenever their cattle are diseased amongst these stones, to pray
+    to St Cornelius for recovery. Such a practice may be a remnant of Pagan superstition.
+  author: Mrs. Charles Stothard
+  source: Letters written during a Tour...Britany, And Other Parts Of France, 1818
+  tags:
+    - Breton
+- text: |
+    I neither praise poverty, nor at it repine
+    But who praises me poverty, I would let him have mine
+    The poor man despised without money or food or wine
+    He is in the light always, despite how the sun may shine.
+  author: Douglas Hyde
+  source: A Few Rhymed Proverbs, Celtic Review, 1904
+  tags:
+    - Irish
+- text: >
+    In this Hyperborean country [Skye] in every district, there is to be met with a rude stone
+    consecrated to Gruagach or Apollo. The first who is done with his reaping send a man
+    or a maiden with a bundle of Corn to his next neighbour, who has not yet reaped down
+    his Harvest, who when he finished, dispatches to his own next neighbour, who is behind
+    in his work and so on until the whole corns are cut down. This sheaf is called the
+    Cripple Goat, or Gaobhir Bhacagh, and is at present meant as a brag or affront to the
+    farmer, to being more remiss, or later than the others at reaping the harvest, for
+    which reason the bearer of it must make as good a pair of heels, for fear of being
+    ill-used for his indiscretion, as he can. Whether the appellation of Cripple Goat
+    may have any or the least adherence to apollonian Altar of Goats Horns, I shall
+    not pretend to determine.
+  author: Sir James Frazer
+  source: The Golden Bough
+  tags:
+- text: >
+    How far from the Earth to the Moon? Answer: one toin and a half, and the same between
+    the moon and mercury from Mercury to Venus one toin. The toin is five thousand stadia:
+    one stadia is twenty thousand and five paces. A pace is two steps, and a step two feed,
+    each foot is eight inches.
+  author: Unknown
+  source: 'Arundel MS 333, #Irish 1514'
+  tags:
+- text: >
+    The Eve of St Michael is for bringing in carrots, baking the struan, killing the lamb, of stealing the horses.
+    The Day of St Michael is the day of early mass, the sacrificial lamb; the oblation struan; the distribution of
+    the lamb; of pilgrimage to the burial ground of their fathers; the day of giving and receiving carrots with their
+    wishes and acknowledgements, and the day of athletics and racing horses. And the Night of Michael is the night of
+    the dance and the song, of merry making and love making and love-gifts.
+  author: Alexander Carmichael
+  source: Carmina Gadelica, 1900
+  tags:
+    - Scottish
 # - text: >
 # 
 #   author:
