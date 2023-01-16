@@ -452,6 +452,7 @@
     In this month drink a cup of cold water daily, fasting. Drink also warm milk, and eat lettuce. Do not drink ale or mead.
   author: Meddygon Myddfai
   source: Welsh, 13th century
+  date: 06-01
   tags:
     - Welsh
     - folkMedicine
@@ -929,7 +930,7 @@
     treacle and two ounces of pewter filings. Boil for two hours in a closed vessel in two
     quarters of ale, strain, and give a spoonful fasting each morning.
   author: Lady Wilde
-  source: Ancient Legends of Ireland, 1888
+  source: 'Ancient Legends of #Ireland, 1888'
   tags:
     - Irish
     - folkMedicine
@@ -968,7 +969,7 @@
     An Irish Battle charm: "O Mary who had the victory over all women, give me victory over my enemies,
     that they may all to the ground, as wheat when it is mown."
   author: Lady Wilde
-  source: Ancient Legends of Ireland, 1888
+  source: 'Ancient Legends of #Ireland, 1888'
   tags:
     - Irish
 - text: >
@@ -1230,8 +1231,8 @@
     - Herbalism
 - text: >
     Take a bunch of sea pinks pulled with the roots. Boil for an hour or more. Leave to cool. Drink slowly and you are ready for the next night ashore.
-  author: Unknown
-  source: Old Cures from South Uist
+  author: Old Cures
+  source: From South Uist
   tags:
     - Scottish
     - Scotland
@@ -1378,156 +1379,252 @@
   source: Carmina Gadelica, 1900
   tags:
     - Scottish
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+- text: >
+    In October drink new wine and eat minnows.
+    Let your diet consist of fresh meat and
+    wholesome vegetables.
+  author: Meddygon Myddfai
+  date: 10-01
+  source: '#Welsh, 13th century'
+  tags:
+    - folkMedicine
+- text: >
+    As for Elf arrows, the Divell [Devil] sharpens them with his ain [own] hand, and delivers them to Elf boys, wha
+    whyttilis [wittle] and dightis [dress] them with a sharp thing lyk a parking needle; bot when I was in Elfland, I
+    saw them whyttling and dighting them.
+  author: Isobel Gowdie
+  source: '#Scottish Criminal Trials'
+  tags:
+- text: >
+    The little man pulled out four of his red hairs and blew upon them, and each became a tailor. The first one had a
+    cabbage, the second on a par of shears, the third had a needle and the fourth an iron. They sat down and went to
+    work. From the first leaf of the cabbage they made a handsome coat; from another a waistcoat, but for the wide
+    trousers of Leon they used two cabbage leaves.
+  author: E. Souvestre
+  source: "The Groac'h from the Isle of Lok, 1845"
+  tags:
+- text: >
+    A lady lecturing recently on the #Irish language drew attention to the fact (I mentioned it myself as long ago as 1925)
+    that, while the average English speaker gets along with a mere 400 words, the Irish-speaking peasant uses 4,000. Considering
+    what most #English speakers can achieve with their tiny fund of noises, it is a nice speculation to what extremity one would be
+    reduced if one were locked up for a day with and Irish-speaking bore and bereft of all means of committing murder or suicide. ...
+    My point, however, is this. The 400/4,000 ration is fallacious; 400/400,000 would be more like it.
+  author: Myles na gCopaleen
+  source: An Crúisgín Lán, 1941
+  tags:
+- text: >
+    Examination, 5 October 1600, by Sir Harry Vivian of Trelowarren of William Jehoseph, who lately landed at Mounts Bay on return from the
+    #English seminary of Valladolid in Spain. The examinee spoke of Cornish scholars there. Indeed Philip III and Queen Margaret, on a state
+    visit to the college on the 19th July, 1600 had listened to sermons preached in #Cornish and #Welsh, as well as in #French, #Flemish, #Italian
+    and English.
+  author: P. Berresford Ellis
+  source: The Cornish anguage and its Literature, 1974
+  tags:
+- text: >
+    Foghmhar na ngéadhna, harvest of the geese, when the geese are allowed to range the stubble.
+  author: Revd Patrick Dineen
+  source: Foclóir, 1927
+  tags:
+- text: >
+    It is and old custom in these parts for the poor people to go about the farm-houses to beg and gather milk between and about
+    the two Michaelmasses, that they may be able to make some puddings and pancakes against Bryngwyn and Clyro Feasts, which are
+    on the same day, next Sunday, the Sunday after Old Michaelmas Day or Hay Fair, October 10th. The old custom is still kept up
+    in Bryngwyn at some hill farms in Clyro.
+  date: 10-09
+  author: Revd Francis Kilvert
+  source: Diary, 10-09 1870
+  tags:
+- text: >
+    People that know very little of arts or sciences or of the powers of Nature will laugh at us Cardiganshire miners that maintain
+    the being of knockers in the mines, a kind of good natured implapable people but to be seen and heard, and who seem to us to work
+    in the mines... Three or four miners together shall hear them sometimes, but if the miners stop to take noticie of them the
+    knockers will also stop; but let the miners go on at their own work, suppose it is borning, the knockers will also go on as
+    brisk as can be in landing, blasting, or beating down the loose.
+  author: Lewis Morris
+  source: 'A Book of #Wales, 1953'
+  tags:
+    - Welsh
+- text: >
+    Whoever kills the cat that guards the king's barn, or steals it, its head is to be set down on a clean level floor,
+    and its tale is to be held up and then wheaten grains are to be pourd around it until they cover the tip of its tail.
+    Any other cat is wrth four legal pence... In law, essential qualifiecations of a cat are that it should be perfect of
+    ear and eye and tail and teeth and clasws, not singed by the fire, and that it should kill mice and not eat its kittens,
+    and should not be caterwauling every full moon.
+  author: Medeival
+  source: '#Welsh Laws'
+  tags:
+- text: >
+    The Leanan-sidhe, or the spirit of life, was supposed to be the inspirit of the poet and singer, as the Ban-sidhe was the
+    spirit of death and foreteller of doom.
+  author: Lady Wilde
+  source: 'Ancient Legends of #Ireland, 1888'
+  tags:
+   - Irish
+- text: >
+    The LeaLianhan Shee, your reverence, is never seen, only by thim it keeps wid; but, hem!, it always, wid the help of the
+    ould boy, conthrives, sir, to make the person break the agreement, an' thin it has him in its power.
+  author: William Carlton
+  source: The Lianhan Shee
+  tags:
+    - Irish
+- text: >
+    By certain incantations, the dead can be made to appear and answer questions, but for this purpose blood must be sprinkled
+    on the dead body when it rises; for it is said the spirits love blood The colour excites them and gives for the time the
+    power and semblance of life.
+  author: Lady Wilde
+  source: 'Ancient Legends, Mystic Charms and Superstituions of #Ireland, 1888'
+  tags:
+    - Irish
+- text: >
+    The old #Welsh year, like the #Celtic year generally,
+    began on the first of #November(Calan Gaef), and the
+    importance attaching to that day has not yet quite
+    disappeared. This is the old New Year's Day which
+    Celtic traditions as a whole favours.
+  author: Revd John Fisher
+  source: The Welsh Calendar, 1895
+  date: 10-29
+  tags:
+- text: >
+    The Land of the Dead is at the western extremity of Great Britain
+    to which the people of Armorica had to ferry the souls of the dead,
+    impelled by unseen prompters to go in the middle of the night and
+    board strange ships, their gunwales close to the water so heavy is
+    their cargo. Breton folklore holds that the boats left from Baie de
+    Dépassés in south-western Brittany.
+  author: Procopius
+  source: Gothic Wars, 6th century
+  tags:
+- text: >
+    There is considerable evidence to show that the first Sunday of each
+    quarter in the Celtic year was the peroper day for the suppliant to
+    pay his vows at the holy well when the healing virtue o their waters
+    was at its utmost potency. The first Sundays of November, February,
+    May and August were the chief days of the resort to the healing
+    fountains (owing to inclembncy of the seasons, February and November
+    are far less popular).
+  day: first sunday after 11-01
+  author: J.M McPherson
+  source: 'Primitive Beliefs in the North-East of #Scotland, 1929'
+  tags:
+    - Scottish
+- text: >
+    There is considerable evidence to show that the first Sunday of each
+    quarter in the Celtic year was the peroper day for the suppliant to
+    pay his vows at the holy well when the healing virtue o their waters
+    was at its utmost potency. The first Sundays of November, February,
+    May and August were the chief days of the resort to the healing
+    fountains (owing to inclembncy of the seasons, February and November
+    are far less popular).
+  day: first sunday after 02-01
+  author: J.M McPherson
+  source: 'Primitive Beliefs in the North-East of #Scotland, 1929'
+  tags:
+    - Scottish
+- text: >
+    There is considerable evidence to show that the first Sunday of each
+    quarter in the Celtic year was the peroper day for the suppliant to
+    pay his vows at the holy well when the healing virtue o their waters
+    was at its utmost potency. The first Sundays of November, February,
+    May and August were the chief days of the resort to the healing
+    fountains (owing to inclembncy of the seasons, February and November
+    are far less popular).
+  day: first sunday after 05-01
+  author: J.M McPherson
+  source: 'Primitive Beliefs in the North-East of #Scotland, 1929'
+  tags:
+    - Scottish
+- text: >
+    There is considerable evidence to show that the first Sunday of each
+    quarter in the Celtic year was the peroper day for the suppliant to
+    pay his vows at the holy well when the healing virtue o their waters
+    was at its utmost potency. The first Sundays of November, February,
+    May and August were the chief days of the resort to the healing
+    fountains (owing to inclembncy of the seasons, February and November
+    are far less popular).
+  day: first sunday after 08-01
+  author: J.M McPherson
+  source: 'Primitive Beliefs in the North-East of #Scotland, 1929'
+  tags:
+    - Scottish
+- text: >
+    If the spirit of the well were outraged, it might cease to give forth
+    healing virtue. A farmer from Letterewe, whose favorite dog had gone mad,
+    brought it to the holy well at Innis Maree to get a drink of the healing
+    waters. The dog was cured, but the offended spirit departed from the well
+    forever. It ceased to heal.
+  author: Gordon Cumming
+  source: In the Hebrides, 1883
+  tags:
+    - Scottish
+- text: >
+    Between Hallowmass and Christmas, when the people laid in their winter provisions, about twenty-four beeves [cattle]
+    were killed in a week; the best not exceeding sixteen or twenty stone. A man who had bought a shilling's worth of beef,
+    or an ounce of tea, would have concealed it from his neighbours like murder.
+  # note: compare with the Nayakan tendancy of hiding things from neighbors
+  author: John Brand
+  date: 11-12
+  source: 'A Statistical Account of #Scotland, 1793'
+  tags:
+    - Scottish
+- text: >
+    Bonfires were formerly kindled at this time, as well as at Midsummer. When the embers had partially burned out, those who
+    assembled were accustomed to cast them about in various directions, or sometimes at each other, with no slight danger to
+    those whoere were not skillfull in parrying orescaping from the burning brands. The high streets or marker squares of tons
+    and villages, or fair greens and cross-roads in the country places, were usually selected for kindling this Samhain pile.
+  author: Leinster lore
+  source: Lageniensis, 1870
+  tags:
+- text: >
+    Now is the time to cut long hazel twigs to season over winter, ready for forming the skeletons of the Spring-built curraghs.
+  author: J. Hornell
+  source: British Coracles and Irish Curraghs, 1938
+  tags:
+- text: >
+    The fish are discovered by means of torches, or fire0grates, filled with blazing ragments of tar-barrels which shed a strong
+    though partial light upon the water.
+    
+    "On the present occasion, the principle party were embarked in a crazy boat upon a part of the river that was enlarged and
+    deepend by the restraints of a mill-weir, while others, like the ancient Bacchanals in their gambols, ran along the banks,
+    brandishing their torches and spears, and pursuing the salmon, some of which endeavoured to escape up the stream while others,
+    shrouding themselves under roots of trees, fragments of stones, and large rocks attempted to conceal themselves from the
+    researches of the fishermen."
+  author: Sir Walter Scott
+  source: Guy Mannering, 1814
+  tags:
+    - Scottish
+- text: >
+    Put a limpet on the fire and remove when the juice bubbles.
+    When cool enough pour the juice in the affected ear and stop
+    the ear with a bit of wool that still has the oil in it.
+  author: Old Cures
+  source: From South Uist
+  tags:
+- text: >
+    the sacred cave byond Kessock Ferry, near the point of Kilmur,
+    Ross-shire, known as the Dropping Cave of Craig-Chowie. Water
+    drips from the roof, and even in modern times these drops have
+    been regarded as a complete cure for deafness and ear ache. The
+    patient lies down on the floor of the cave and lets the water
+    all first in one ear and then the other.
+  author: J.M. McPherson
+  source: 'Primitive Beliefs in the North-East of #Scotland, 1929'
+  tags:
+    - Scottish
+- text: >
+    Courtship is unknown in Glenmornan. When a young man takes it
+    in his head to marry, he goes out in company with a friend and
+    a bottle of whiskey and looks for a woman. If one refuses, the
+    young man looks for another and another until the bottle of
+    whiskey is consumed. The friend talks to the girls father and
+    lays great stress upon the merits of the would-be husband, who
+    meanwhile pleasds his suit with the girl. Sometimes a young man
+    empties a dozen bottles of whiskey before he can persuade a
+    woman to marry him.
+  author: Patrick MacGill
+  source: Children of the Dead End, 1914
+  tags:
+    - Irish
 # - text: >
 # 
 #   author:
@@ -3282,7 +3379,7 @@
     save all here, except the cat." Even the cake on
     the griddle may be blessed, but no one says, 'God Bless the cat.'
   author: Lady Wilde
-  source: Ancient Legends of Ireland, 1888
+  source: 'Ancient Legends of #Ireland, 1888'
   tags:
     - Irish
     - cats
@@ -3404,7 +3501,7 @@
     under a hawthorn tree, and a peasant would die sooner
     than cut down one of the ancient hawthorns sacred to the fairies.
   author: Lady Wilde
-  source: Ancient Legends of Ireland, 1888
+  source: 'Ancient Legends of #Ireland, 1888'
   date: 04-20
   tags:
     - Irish
