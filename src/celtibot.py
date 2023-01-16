@@ -139,7 +139,7 @@ def dateFromWords(dateString):
                 newDateString = newDate.strftime('%m-%d')
                 return newDateString
             if words[-2] == '+':
-                return (calcEasterDate(datetime.datetime.now().strftime('%Y')) + datetime.timedelta(days=int(words[0])))
+                return (calcEasterDate(datetime.datetime.now().strftime('%Y')) + datetime.timedelta(days=int(words[0]))).strftime('%m-%d')
         elif words[0] in ['first', 'second', 'third', 'fourth', 'last']:
             date = words[-1]
             verb = words[-2]
@@ -183,9 +183,8 @@ def getHolidayObjectsForToday(yamlListOfHolidays):
 def getQuoteObjectsForToday(yamlListOfQuotes):
     quotes = list()
     for item in [x for x in yamlListOfQuotes if set(x.keys()).intersection(['day','date'])]:
-        
         dateString = dateStringFromTextOrWords(item)
-
+        
         if isDateToday(dateString):
             quotes.append(item)
     return quotes
@@ -371,7 +370,6 @@ def makeToots(toots):
     for toot in toots:
         if toots.index(toot) == 0:
             continue
-        pprint(first_toot['id'])
         tooter(toot, first_toot['id'])
 
 def init():
