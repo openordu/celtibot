@@ -4,12 +4,15 @@ metadata:
   name: {{.Values.name}}-holiday
   namespace: {{.Values.namespace}}
 spec:
+  concurrencyPolicy: Forbid
+  failedJobsHistoryLimit: 1
   schedule: "0 12 * * *"
   jobTemplate:
     spec:
       template:
         spec:
-          restartPolicy: OnFailure
+          backoffLimit: 0
+          restartPolicy: Never
           {{- if .Values.dockercfg}}
           imagePullSecrets:
           - name: {{.Values.name}}-dockercfg
@@ -39,12 +42,15 @@ metadata:
   name: {{.Values.name}}-quote-am
   namespace: {{.Values.namespace}}
 spec:
+  concurrencyPolicy: Forbid
+  failedJobsHistoryLimit: 1
   schedule: "0 14 * * *"
   jobTemplate:
     spec:
       template:
         spec:
-          restartPolicy: OnFailure
+          backoffLimit: 0
+          restartPolicy: Never
           {{- if .Values.dockercfg}}
           imagePullSecrets:
           - name: {{.Values.name}}-dockercfg
@@ -74,12 +80,15 @@ metadata:
   name: {{.Values.name}}-topic-am
   namespace: {{.Values.namespace}}
 spec:
+  concurrencyPolicy: Forbid
+  failedJobsHistoryLimit: 1
   schedule: "0 16 * * *"
   jobTemplate:
     spec:
       template:
         spec:
-          restartPolicy: OnFailure
+          backoffLimit: 0
+          restartPolicy: Never
           {{- if .Values.dockercfg}}
           imagePullSecrets:
           - name: {{.Values.name}}-dockercfg
@@ -108,12 +117,15 @@ kind: CronJob
 metadata:
   name: {{.Values.name}}-topic-pm
 spec:
+  concurrencyPolicy: Forbid
+  failedJobsHistoryLimit: 1
   schedule: "0 21 * * *"
   jobTemplate:
     spec:
       template:
         spec:
-          restartPolicy: OnFailure
+          backoffLimit: 0
+          restartPolicy: Never
           {{- if .Values.dockercfg}}
           imagePullSecrets:
           - name: {{.Values.name}}-dockercfg
