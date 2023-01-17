@@ -306,6 +306,13 @@ def followToots(toots):
         if follower['id'] not in following_ids:
             mastodon.account_follow(id=follower['id'])
 
+    # Get a list of the users you follow but do not follow you back
+    non_followers = [user for user in following if user not in followers]
+
+    # Unfollow the non-followers
+    for user in non_followers:
+        mastodon.account_unfollow(id=user["id"])
+
 def quoteToots(toots):
     # quotes
     quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
