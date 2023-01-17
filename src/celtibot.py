@@ -1,20 +1,11 @@
 #!/usr/bin/env python3
 
 # Feature requests
-# * Post to FB and Twitter
-# * Post images that are celtic related
-# * Follow people who use certain hashtags
-#   * StandingStoneSunday
-#   * MastoDaoine
-#   * NewGrange
-#   * BrunaBoinne
-#   * Ireland
-#   * etc
-# * boost followers celtic posts based on tweets
-# * links with images posts the image
-# * celtic word of the day freakout
-# * boost everything in certain tags
-# * replaces text with tags
+# * Post images that are celtic language related
+# * boost followers celtic posts based on tags
+# * links with images / posts the image
+# * celtic word of the day freakout / celbration post
+# * prefixes entity strings with tag '#'
 
 from pprint import pprint
 import sys, datetime
