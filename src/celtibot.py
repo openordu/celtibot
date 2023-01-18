@@ -313,6 +313,9 @@ def followToots(toots):
     for user in non_followers:
         mastodon.account_unfollow(id=user["id"])
 
+    # Roadmap for this function:
+    # 1. DM new users with a link to the bot's terms of use and license
+
 def quoteToots(toots):
     # quotes
     quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
