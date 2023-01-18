@@ -295,16 +295,16 @@ def followToots(toots):
         api_base_url = env['SERVER']
     )
     # Get a list of accounts the bot is already following
-    acctsTheBotFollows = mastodon.account_following(id=env['BOT_ACCOUNT_ID'])
+    acctsTheBotFollows = mastodon.account_following(id=env['BOT_ACCOUNT_ID'], min_id=0)
     acctsTheBotFollowsIDs = [f['id'] for f in acctsTheBotFollows]
     last_followed_user = acctsTheBotFollowsIDs[-1]
 
     # Get a list of the bot's new followers
-    acctsFollowingTheBot = mastodon.account_followers(id=env['BOT_ACCOUNT_ID'])
+    acctsFollowingTheBot = mastodon.account_followers(id=env['BOT_ACCOUNT_ID'], min_id=0)
 
 
     # Get a list of the bot's new followers
-    newAcctsFollowingTheBot = mastodon.account_followers(id=env['BOT_ACCOUNT_ID'],since_id=last_followed_user)
+    newAcctsFollowingTheBot = mastodon.account_followers(id=env['BOT_ACCOUNT_ID'], since_id=last_followed_user)
     sorted(acctsTheBotFollowsIDs)
 
     # Follow each new follower
