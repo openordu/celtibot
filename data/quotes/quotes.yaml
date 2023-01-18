@@ -1529,36 +1529,53 @@
   source: 'Ancient £Irish Poetry, 1911'
   tags:
 - text: >
-    In Warleggan, #Cornwall, on Christmas Eve it was customary for some of the household to put in the fire and the rest to take a jar of cider, a bottle, and a gun to the orchard and put a small bough into the bottle. They then said, "Here's to thee, old apple tree! Hats full, sacks full, great bushel gabs full! Hurrah!" and then fired off the gun.
+    In Warleggan, #Cornwall, on Christmas Eve it was customary for some of the
+    household to put in the fire and the rest to take a jar of cider, a bottle,
+    and a gun to the orchard and put a small bough into the bottle. They then
+    said, "Here's to thee, old apple tree! Hats full, sacks full, great bushel
+    gabs full! Hurrah!" and then fired off the gun.
   author: T. Quiller Coach
   date: 12-24
   source: Western Antiquary, 1883
   tags:
     - Cornish
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+- text: >
+    Guaire [King of Connaught] received them and told them to ask for anything
+    they wished for. It was a difficult situation because each had to be served
+    alone, occupy a separate bed, and always some one of them had a peculiar or
+    difficult wish, which the king had to gratify or suffer satire.
+  author: James Carney
+  source: The Burdensome Company of Guaire, 13th century
+  tags:
+    - Irish
+- text: >
+    Innocents' Day, or Childermas, called in Medieval Welsh literature Gwyl y
+    fil feibion, the Festival of the Thousand Sons.
+  author: Revd John Fisher
+  date: 12-28
+  source: 'The #Welsh Calendar, 1895'
+  tags:
+- text: >
+    It is very unlucky to wash [clothes] on Innocents' day, washing is still not
+    done at St Austell on the 28th of December: which is about the only saint's
+    day we keep.
+  author: Joseph Hammond
+  date: 12-28
+  source: 'A #Cornish Parish: being an account of St Austell, 1897'
+  tags:
+- text: >
+    The stone at Quoybune in Birsay, every Hogmanay night, when the clock
+    strikes twelve, marches down to the Loch of boardhouse and dips its head in
+    the water. It is not safe to watch this occurrence.
+  author: J. M. McPherson
+  source: Primitive Beliefs in the North-East of Scotland, 1929
+  tags:
+    - Scottish
+    - Scotland
+    - fire
+    - witch
+    - druid
+    - pagan
 # - text: >
 # 
 #   author:
@@ -3467,8 +3484,13 @@
     - IrishTriads
     - wisdomTriads
     - wisdom
-
-- text: "Three tribal thrones of the Island of Prydain. Arthur the Chief Lord at Menevia, and David the chief bishop, and Maelgwyn Gwyned the chief elder. Arthur the chief lord at Kelliwic in Cornwall, and Bishop Betwini the chief bishop, and Caradawg Vreichvras the chief elder. Arthur the chief lord in Penrionyd in the north, and Cyndeyrn Garthwys the cheif bishop, and Gurthmwl Guledic the chief elder."
+- text: >
+    Three tribal thrones of the Island of Prydain. Arthur the Chief Lord at
+    Menevia, and David the chief bishop, and Maelgwyn Gwyned the chief elder.
+    Arthur the chief lord at Kelliwic in Cornwall, and Bishop Betwini the chief
+    bishop, and Caradawg Vreichvras the chief elder. Arthur the chief lord in
+    Penrionyd in the north, and Cyndeyrn Garthwys the cheif bishop, and Gurthmwl
+    Guledic the chief elder.
   author: Unknown
   source: Welsh Triads - Peniarth MS 54
   tags:
