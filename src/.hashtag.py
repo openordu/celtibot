@@ -1,3 +1,4 @@
+# This file is retired and was used to get an initial group of followers before the searchbot controversey of mid-January 2023
 from mastodon import Mastodon
 from os import environ as env
 from pprint import pprint

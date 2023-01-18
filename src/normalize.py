@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
 
 # Feature requests
-# * Post images that are celtic language related
-# * boost followers celtic posts based on tags
-# * links with images / posts the image
-# * celtic word of the day freakout / celbration post
-# * prefixes entity strings with tag '#'
+# * Post to FB and Twitter
+# * Post images that are celtic related
+# * Follow people who use certain hashtags
+#   * StandingStoneSunday
+#   * MastoDaoine
+#   * NewGrange
+#   * BrunaBoinne
+#   * Ireland
+#   * etc
+# * boost followers celtic posts based on tweets
+# * links with images posts the image
+# * celtic word of the day freakout
+# * boost everything in certain tags
+# * replaces text with tags
 
 from pprint import pprint
 import sys, datetime
@@ -16,27 +25,16 @@ import textwrap
 import requests
 import argparse
 from dateutil.easter import *
+import yaml
 
 allModes = ['holiday', 'quote', 'topic', 'follow']
 tootModes =  ['holiday', 'topic', 'quote']
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dryrun", help="on/off/True/False",default="0",metavar='DRYRUN')
-parser.add_argument("--date", help="set now date in %m-%d / mm-dd format.",default="%s-%s" % (datetime.datetime.now().strftime('%m'), datetime.datetime.now().strftime('%d')),metavar='DATE')
-parser.add_argument("--pod", help="part of day",default=None,metavar='PARTOFDAY')
 parser.add_argument("--mode", help="must be one of %s" % " ".join(allModes),default=str('holiday'),metavar='INFO')
 
 args = parser.parse_args()
-current_year = int(datetime.datetime.now().strftime('%Y'))
-day = int(str(args.date).split('-')[1])
-month = int(str(args.date).split('-')[0])
-
-partOfDay = int(args.pod) if args.pod != None else None
-
-if partOfDay == None: partOfDay = 1 if datetime.date(current_year, month, day).strftime('%j') == 'am' else 2
-    
-
-doy = (int(datetime.date(current_year, month, day).strftime('%j')))-1 if partOfDay == 1 else int(datetime.date(current_year, month, day).strftime('%j'))+364
 
 def usage():
   print("Run with -h for usage")
@@ -306,72 +304,22 @@ def followToots(toots):
         if follower['id'] not in following_ids:
             mastodon.account_follow(id=follower['id'])
 
-    # Get a list of the users you follow but do not follow you back
-    non_followers = [user for user in following if user not in followers]
-
-    # Unfollow the non-followers
-    for user in non_followers:
-        mastodon.account_unfollow(id=user["id"])
-
-    # Roadmap for this function:
-    # 1. DM new users with a link to the bot's terms of use and license
-
 def quoteToots(toots):
     # quotes
     quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
-    todayQuotes = getQuoteObjectsForToday(quoteObjectsFromYamlFile)
-    if not len(todayQuotes) or int(partOfDay) == 2:
-        undatedQuotesObjects = [x for x in quoteObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]
-        try:
-            toots = formatQuoteToot(undatedQuotesObjects[doy])
-        except IndexError:
-            sys.exit()
-        return toots
-
-    for quote in todayQuotes:
-        toots = formatQuoteToot(quote)
-    return toots
+    with open('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()), 'w') as f:
+        data = yaml.dump(quoteObjectsFromYamlFile, f, encoding=None, sort_keys=False, default_flow_style=False)
 
 def topicToots(toots):
     infoObjectsFromYamlFile = yamlRead('%s/../data/info/topics.yaml' % str(scriptDirectory()))
-    todayTopics = getInfoObjectsForToday(infoObjectsFromYamlFile)
-    if not len(todayTopics) or int(partOfDay) == 2:
-        undatedInfoObjects = [x for x in infoObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]
-        try:
-            toots = formatTopicToot(undatedInfoObjects[doy])
-        except IndexError:
-            sys.exit()
-        return toots
-    for topic in todayTopics:
-        toots = formatTopicToot(topic)
-    return toots
+    with open('%s/../data/info/topics.yaml' % str(scriptDirectory()), 'w') as f:
+        data = yaml.dump(infoObjectsFromYamlFile, f, encoding=None, sort_keys=False, default_flow_style=False)
 
 def holidayToots(toots):
     # holidays
     holidayObjectsFromYamlFile = yamlRead('%s/../data/cal/holidays.yaml' % str(scriptDirectory()))
-    relevantHolidaysFromFile = getHolidayObjectsForToday(holidayObjectsFromYamlFile)
-    for i in range(len(relevantHolidaysFromFile)):
-        holiday = relevantHolidaysFromFile[i]
-        toots[i] = formatHolidayToots(holiday)
-    return toots
-
-def tooter(toot, replyid=0):
-    from mastodon import Mastodon
-    mastodon = Mastodon(
-        access_token = env['ACCESS_TOKEN'],
-        api_base_url = env['SERVER']
-    )
-    if replyid>0: return mastodon.status_post(toot, in_reply_to_id=replyid)
-    else: return mastodon.status_post(toot)
-
-def makeToots(toots):
-    if len(toots) == 1: status = tooter(toots[0])
-    else:
-        first_toot = tooter(toots[0])
-    for toot in toots:
-        if toots.index(toot) == 0:
-            continue
-        tooter(toot, first_toot['id'])
+    with open('%s/../data/cal/holidays.yaml' % str(scriptDirectory()), 'w') as f:
+        data = yaml.dump(holidayObjectsFromYamlFile, f, encoding=None, sort_keys=False, default_flow_style=False)
 
 def init():
     import os, datetime
@@ -382,7 +330,5 @@ def init():
     else:
         usage()
         sys.exit(5)
-    if args.mode not in tootModes: sys.exit()
-    if switchHandler(args.dryrun) == 1: print(toots)
-    else: makeToots(toots)
+
 init()
