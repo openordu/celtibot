@@ -295,23 +295,37 @@ def followToots(toots):
         api_base_url = env['SERVER']
     )
     # Get a list of accounts the bot is already following
-    following = mastodon.account_following(id=env['BOT_ACCOUNT_ID'])
-    following_ids = [f['id'] for f in following]
+    acctsTheBotFollows = mastodon.account_following(id=env['BOT_ACCOUNT_ID'])
+    acctsTheBotFollowsIDs = [f['id'] for f in acctsTheBotFollows]
+    last_followed_user = acctsTheBotFollowsIDs[-1]
 
-    # Get a list of the bot's followers
-    followers = mastodon.account_followers(id=env['BOT_ACCOUNT_ID'])
+    # Get a list of the bot's new followers
+    acctsFollowingTheBot = mastodon.account_followers(id=env['BOT_ACCOUNT_ID'])
+
+
+    # Get a list of the bot's new followers
+    newAcctsFollowingTheBot = mastodon.account_followers(id=env['BOT_ACCOUNT_ID'],since_id=last_followed_user)
+    sorted(acctsTheBotFollowsIDs)
 
     # Follow each new follower
-    for follower in followers:
-        if follower['id'] not in following_ids:
-            mastodon.account_follow(id=follower['id'])
+    for acct in newAcctsFollowingTheBot:
+        if acct['id'] not in acctsTheBotFollowsIDs:
+            try:
+                if int(args.dryrun) == 0: mastodon.account_follow(id=acct['id'])
+                print("Followed %s." % acct['acct'])
+            except:
+                # User has blocked us from following them
+                if int(args.dryrun) == 0: mastodon.account_remove_from_followers(acct['id'])
+                print("User: %s has blocked us from following them." % acct['id'])
 
     # Get a list of the users you follow but do not follow you back
-    non_followers = [user for user in following if user not in followers]
+    non_followers = [user for user in acctsTheBotFollows if user not in acctsFollowingTheBot]
 
     # Unfollow the non-followers
     for user in non_followers:
-        mastodon.account_unfollow(id=user["id"])
+        print("Unfollowing user: %s" % user['acct'])
+        if int(args.dryrun) == 0:
+            mastodon.account_unfollow(user["id"])
 
     # Roadmap for this function:
     # 1. DM new users with a link to the bot's terms of use and license
