@@ -1582,42 +1582,42 @@
     - witch
     - druid
     - pagan
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+- text: >
+    Words alone are certain good.
+  author: 'W.B. #Yeats'
+  source: The Song Of The Happy Shepherd
+  tags:
+    - Irish
+- text: >
+    The only business of the head in the world is to bow a ceaseless obeisance to the heart.
+  author: 'W.B. #Yeats'
+  source: Letter to Frederick J. Gregg, 1886
+  tags:
+    - Irish
+- text: >
+    I hate #journalists. There is nothing in them but tittering jeering emptiness. They have all made what Dante calls the Great Refusal, — that is they have ceased to be self-centered, have given up their individuality.... The shallowest people on the ridge of the earth.
+  author: 'W.B. #Yeats'
+  source: Letter to Katharine Tynan (30 August 1888)
+  tags:
+    - Irish
+- text: >
+    We can make our minds so like still water that beings gather about us that they may see, it may be, their own images, and so live for a moment with a clearer, perhaps even with a fiercer life because of our quiet.
+  author: 'W.B. #Yeats'
+  source: The Celtic Twilight, 1893
+  tags:
+    - Irish
+- text: >
+    We make out of the quarrel with others, rhetoric, but of the quarrel with ourselves, poetry.
+  author: 'W.B. #Yeats'
+  source: Per Amica Silentia Lunae, 1918
+  tags:
+    - Irish
+- text: >
+    Englishmen are babes in philosophy and so prefer faction-fighting to the labour of its unfamiliar thought.
+  author: 'W.B. #Yeats'
+  source: Letter to Olivia Shakespear, 1927
+  tags:
+    - Irish
 # - text: >
 # 
 #   author:
