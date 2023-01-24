@@ -19,6 +19,10 @@ test="Date quot test"
 echo "Running ${test}"
 SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode quote --date 02-01 | grep "Uist" | wc -l >/dev/null
 passfail "${test}" $?
+test="Date dual test"
+echo "Running ${test}"
+SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode quote --date 02-01 | grep "Uist" | grep "Imbolc" | wc -l >/dev/null
+passfail "${test}" $?
 test="Date topic test"
 echo "Running ${test}"
 SERVER= ACCESS_TOKEN= python3 src/celtibot.py --dryrun 1 --mode topic --date 05-01 | grep Beltane | wc -l >/dev/null

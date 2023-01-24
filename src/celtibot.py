@@ -33,8 +33,8 @@ month = int(str(args.date).split('-')[0])
 
 partOfDay = int(args.pod) if args.pod != None else None
 
-if partOfDay == None: partOfDay = 1 if datetime.date(current_year, month, day).strftime('%j') == 'am' else 2
-    
+if partOfDay == None: partOfDay = 1 if datetime.date(current_year, month, day).strftime('%p') == 'AM' else 2
+ 
 
 doy = (int(datetime.date(current_year, month, day).strftime('%j')))-1 if partOfDay == 1 else int(datetime.date(current_year, month, day).strftime('%j'))+364
 
@@ -330,6 +330,7 @@ def quoteToots(toots):
     # quotes
     quoteObjectsFromYamlFile = yamlRead('%s/../data/quotes/quotes.yaml' % str(scriptDirectory()))
     todayQuotes = getQuoteObjectsForToday(quoteObjectsFromYamlFile)
+
     if not len(todayQuotes) or int(partOfDay) == 2:
         undatedQuotesObjects = [x for x in quoteObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]
         try:
@@ -339,7 +340,7 @@ def quoteToots(toots):
         return toots
 
     for quote in todayQuotes:
-        toots = formatQuoteToot(quote)
+        toots.append(formatQuoteToot(quote))
     return toots
 
 def topicToots(toots):
@@ -348,12 +349,12 @@ def topicToots(toots):
     if not len(todayTopics) or int(partOfDay) == 2:
         undatedInfoObjects = [x for x in infoObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]
         try:
-            toots = formatTopicToot(undatedInfoObjects[doy])
+            toots.append(formatTopicToot(undatedInfoObjects[doy]))
         except IndexError:
             sys.exit()
         return toots
     for topic in todayTopics:
-        toots = formatTopicToot(topic)
+        toots.append(formatTopicToot(topic))
     return toots
 
 def holidayToots(toots):
@@ -362,7 +363,7 @@ def holidayToots(toots):
     relevantHolidaysFromFile = getHolidayObjectsForToday(holidayObjectsFromYamlFile)
     for i in range(len(relevantHolidaysFromFile)):
         holiday = relevantHolidaysFromFile[i]
-        toots[i] = formatHolidayToots(holiday)
+        toots.append(formatHolidayToots(holiday))
     return toots
 
 def tooter(toot, replyid=0):
@@ -385,7 +386,7 @@ def makeToots(toots):
 
 def init():
     import os, datetime
-    toots = dict()
+    toots = list()
 
     if args.mode in allModes:
         toots = eval("%sToots(toots)" % args.mode)
