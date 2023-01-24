@@ -249,9 +249,10 @@ def formatTopicToot(topic):
     tags = ''
     toots = []
     breakPoint = 400
+    wrapPoint = 80
 
     toot = "`%s' - %s\n\n%s\n" % (topic['name'], topic['summary'], shorten_url(topic['link']))
-    toots = textwrap.wrap(toot, breakPoint, break_long_words=False)
+    toots = textwrap.wrap(toot, breakPoint, break_long_words=False, replace_whitespace=False)
 
     hashTags = set(topic['tags']) if 'tags' in topic.keys() else []
 
@@ -270,18 +271,19 @@ def formatQuoteToot(quote):
     toots = []
     tags = ''
     breakPoint = 400
+    wrapPoint = 80
     toot = "`%s' - %s, %s " % (quote['text'], quote['author'], quote['source'])
-    toots = textwrap.wrap(toot, breakPoint, break_long_words=False)
+    toots = textwrap.wrap(toot, breakPoint, break_long_words=False, replace_whitespace=False)
 
     
-    hashTags = set(quote['tags']) if 'tags' in quote.keys() else []
+    hashTags = quote['tags'] if 'tags' in quote.keys() else None
 
-    while len(hashTags):
-        tag = list(hashTags)[0]
+    while type(hashTags) in ['list', 'set']:
+        tag = hashTags[0]
         tags += "\n#%s " % hashTags.pop()
     tags += "\n#celtic"
 
-    tags = textwrap.wrap(tags, 100, break_long_words=False)
+    tags = textwrap.wrap(tags, 100, break_long_words=False,  replace_whitespace=False)
 
     for toot in toots:
         toots[toots.index(toot)] = "%s%s%s" % (toot, '...' if (toots.index(toot) != len(toots)-1) else '', tags[0])
