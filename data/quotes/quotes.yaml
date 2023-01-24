@@ -1940,17 +1940,6 @@
     - druidry
     - druidism
 - text: >
-    The Druids are those who delight in oaks.
-  author: Lactantius Placidus
-  source: Commentary on Thebais of Caecilius Statius
-  tags:
-    - Gaul
-    - Gaulish
-    - pagan
-    - druid
-    - druidry
-    - druidism
-- text: >
     'dense and ancient, untouched by human hand and impervious to the beams of
     the sun. Here the pale and uncertain light serves only to increase the awe
     and the ominous silence. [Latona] haunted the grove, and the wood in its
@@ -2085,35 +2074,73 @@
     - druidry
     - druidism
 - text: >
-    
-  author:
-  source:
+    Bards are constituted judges of excellence, even Druids of the circle, of four dialects, coming from the four kingdoms [of Wales].
+  author: Cynndelw Brydydd Mawr
+  source: Panegyric of King Owain Gwynedd
   tags:
-    -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+    - Welsh
+    - bards
+    - druid
+    - druidry
+    - druidism
+- text: >
+    The basic assumption that the medieval Welsh bards were a continuation of
+    the Druidic hierarchy.... is not by any means an extravagant or ridiculous
+    belief.
+  author: Thomas D. Kendrick
+  source: 'The Druids: A Study in Keltic Prehistory, 1927'
+  tags:
+    - Welsh
+    - bards
+    - druid
+    - druidry
+    - druidism
+- text: >
+    we have good reason to believe that it [the medieval Welsh bardic class] must have retained and preserved much
+    of the lore of the Druidic cultus with which it had once been contemporary
+    and closely allied.
+  author: Lewis Spence
+  source: The History and Origin of Druidism, 1949
+  tags:
+    - Welsh
+    - bards
+    - druid
+    - druidry
+    - druidism
+- text: >
+    ...although the Druids have left no certain visible monuments of their
+    religion, they appear to have left enduring memorials in the minds of men.
+    The belief that passing children through the hole of Men-an-Tol will cure
+    them of rickets could be a superstition of the Druids, derived perhaps from
+    and even earlier age, and their art of divination may be preserved in the
+    old custom of placing their movements. And again, the fire festivals so dear
+    to the Cornish are probably the sacrificial fires of the Druids in modified
+    Christmas 'stocks' or Yule logs, before setting them alight, and at the
+    great Celtic festival of Midsummer, when fires where lighted on the
+    hilltops, as they still are, children were swung through the flames,
+    sometimes so perilously close as to singe their cloths.
+  author: F.E. Halliday
+  source: A History of Cornwall
+  date: 06-21
+  tags:
+    - Midsummer
+    - Cornish
+    - bards
+    - druid
+    - druidry
+    - druidism
+- text: >
+    The ills I have endured are as nothing to the agonies through which he has
+    passed... he as lost his gods! What sorrow can compare with this sorrow?
+    Once he was a Druid; now he mourns a dead religion.
+  author: Wrdistan
+  source: Life of St Guénolé
+  tags:
+    - Breton
+    - Brittany
+    - druid
+    - druidry
+    - druidism
 # - text: >
 # 
 #   author:
