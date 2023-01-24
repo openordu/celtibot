@@ -2026,7 +2026,6 @@
   tags:
     - Gaul
     - Gaulish
-    - hedgeSchool
     - pagan
     - druid
     - druidry
@@ -2043,7 +2042,6 @@
   tags:
     - Gaul
     - Gaulish
-    - hedgeSchool
     - pagan
     - druid
     - druidry
@@ -2057,29 +2055,41 @@
   tags:
     - Gaul
     - Gaulish
-    - hedgeSchool
     - pagan
     - druid
     - druidry
     - druidism
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+- text: >
+    '[Mannanán Mac Lir] a famous Druid who kept, by necromancy, the Land of
+    Mann, under mists, and, if he dreaded any enemies, he would make of one man
+    to seem an hundred by his art magic.'
+  author: A.W. Moore
+  source: Folklore of the Isle of Man, 1891
+  tags:
+    - Manx
+    - pagan
+    - druid
+    - druidry
+    - druidism
+- text: |
+    It is not with the sneeze our destiny is,
+    Nor with the bird on the top of the twig,
+    Nor with the trunk of a knotty tree.
+    Nor with an act of humming...
+  author: St Colmcille on augury
+  source: Ancient Scotland, 1887
+  tags:
+    - Manx
+    - pagan
+    - druid
+    - druidry
+    - druidism
+- text: >
+    
+  author:
+  source:
+  tags:
+    -
 # - text: >
 # 
 #   author:
