@@ -409,14 +409,6 @@
     - StoneOfTheSea
     - WhitsunTide
 - text: >
-    The Druids - for so their magicians are called - held nothing more sacred than the mistletoe and the tree that bears it, always supposing that tree to be the oak. But they choose groves of oaks for the sake of the tree alone, and they never perform any of their rites except in the presence of a branch of it; so that it seems probable that the priests themselves may derive their name from the Greek word for that tree.* In fact, they think that everything that grows on it has been sent from heaven and is a proof that the tree was chosen by the god himself.
-  author: Pliny the Elder
-  source: Natural History, 1st Century
-  tags:
-    - Druids
-    - Pagan
-    - Oak
-- text: >
     Fiercest heat-giver of all timber is green #oak, from him none may escape unhurt; by partiality for him the head is set on aching and by his acrid embers the eye is made sore.
   author: Death of Fergus
   source: B.L. Egerton MS 1782
@@ -1899,76 +1891,177 @@
     choose the oak to form groves, and they do not perform any religious rites
     without its foliage, so that it can be seen that the Druides are so called
     from the Greek word.
-  author:
+  author: Pliny the Elder
   source:
   tags:
-    -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+    - Gaul
+    - Gaulish
+    - pagan
+    - druid
+    - druidry
+    - druidism
+- text: >
+    It [Pliny's Mistletoe account] ranks with the stories of King Alfred and the
+    cakes, of Cnut and the waves, of Bruce and the spider, among the classics of
+    universal popular knowledge... taken with the uncritical nature of Pliny's
+    writings generally, should make us hesitate to attach too grave a credence
+    to the passage of the mistletoe in association with the Druids.
+  author: Nora Chadwick
+  source: The Druids, 1966
+  tags:
+    - Gaul
+    - Gaulish
+    - pagan
+    - druid
+    - druidry
+    - druidism
+- text: >
+    The People never frequented the place to worship very near it, but left it
+    the gods... The priest himself dreads the approach and fears to come upon
+    the lord of the grove.
+  author: Lucan
+  source: Pharsalia, 61 C.E.
+  tags:
+    - Gaul
+    - Gaulish
+    - pagan
+    - druid
+    - druidry
+    - druidism
+- text: >
+    The Druids are those who delight in oaks.
+  author: Lactantius Placidus
+  source: Commentary on Thebais of Caecilius Statius
+  tags:
+    - Gaul
+    - Gaulish
+    - pagan
+    - druid
+    - druidry
+    - druidism
+- text: >
+    The Druids are those who delight in oaks.
+  author: Lactantius Placidus
+  source: Commentary on Thebais of Caecilius Statius
+  tags:
+    - Gaul
+    - Gaulish
+    - pagan
+    - druid
+    - druidry
+    - druidism
+- text: >
+    'dense and ancient, untouched by human hand and impervious to the beams of
+    the sun. Here the pale and uncertain light serves only to increase the awe
+    and the ominous silence. [Latona] haunted the grove, and the wood in its
+    sacred shadows hides her effigies in the cedar and oak.'
+  author: Lactantius Placidus
+  source: Commentary on Thebais of Caecilius Statius
+  tags:
+    - Gaul
+    - Gaulish
+    - pagan
+    - druid
+    - druidry
+    - druidism
+- text: >
+    Woods and groves are the sacred depositories; and the spot being consecrated
+    those pious uses, they give to that sacred recess the name of the divinity
+    that fills the place, which is never profaned by the steps of man. The gloom
+    fills every mind with awe; revered at a distance and never seen but with the eye
+    of contemplation.
+  author: Tacitus
+  source: Germania
+  tags:
+    - Gaul
+    - Gaulish
+    - pagan
+    - druid
+    - druidry
+    - druidism
+    - heathen
+- text: >
+    The Germans [Gauls] abound with rude strains of verse, the reciters of
+    which, in the language of the country, are called bards.
+  author: Tacitus
+  source: Germania
+  tags:
+    - Gaul
+    - Gaulish
+    - pagan
+    - druid
+    - druidry
+    - druidism
+    - heathen
+- text: >
+    They [the Druids] teach many things to the noblest of the race in
+    sequestered and remote places during twenty years, whether in a cave or in
+    secluded groves.
+  author: Pomponius Mela
+  source: De situ orbis libri III
+  tags:
+    - Gaul
+    - Gaulish
+    - hedgeSchool
+    - pagan
+    - druid
+    - druidry
+    - druidism
+- text: >
+    The Gauls began to breathe new life and vigour, persuaded that the Roman
+    armies, wherever stationed, were broken and dispirited. A rumour was current
+    among them, and universally believed, that the Racians and Sarmatians had
+    laid seige to the encampments in Maesia dn Pannonia. Affairs in Britain
+    supposed to be in no better situation. Above all, the destruction of the
+    Capitol [330 years prior] announced the approaching fate of the Roman
+    empire. The Druids in their whiled enthusiasm, sung their oracular songs, in
+    which they taught that, when Rome was formerly sacked by the Gauls, the
+    mansion of Jupiter being left entire, the commonwealth survived that
+    dreadful shock; but the calamity of fire, which had lately happened, was a
+    denunciation from heaven, in consequence of which, power and dominion were
+    to circulate round the world, and the nations on their side of the Alps were
+    in their turn to become masters of the world.
+  author: Tacitus
+  source: Histories, first century
+  tags:
+    - Gaul
+    - Gaulish
+    - hedgeSchool
+    - pagan
+    - druid
+    - druidry
+    - druidism
+- text: >
+    The Celts appointed Druids, who likewise were versed in the art of seers and
+    other forms of wisdom without whom the kings were not permitted to adopt or
+    plan any course, so that in fact it was these who ruled and the kings became
+    their subordinates and instruments of their judgement, while themselves
+    seated on golden thrones, and dwelling in great houses and being sumptuously
+    feasted.
+  author: Dio Chrysostom
+  source: Oratio
+  tags:
+    - Gaul
+    - Gaulish
+    - hedgeSchool
+    - pagan
+    - druid
+    - druidry
+    - druidism
+- text: >
+    It was Diogenes Laertius who claimed that the Druids taught in triads and
+    the basis of their tradition was 'to honor the gods, to do no evil, and to
+    practise bravery.'
+  author: Peter Beresford Ellis
+  source: 'A Brief History of the #Druids'
+  tags:
+    - Gaul
+    - Gaulish
+    - hedgeSchool
+    - pagan
+    - druid
+    - druidry
+    - druidism
 # - text: >
 # 
 #   author:
