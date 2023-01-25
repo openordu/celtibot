@@ -6,7 +6,7 @@ metadata:
 spec:
   concurrencyPolicy: Forbid
   failedJobsHistoryLimit: 1
-  schedule: "0 12 * * *"
+  schedule: "0 16 * * *"
   jobTemplate:
     spec:
       backoffLimit: 0
@@ -44,7 +44,7 @@ metadata:
 spec:
   concurrencyPolicy: Forbid
   failedJobsHistoryLimit: 1
-  schedule: "0 14 * * *"
+  schedule: "0 16 * * *"
   jobTemplate:
     spec:
       backoffLimit: 0
@@ -82,7 +82,7 @@ metadata:
 spec:
   concurrencyPolicy: Forbid
   failedJobsHistoryLimit: 1
-  schedule: "0 16 * * *"
+  schedule: "0 19 * * *"
   jobTemplate:
     spec:
       backoffLimit: 0
@@ -119,7 +119,7 @@ metadata:
 spec:
   concurrencyPolicy: Forbid
   failedJobsHistoryLimit: 1
-  schedule: "0 21 * * *"
+  schedule: "0 02 * * *"
   jobTemplate:
     spec:
       backoffLimit: 0
