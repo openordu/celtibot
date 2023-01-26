@@ -2357,66 +2357,96 @@
     - druid
     - druidry
     - druidism
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
+- text: >
+    Several Greek and Latin writers speak of Dryades or Druidesses, and the
+    existence of such female Druids is certainly confirmed by Celtic sources.
+  author: Peter Berresford Ellis
+  source: 'A Brief History of the #Druids'
+  tags:
+   - druid
+   - druidry
+   - druidism
+- text: >
+    it is not the first time that Britons have been led to battle by a woman.
+  author: Tacitus
+  source: Annals
+  tags:
+    - CelticWomen
+    - WomenWarriors
+- text: >
+    In Britain there is no rule of distinction to exclude the female line from
+    the throne, or the command of armies.
+  author: Tacitus
+  source: Agricola
+  tags:
+    - CelticWomen
+    - WomenWarriors
+    - Gaul
+    - Gaulish
+- text: >
+    The city states of Greece and Rome had highly organized political structures
+    which had no place for women in power. Greeks and Romans were all the more
+    astonished at the relative freedom and individuality of Celtic Women.
+  author: H.D. Ranking
+  source: Celts and the Classical World, 1987
+  tags:
+    - CelticWomen
+    - WomenWarriors
+    - Gaul
+    - Gaulish
+- text: >
+    The Romans looked upon women as bearers of children and objects of pleasure,
+    while the Druids included women in their political and religious life.
+  author: Jean Markle
+  source: Women of the Celts, 1975
+  tags:
+    - CelticWomen
+    - WomenWarriors
+    - Gaul
+    - Gaulish
+- text: >
+    There is, in their opinion, something sacred in the female sex, and even the
+    power of foreseeing future events. Their advice is, therefore, always heard;
+    and are deemed oracular.
+  author:
+  source:
+  tags:
+    -
+- text: >
+    It is therefore probable that a pagan sanctuary at Kildare was Christianized
+    a holy woman of the Fotharta (Faughart). This would have meant that the cult
+    of that sanctuary became attached to her, including the goddess name #Brighid
+    which probably was a title born by the cheif #Druidess there.
+  author: Dáithí Ó hÓgáin
+  source: 'Myth Legend and Romance: An Encyclopedia on the #Irish Folk Tradition, 1990'
+  tags:
+    - CelticWomen
+    - Bandraoi
+    - Ireland
+- text: >
+    To summon a dead religion from its forgotten grave and to make it tell its
+    story, would require an enchanter's wand...
+  author: J.A. MacCulloch
+  source: 'The Religion of the Ancient #Celts, 1911'
+  tags:
+   - druid
+   - druidry
+   - druidism
+- text: >
+    They neither forgot nor transgressed the law o the gods, and they thought
+    that no good befell men apart from their will.
+  author: J.A. MacCulloch
+  source: 'The Religion of the Ancient #Celts, 1911'
+  tags:
+   - druid
+   - druidry
+   - druidism
+- text: >
+    
+  author:
+  source:
+  tags:
+    -
 # - text: >
 # 
 #   author:
