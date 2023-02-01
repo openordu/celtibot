@@ -249,20 +249,21 @@ def formatTopicToot(topic):
     tags = ''
     toots = []
     breakPoint = 400
-    wrapPoint = 80
 
     toot = "`%s' - %s\n\n%s\n" % (topic['name'], topic['summary'], shorten_url(topic['link']))
-    toots = textwrap.wrap(toot, breakPoint, break_long_words=False, replace_whitespace=False)
+    toots = textwrap.wrap(toot, breakPoint, break_long_words=False)
 
     hashTags = set(topic['tags']) if 'tags' in topic.keys() else []
 
-    tags += "\n#celtic"
     while len(hashTags):
         tag = list(hashTags)[0]
         tags += "\n#%s " % hashTags.pop()
+    tags += "\n#celtic"
+
+    tags = textwrap.wrap(tags, 100, break_long_words=False)
 
     for toot in toots:
-        toots[toots.index(toot)] = "%s%s%s" % (toot, '...' if (toots.index(toot) != len(toots)-1) else '',tags)
+        toots[toots.index(toot)] = "%s%s%s" % (toot, '...' if (toots.index(toot) != len(toots)-1) else '',tags[0])
 
     if len(toots): toots[len(toots)-1] = "%s %s" % (toots[len(toots)-1], "\nnote: edit this info: https://dub.sh/FcTpgFK")
     return toots
@@ -271,19 +272,18 @@ def formatQuoteToot(quote):
     toots = []
     tags = ''
     breakPoint = 400
-    wrapPoint = 80
     toot = "`%s' - %s, %s " % (quote['text'], quote['author'], quote['source'])
-    toots = textwrap.wrap(toot, breakPoint, break_long_words=False, replace_whitespace=False)
+    toots = textwrap.wrap(toot, breakPoint, break_long_words=False)
 
     
-    hashTags = quote['tags'] if 'tags' in quote.keys() else None
+    hashTags = set(quote['tags']) if 'tags' in quote.keys() else []
 
-    while type(hashTags) in ['list', 'set']:
-        tag = hashTags[0]
+    while len(hashTags):
+        tag = list(hashTags)[0]
         tags += "\n#%s " % hashTags.pop()
     tags += "\n#celtic"
 
-    tags = textwrap.wrap(tags, 100, break_long_words=False,  replace_whitespace=False)
+    tags = textwrap.wrap(tags, 100, break_long_words=False)
 
     for toot in toots:
         toots[toots.index(toot)] = "%s%s%s" % (toot, '...' if (toots.index(toot) != len(toots)-1) else '', tags[0])
@@ -351,7 +351,7 @@ def topicToots(toots):
     if not len(todayTopics) or int(partOfDay) == 2:
         undatedInfoObjects = [x for x in infoObjectsFromYamlFile if not set(['date','day']).intersection(x.keys())]
         try:
-            toots.append(formatTopicToot(undatedInfoObjects[doy]))
+            toots = formatTopicToot(undatedInfoObjects[doy])
         except IndexError:
             sys.exit()
         return toots
