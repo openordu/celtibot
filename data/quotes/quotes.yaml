@@ -2433,7 +2433,7 @@
    - druidry
    - druidism
 - text: >
-    They neither forgot nor transgressed the law o the gods, and they thought
+    They [the #Druids] neither forgot nor transgressed the law of the gods, and they thought
     that no good befell men apart from their will.
   author: J.A. MacCulloch
   source: 'The Religion of the Ancient #Celts, 1911'
@@ -2442,41 +2442,49 @@
    - druidry
    - druidism
 - text: >
-    
+    The Druids 'profess to know the will of the gods.'
+  author: Pomponius Mela
+  source:  De situ orbis libri III
+  tags:
+   - druid
+   - druidry
+   - druidism
+- text: >
+    One thing is evident, confirmed by Caesar and the insular Celtic
+    literatures, that the Celts did not look upon their gods as their creators
+    as their ancestors... in which form they also appear in Hindu myth and saga.
+  author: Peter Berresford Ellis
+  source: 'A Brief History of the #Druids'
+  tags:
+- text: >
+    According to O'Curry there is a passage in the ancient texts in which Conlaí
+    of Connacht convened an assembly of Druids at which a claim was made that
+    they were creators of the world.
+  author: Peter Berresford Ellis
+  source: 'A Brief History of the #Druids'
+  tags:
+- text: >
+    Brigh Ambui was a female author of wisdom and prudence among the men of
+    Erin—after her came Connla Cainbhrethach, chief doctor of Connaught. He
+    excelled the men of Erin in wisdom, for he was filled with the grace of the
+    Holy Ghost; he used to contend with the Druids, who said that it was they
+    that made heaven and the earth and the sea—and the sun and moon...
+  author: James Bonwick
+  source: Senchus Mór
+  tags:
+- text: >
+    Naming as a process of creation does occur in Irish mythology, for the
+    Leabhar Gabhála is careful to provide the name of the first to accomplish
+    things, ranging from landing in the country to churning butter.
+  author: Peter Berresford Ellis
+  source: 'A Brief History of the #Druids'
+  tags:
+- text: >
+    The Druidic 
   author:
   source:
   tags:
     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
-# - text: >
-# 
-#   author:
-#   source:
-#   tags:
-#     -
 # - text: >
 # 
 #   author:
