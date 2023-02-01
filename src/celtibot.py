@@ -218,6 +218,9 @@ def formatHolidayToots(holiday):
     blessName       = holiday['blessname'] if 'blessname' in holiday.keys() else holidayName
     scottishName    = formatName(holiday['scottishname']) if 'scottishname' in holiday.keys() else None
     gaulishName     = formatName(holiday['gaulishname']) if 'gaulishname' in holiday.keys() else None
+    manxName        = formatName(holiday['manxname']) if 'manxname' in holiday.keys() else None
+    brythonicName     = formatName(holiday['brythonicname']) if 'brythonicname' in holiday.keys() else None
+
     irishName       = formatName(holiday['irishname']) if 'irishname' in holiday.keys() else None
     cornishName     = formatName(holiday['cornishname']) if 'cornishname' in holiday.keys() else None
     bretonName      = formatName(holiday['bretonname']) if 'bretonname' in holiday.keys() else None
@@ -225,7 +228,7 @@ def formatHolidayToots(holiday):
     hashTags        = set(holiday['tags']) if 'tags' in holiday.keys() else []
     reconstructed   = holiday['reconstructed'] if 'reconstructed' in holiday.keys() else False
     
-    celticNames     = {'gaulish':gaulishName,'scottish':scottishName, 'irish': irishName, 'cornish': cornishName, 'breton': bretonName, 'welsh': welshName}
+    celticNames     = {'gaulish':gaulishName,'brythonic':brythonicName,'manx':manxName,'scottish':scottishName, 'irish': irishName, 'cornish': cornishName, 'breton': bretonName, 'welsh': welshName}
     celticNames     = {key:val for key, val in celticNames.items() if val != None}
 
     string = "Today is %s!\n" % (holidayName)

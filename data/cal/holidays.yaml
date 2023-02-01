@@ -18,7 +18,7 @@ holidays:
     manxname:
       - "Sauin"
       - "Oie Houney"
-    cornishname: "Kalan Gwav"
+    cornishname: "Dê Halan Gwâf"
     welshname: "Galan Gaeaf"
     bretonname: "Kalan Goañv"
     date: 11-01
@@ -213,17 +213,15 @@ holidays:
       - scottish
       - burnssupper
       - burnsnight
-  - name: "Brighid's Eve"
-    gaulishname: "Brigantianox"
+  - name: Brighid's Eve
+    brittonname: Brigantianox
+    gaulishname: Brigandonox
     irishname: Oíche Bhríghte
-    scottishname: "Oíche Brìghde"
-    manxname:
-      - "Laa'l Breeshey"
-      - "Toshiaght Arree"
-    cornishname: "Kalan Gwaynten"
-    welshname: "Gwyl Dechrau'r Gwanwyn"
-    bretonname: "Gouel ar Gouloú"
-    datekind: 
+    scottishname: Oíche Brìghde
+    manxname: Oie'l Vreeshey
+    cornishname: Nosweyth Gwaynten
+    welshname: Efa Ffraed
+    bretonname: Noz ar Wrac'h
     date: 01-31
     reconstructed: true
     tags:
@@ -232,17 +230,19 @@ holidays:
       - druid
       - catholic
   - name: "Festival of Spring"
-    gaulishname: "Ambiuolcia"
+    brythonicname: "Ambiuolcia"
+    gaulishname: "Îuos Brigantiâs"
     irishname:
-      - "Lá Fhéile Bríd"
       - "Imbolc"
+      - "Lá Fhéile Bríd"
     scottishname: "Là Fhèill Brìghde"
     manxname:
       - "Laa'l Breeshey"
       - "Toshiaght Arree"
-    cornishname: "Kalan Gwaynten"
-    welshname: "Gwyl Dechrau'r Gwanwyn"
-    bretonname: "Gouel ar Gouloú"
+    cornishname: "Dê Hala' Whevrel"
+    welshname: "Gwyl Ffraed"
+    bretonname: "Gouel Brec'hed"
+    reconstructed: true
     date: 02-01
     tags:
       - pagan
@@ -250,6 +250,12 @@ holidays:
       - druid
       - catholic
   - name: "Candlemas"
+    irishname: "Lá Fhéile Muire na gCoinneal"
+    scottishname: Là Fhèill Brìghde nan Coinnlean
+    manxname: Laa'l Moirrey ny gainle
+    cornishname: "Dêgol Marŷ·a an Cantotyow"
+    welshname: "Gwyl Dechrau'r Gwanwyn"
+    bretonname: "Gouel ar Gouloú"
     date: 02-02
     tags:
       - catholic
@@ -394,7 +400,7 @@ holidays:
     irishname: "Lá Bealtainne"
     scottishname: "Latha Bealltainn"
     manxname: "Laa Boaldyn"
-    cornishname: "Kalan Haf"
+    cornishname: " Cala' Mê"
     welshname: "Galan Haf"
     bretonname: "Kalan-hañv"
     date: 04-30
@@ -489,7 +495,7 @@ holidays:
     irishname: "Lúnasa"
     scottishname: "Lùnastal"
     manxname: "Luanistyn"
-    cornishname: "Kalan Kynyaf"
+    cornishname: "Dê Halan Êst"
     welshname: "Gŵyl Awst"
     bretonname: "Kalan Here"
     date: 08-01
