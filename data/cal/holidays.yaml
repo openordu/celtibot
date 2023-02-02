@@ -1,4 +1,7 @@
-# need to add easter, ascension day, whitsunday, St Melangell's feast, St Columba's Day50 + easter
+# need to add easter, ascension day, whitsunday, St Melangell's feast
+# add St Columba's Day50 + easter
+# create a way to specify holidays which celtibot declares
+# 
 ---
 holidays:
   - name: "November Eve"
@@ -262,8 +265,8 @@ holidays:
       - wiccan
       - witch
       - neopagan
-  - name: "Blaise' Day"
-    cornish: "St. Blaise Day"
+  - name: "St. Blaise' Day"
+    cornish: "St. Blaise' Day"
     date: 02-
     tags:
       - catholic
@@ -271,10 +274,10 @@ holidays:
     date: 02-09
     tags:
       - irishman
-  - name: "Fairy Queen Day"
-    date: 02-11
-    reconstructed: true
-    what: "Festival of Bees"
+  # - name: "Fairy Queen Day"
+  #   date: 02-11
+  #   reconstructed: true
+  #   what: "Festival of Bees"
   - name: "James MacPherson Remembrance Day"
     date: 02-17
     what: "Translator of the Ossianic Poems"
@@ -294,14 +297,14 @@ holidays:
     tags:
       - catholic
       - pagan
-  - name: "Fionn MacCumhail's Day"
-    date: 03-16
-    reconstructed: true
-    tags:
-      - pagan
-      - witch
-      - druid
-      - newpaganholiday
+  # - name: "Fionn MacCumhail's Day"
+  #   date: 03-16
+  #   reconstructed: true
+  #   tags:
+  #     - pagan
+  #     - witch
+  #     - druid
+  #     - newpaganholiday
   - name: "Saint patrick's Day"
     date: 03-17
     tags:
