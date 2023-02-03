@@ -278,7 +278,6 @@ def formatQuoteToot(quote):
     toot = "`%s' - %s, %s " % (quote['text'], quote['author'], quote['source'])
     toots = textwrap.wrap(toot, breakPoint, break_long_words=False)
 
-    
     hashTags = set(quote['tags']) if 'tags' in quote.keys() else []
 
     while len(hashTags):
